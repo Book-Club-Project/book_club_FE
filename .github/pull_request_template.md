@@ -39,6 +39,8 @@ Please check the option(s) that best describe your tests.
 
 - [ ] I have performed a self-review of my code
 - [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] My changes generate no new warnings
 - [ ] I have added tests that prove my fix is effective or that my feature works
+- [ ] I have removed all unused code or commented why I left it
+- [ ] I have deployed my changes to a test-heroku and they work
+- [ ] My changes generate no new warnings
 - [ ] New and existing tests pass locally with my changes
