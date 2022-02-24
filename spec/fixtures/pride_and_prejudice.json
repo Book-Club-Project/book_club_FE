@@ -1,0 +1,78 @@
+{
+    "kind": "books#volume",
+    "id": "s1gVAAAAYAAJ",
+    "etag": "tpm/VjvLINU",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/s1gVAAAAYAAJ",
+    "volumeInfo": {
+        "title": "Pride and Prejudice",
+        "authors": [
+            "Jane Austen"
+        ],
+        "publisher": "C. Scribner's sons",
+        "publishedDate": "1918",
+        "description": "Austen’s most celebrated novel tells the story of Elizabeth Bennet, a bright, lively young woman with four sisters, and a mother determined to marry them to wealthy men. At a party near the Bennets’ home in the English countryside, Elizabeth meets the wealthy, proud Fitzwilliam Darcy. Elizabeth initially finds Darcy haughty and intolerable, but circumstances continue to unite the pair. Mr. Darcy finds himself captivated by Elizabeth’s wit and candor, while her reservations about his character slowly vanish. The story is as much a social critique as it is a love story, and the prose crackles with Austen’s wry wit.",
+        "readingModes": {
+            "text": true,
+            "image": true
+        },
+        "pageCount": 401,
+        "printedPageCount": 448,
+        "dimensions": {
+            "height": "18.00 cm"
+        },
+        "printType": "BOOK",
+        "averageRating": 4,
+        "ratingsCount": 373,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.2.8.0.full.3",
+        "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+        },
+        "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=s1gVAAAAYAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE72thWwSPVK6ihAxyFLBq3VlDtcvwTFCw91GFWmv2pqOd28Beyg-ZzgY-q-f9Fn8CkfBMaC-wJM4cIK7O5_i-ZTJXA5ybdVnhixypTozIAgx4dEu7Y4anKGA2qM85kW9hK1Kz3Do&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=s1gVAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72gkfLLdhyDUG2jnbWXiqldS-Vq31FJ7e0-uhJHkhtPxESEw4cZoGBADcflnOP66KhcOSOu9Q6-MU5Qd4gz1hRe3zOBbNwh7fJJVMPSJ990r5q1HAIB6M5mSS0xpvGzx0A87yuE&source=gbs_api",
+            "small": "http://books.google.com/books/content?id=s1gVAAAAYAAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE70P2JBuiE7I6Kh-cDQkXmssQWF5mPaC-aa99Vg8qiLJly6JnVjRrZWhsSGsS3j8Vagobbqwx747-df-_GTza7IZ_okR7RgqUpWQTeal7XsMCAxGOOxs473Lbf2LFlSs4nwt5BCG&source=gbs_api",
+            "medium": "http://books.google.com/books/content?id=s1gVAAAAYAAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70-sTfT0O-Nl0W6-qhP8yoq-iRRthg8iM5WPCIOqtAeyxXFuZWq93jh2atwLLd9NPHkuWv0JZrCYsoqcXxgjiYLiHOVUSFztYQrlNUX6OLjuG4swEGaV6bVxKtjLigcApl7BoMV&source=gbs_api",
+            "large": "http://books.google.com/books/content?id=s1gVAAAAYAAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE70zYdOJ1yopiW5Zmcp9sbHeA_9TY_5KosGyPHfGN9CXoHMa2xwOzgg1F5R0HGRmZKcK9yVZ56q7sh21hTNA1Eqq36MobxJZOI3QCLw-cOghU4P2BgbUXrNqY5LfXfT_bvc9sZmY&source=gbs_api",
+            "extraLarge": "http://books.google.com/books/content?id=s1gVAAAAYAAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE73k8S-jfPh47-IcmRhm6lLLkzUS6EI8LdK4EZ-OfZYsabuWkjqK4T1oznJJguBK4qXwilHQqVJ60efZKrMjf_gkg9Q17jH-mfudXZu4wCv_P9o6ukCzwpAUTgK4rbgGcXHWdccH&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=s1gVAAAAYAAJ&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=s1gVAAAAYAAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=s1gVAAAAYAAJ"
+    },
+    "layerInfo": {
+        "layers": [
+            {
+                "layerId": "geo",
+                "volumeAnnotationsVersion": "13"
+            }
+        ]
+    },
+    "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=s1gVAAAAYAAJ&rdid=book-s1gVAAAAYAAJ&rdot=1&source=gbs_api"
+    },
+    "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+            "isAvailable": true,
+            "downloadLink": "http://books.google.com/books/download/Pride_and_Prejudice.epub?id=s1gVAAAAYAAJ&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+            "isAvailable": true,
+            "downloadLink": "http://books.google.com/books/download/Pride_and_Prejudice.pdf?id=s1gVAAAAYAAJ&hl=&output=pdf&sig=ACfU3U3dQw5JDWdbVgk2VRHyDjVMT4oIaA&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=s1gVAAAAYAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+    }
+}
