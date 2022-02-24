@@ -6,10 +6,10 @@ RSpec.describe User do
             username: "Book_Worm",
             password_diget: "seeeecret"
           }
-    book = User.new(data)
-    expect(book).to be_a(User)
-    expect(book.email).to eq("my_email@email.com")
-    expect(book.username).to eq("Book_Worm")
-    expect(book.password_diget).to eq("seeeecret")
+    user = User.new(data)
+    expect(user).to be_a(User)
+    expect(user.email).to eq("my_email@email.com")
+    expect(user.username).to eq("Book_Worm")
+    expect(user.password_diget).to eq("seeeecret")
   end
 end
