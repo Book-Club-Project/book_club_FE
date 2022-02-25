@@ -1,7 +1,7 @@
 ![th-1](https://user-images.githubusercontent.com/87088092/155640565-91ed61db-0262-4bc9-8096-51b616c21508.jpg)
 # Mod3 Group Consultancy Project
 
-reference: [Turing docs](https://backend.turing.edu/module3/projects/consultancy)
+reference: [Turing documentation](https://backend.turing.edu/module3/projects/consultancy)
 
 <details open="open">
   <summary>Table of Contents</summary>
@@ -45,3 +45,12 @@ Explicit
 - Use serializers to format JSON responses 
 - Implement CircleCI 
 - Implement OAuth2
+
+Implicit 
+- Project planning
+- Reading/Writing documentation 
+- Time Management/Prioritizing Work 
+- Breaking down a large project into small pieces 
+- Breaking down a problem into small steps
+- Experience in 'sprints' 
+- GitHub workflow 
