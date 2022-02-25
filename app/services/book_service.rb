@@ -5,7 +5,6 @@ class BookService
 
   def self.parsed_response(url)
     response = conn.get(url)
-    binding.pry
     JSON.parse(response.body, symbolize_names: true)
   end
 
@@ -14,7 +13,8 @@ class BookService
   end
 
   def self.book_info(book_id)
-    response = parsed_response("/books/#{book_id}")
+    response = parsed_response("/api/v1/books/#{book_id}")
+
   end
 
 end
