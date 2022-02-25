@@ -71,3 +71,15 @@ Testing: [rspec-rails](https://github.com/rspec/rspec-rails), [simplecov](https:
 API: [jsonapi-serializer](https://github.com/fotinakis/jsonapi-serializers), [figaro](https://medium.com/@MinimalGhost/the-figaro-gem-an-easier-way-to-securely-configure-rails-applications-c6f963b7e993)
 
 
+----------
+
+### Database Schema 
+
+![Screen Shot 2022-02-22 at 10 31 07 AM](https://user-images.githubusercontent.com/87088092/155647400-97e86edd-30ad-4652-b53b-f26fd5ac429d.png)
+
+
+
+----------
+
+
+
