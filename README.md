@@ -71,7 +71,7 @@ Implicit
 
 - User Flow: [Mind Map](https://miro.com/app/board/uXjVOLajDBA=/) 
 
-- Group DTR: [DTR responses]
+- Group DTR: [DTR responses](https://docs.google.com/document/d/1dr8PcOvEctROQARJs0yk_TheJf21qY06tW8OX3wtlSw/edit)
 
 
 ----------
