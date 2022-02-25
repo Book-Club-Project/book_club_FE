@@ -60,7 +60,7 @@ Implicit
 
 ---------- 
 
-## Inception 
+### Inception 
 
 - Miro Board: [Group Brainstorm](https://miro.com/app/board/uXjVOL7SYZg=/) 
   (including mission statement, initial feature dump, initial MVP design, determined stretch features)
@@ -92,11 +92,19 @@ API: [jsonapi-serializer](https://github.com/fotinakis/jsonapi-serializers), [fi
 
 ----------
 
-### Database Schema 
+## Database Schema 
 
 ![Screen Shot 2022-02-22 at 10 31 07 AM](https://user-images.githubusercontent.com/87088092/155647400-97e86edd-30ad-4652-b53b-f26fd5ac429d.png)
 
 
+----------
+
+## Book Club API 
+
+
+---------- 
+
+## Getting Started
 
 ----------
 
