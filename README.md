@@ -54,3 +54,20 @@ Implicit
 - Breaking down a problem into small steps
 - Experience in 'sprints' 
 - GitHub workflow 
+
+---------- 
+
+### Versions 
+
+- Ruby 2.7.2 
+- Rails 5.2.6 
+
+---------- 
+
+### Important Gems 
+
+Testing: [rspec-rails](https://github.com/rspec/rspec-rails), [simplecov](https://github.com/simplecov-ruby/simplecov), [factory_bot_rails](https://github.com/thoughtbot/factory_bot_rails), [faker](https://github.com/vajradog/faker-rails)
+
+API: [jsonapi-serializer](https://github.com/fotinakis/jsonapi-serializers), [figaro](https://medium.com/@MinimalGhost/the-figaro-gem-an-easier-way-to-securely-configure-rails-applications-c6f963b7e993)
+
+
