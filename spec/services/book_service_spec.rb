@@ -26,9 +26,6 @@ RSpec.describe BookService do
         expect(search.first[:attributes]).to have_key :rating
         expect(search.first[:attributes][:rating]).to be_a Integer
 
-        # expect(search.first[:volumeInfo]).to have_key :averageRating
-        # expect(search.first[:volumeInfo][:averageRating]).to be_an Integer
-
         # expect(search.first[:volumeInfo]).to have_key :categories
         # expect(search.first[:volumeInfo][:categories]).to be_an Array
         #
@@ -57,8 +54,6 @@ RSpec.describe BookService do
 
           expect(book_data[:attributes]).to have_key :rating
           expect(book_data[:attributes][:rating]).to be_an Integer
-          # expect(book_data[:volumeInfo]).to have_key :averageRating
-          # expect(book_data[:volumeInfo][:averageRating]).to be_an Integer
 
           # expect(book_data[:volumeInfo]).to have_key :categories
           # expect(book_data[:volumeInfo][:categories]).to be_an Array
