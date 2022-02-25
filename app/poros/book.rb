@@ -5,7 +5,7 @@ class Book
               :reviews,
               :book_cover,
               :rating,
-              :subject #this is for genre and may need to move
+              :genre
   def initialize(data)
     @title = data[:title]
     @author = data[:author]
@@ -13,6 +13,6 @@ class Book
     @reviews = data[:reviews]
     @book_cover = data[:book_cover]
     @rating = data[:rating]
-    @subject = data[:subject]
+    @genre = data[:genre]
   end
 end

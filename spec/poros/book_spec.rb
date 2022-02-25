@@ -8,7 +8,7 @@ RSpec.describe Book do
              reviews: "wow, so good",
              book_cover: "cover_art_path",
              rating: 8.5,
-             subject: "Historical Fiction"
+             genre: "Historical Fiction"
            }
     book = Book.new(data)
     expect(book).to be_a(Book)
@@ -17,6 +17,6 @@ RSpec.describe Book do
     expect(book.summary).to eq("marriage plot")
     expect(book.reviews).to eq("wow, so good")
     expect(book.rating).to eq(8.5)
-    expect(book.subject).to eq("Historical Fiction")
+    expect(book.genre).to eq("Historical Fiction")
   end
 end
