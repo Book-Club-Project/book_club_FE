@@ -1,7 +1,7 @@
 ![th-1](https://user-images.githubusercontent.com/87088092/155640565-91ed61db-0262-4bc9-8096-51b616c21508.jpg)
 # Mod3 Group Consultancy Project
 
-[reference](https://backend.turing.edu/module3/projects/consultancy)
+reference: [Turing docs](https://backend.turing.edu/module3/projects/consultancy)
 
 <details open="open">
   <summary>Table of Contents</summary>
@@ -17,14 +17,17 @@
       <ul>
         <li><a href="#important-gems">Important Gems</a></li>
       </ul>
+      <ul>
+        <li><a href="#database-schema">Database Schema</a></li>
+      </ul>
     </li>
     <li>
-      <a href="#postman">Postman</a>
+      <a href="#book-club-api">Book Club API</a>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
     </li>
-    <li><a href="#running-the-test">Running the test</a></li>
+    <li><a href="#collaborators">Collaborators</a></li>
   </ol>
 </details>
 
@@ -41,4 +44,4 @@ Explicit
 - Consume an API 
 - Use serializers to format JSON responses 
 - Implement CircleCI 
-- Implement 
+- Implement OAuth2
