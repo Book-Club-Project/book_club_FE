@@ -58,6 +58,8 @@ group :test do
   gem 'capybara'
   gem 'simplecov'
   gem 'vcr'
+  gem 'rspec'
+  gem 'rspec_junit_formatter'
 end
 
 
