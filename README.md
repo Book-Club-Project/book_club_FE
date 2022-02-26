@@ -105,7 +105,9 @@ Implicit
 
 ----------
 
-## Book Club API 
+## APIs 
+
+see [book club BE repo](https://github.com/Book-Club-Project/book_club_BE)
 
 ----------
 
