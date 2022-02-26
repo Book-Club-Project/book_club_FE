@@ -35,6 +35,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'faraday'
 gem 'bootstrap', '~> 5.1', '>= 5.1.3'
+gem 'jquery-rails'
 gem 'omniauth-google-oauth2'
 
 
