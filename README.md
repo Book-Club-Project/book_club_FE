@@ -7,6 +7,9 @@ reference: [Turing documentation](https://backend.turing.edu/module3/projects/co
   <summary>Table of Contents</summary>
   <ol>
     <li>
+      <a href="#getting-started">Getting Started</a>
+    </li>
+    <li>
       <a href="#project-description">About This Project</a>
       <ul>
         <li><a href="#learning-goals-for-project">Learning Goals for Project</a></li>
@@ -27,12 +30,15 @@ reference: [Turing documentation](https://backend.turing.edu/module3/projects/co
     <li>
       <a href="#book-club-api">Book Club API</a>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-    </li>
     <li><a href="#collaborators">Collaborators</a></li>
   </ol>
 </details>
+
+----------
+
+## Getting Started
+
+----------
 
 ## Project Description 
 
@@ -100,11 +106,6 @@ Implicit
 ----------
 
 ## Book Club API 
-
-
----------- 
-
-## Getting Started
 
 ----------
 
