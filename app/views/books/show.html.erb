@@ -1,10 +1,6 @@
-What we need:
 
--[:volumeId]
--[:volumeInfo][:title]
--[:volumeInfo][:authors] (array)
--[:volumeInfo][:imageLinks]
-- [:volumeInfo][:description] (summary)
--[:volumeInfo][:averageRating]
-
-maybe average rating instead of genre
+<p><%= @book.title %></p>
+<p><%= @book.author %></p>
+<p><%= @book.summary %></p>
+<p><%= @book.rating %></p>
+<p><%= @book.genre %></p>

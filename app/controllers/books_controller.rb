@@ -1,7 +1,6 @@
 class BooksController < ApplicationController
-  def index
-  end
 
   def show
+    @book = BookFacade.book_show(params[:id])
   end
 end
