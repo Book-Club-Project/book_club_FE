@@ -7,12 +7,12 @@ class Book
               :rating,
               :genre
   def initialize(data)
-    @title = data[:title]
-    @author = data[:author]
-    @summary = data[:summary]
-    @reviews = data[:reviews]
-    @book_cover = data[:book_cover]
-    @rating = data[:rating]
-    @genre = data[:genre]
+    @title = data[:data][:attributes][:title]
+    @author = data[:data][:attributes][:authors][0]
+    @summary = data[:data][:attributes][:description]
+    # @reviews = data[:data][:attributes][:reviews]
+    # @book_cover = data[:book_cover]
+    @rating = data[:data][:attributes][:rating]
+    @genre = data[:data][:attributes][:genres][0]
   end
 end
