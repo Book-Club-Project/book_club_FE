@@ -3,7 +3,8 @@ class BooksController < ApplicationController
     if params[:search]
       # binding.pry
       @books = BookFacade.find_book(params[:search])
-      redirect_to '/discover'
+      # require "pry"; binding.pry
+      # redirect_to '/discover'
     # else
     #   redirect_to '/discover'
     #   flash[:error] = "We failed you or this book does not exist"

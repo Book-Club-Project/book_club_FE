@@ -5,10 +5,9 @@ RSpec.describe 'Books Discover/Index' do
     visit('/discover')
     expect(page).to have_button('Search')
 
-    fill_in 'search', with: 'pride'
+    fill_in :search, with: 'pride'
     click_button 'Search'
     expect(current_path).to eq('/discover')
-    save_and_open_page
     expect(page).to have_content('Pride and Prejudice')
   end
 end

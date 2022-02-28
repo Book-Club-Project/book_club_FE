@@ -27,6 +27,6 @@
    Not a valid search
 <% else %>
   <% @books.each do |book| %>
-    <p><%= link_to book.title, book_path %></p>
+    <p><%= book.title %></p>
   <% end %>
 <% end %>
