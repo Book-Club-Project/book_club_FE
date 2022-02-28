@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
   #As an un-authenticated visitor
-  context 'As a visitor to the landing page' do
+  context 'As a visitor to the landing page', :vcr do
     before(:each) { visit '/' }
 
     scenario 'I am on the root directory' do
@@ -21,9 +21,9 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
       end
 
       scenario 'discover books link' do
-        expect(page).to have_link('Discover Books', href: '/books/discover')
+        expect(page).to have_link('Discover Books', href: '/discover')
         click_link 'Discover Books'
-        expect(page).to have_current_path('/books/discover')
+        expect(page).to have_current_path('/discover')
       end
 
       scenario 'login and register links' do
@@ -66,9 +66,9 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
       end
 
       scenario 'discover books link' do
-        expect(page).to have_link('Discover Books', href: '/books/discover')
+        expect(page).to have_link('Discover Books', href: '/discover')
         click_link 'Discover Books'
-        expect(page).to have_current_path('/books/discover')
+        expect(page).to have_current_path('/discover')
       end
 
       scenario 'logout link' do
