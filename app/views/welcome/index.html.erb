@@ -1,1 +1,38 @@
+<header>
+  <style>
+    .banner {
+      width: 100%;
+      opacity: 0.5;
+    }
+
+    .container {
+      position: relative;
+      text-align: center;
+    }
+
+    /* Centered text */
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .app-name {
+      font-size: 100px;
+      color: blue;
+    }
+
+  </style>
+
+  <div class="container">
+    <!-- Content here -->
+    <img class="banner" src="<%= asset_path 'landing_banner_2.jpg' %>" alt="Bookclub landing page banner image">
+    <div class="centered"><h1 class='app-name'>Welcome to Book Club</h1></div>
+  </div>
+  <!-- Navbar -->
+  <%= render partial: '/layouts/partials/nav_bar', locals: {links: {uri: '/', link_text: 'Home'}} %>
+  <!-- Navbar -->
+
+</header>
 

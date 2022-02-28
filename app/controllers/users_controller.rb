@@ -1,4 +1,8 @@
 class UsersController < ApplicationController
+
+  def new
+  end
+
   def create
     conn = Faraday.new(url: 'http://localhost:3000/')
 
