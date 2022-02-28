@@ -16,5 +16,4 @@ class BookService
     response = conn.get("api/v1/books/#{book_id}")
     JSON.parse(response.body, symbolize_names: true)
   end
-
 end
