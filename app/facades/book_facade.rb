@@ -7,6 +7,7 @@ class BookFacade
   end
 
   def self.book_show(book_id)
-    Book.new(BookService.book_info(book_id))
+    book = BookService.book_info(book_id)
+    Book.new(book)
   end
 end

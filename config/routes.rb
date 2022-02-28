@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
   # get '/discover', to: 'search#index'
   get '/discover/', to: 'books#index'
-  get '/books/:id', to: "books#show"
+
+  resources :books
   get '/auth/google_oauth2/callback', to: 'users#create'
 end

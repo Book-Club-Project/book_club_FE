@@ -10,7 +10,6 @@ class BookService
 
   def self.search_books(query)
     response = parsed_response("/api/v1/books/search?title=#{query}")
-    binding.pry
   end
 
   def self.book_info(book_id)
