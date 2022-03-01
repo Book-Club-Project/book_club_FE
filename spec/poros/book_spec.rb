@@ -10,6 +10,8 @@ RSpec.describe Book do
              rating: 8.5,
              genre: "Historical Fiction"
            }
+
+
     book = Book.new(data)
     expect(book).to be_a(Book)
     expect(book.title).to eq("Pride and Prejudice")

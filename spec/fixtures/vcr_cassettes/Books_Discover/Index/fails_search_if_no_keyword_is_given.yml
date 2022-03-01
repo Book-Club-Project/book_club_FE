@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/books/search?title=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Request-Id:
+      - 3d9aaf41-4ffb-4b79-b08e-7fee5a61904c
+      X-Runtime:
+      - '0.062644'
+      Content-Length:
+      - '5157'
+    body:
+      encoding: UTF-8
+      string: '{"status":500,"error":"Internal Server Error","exception":"#\u003cActiveRecord::PendingMigrationError:
+        \n\nMigrations are pending. To resolve this issue, run:\n\n        bin/rails
+        db:migrate RAILS_ENV=development\n\n\u003e","traces":{"Application Trace":[],"Framework
+        Trace":[{"id":0,"trace":"activerecord (5.2.6.2) lib/active_record/migration.rb:579:in
+        `check_pending!''"},{"id":1,"trace":"activerecord (5.2.6.2) lib/active_record/migration.rb:556:in
+        `call''"},{"id":2,"trace":"actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:28:in
+        `block in call''"},{"id":3,"trace":"activesupport (5.2.6.2) lib/active_support/callbacks.rb:98:in
+        `run_callbacks''"},{"id":4,"trace":"actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in
+        `call''"},{"id":5,"trace":"actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in
+        `call''"},{"id":6,"trace":"actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in
+        `call''"},{"id":7,"trace":"actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in
+        `call''"},{"id":8,"trace":"railties (5.2.6.2) lib/rails/rack/logger.rb:38:in
+        `call_app''"},{"id":9,"trace":"railties (5.2.6.2) lib/rails/rack/logger.rb:26:in
+        `block in call''"},{"id":10,"trace":"activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in
+        `block in tagged''"},{"id":11,"trace":"activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in
+        `tagged''"},{"id":12,"trace":"activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in
+        `tagged''"},{"id":13,"trace":"railties (5.2.6.2) lib/rails/rack/logger.rb:26:in
+        `call''"},{"id":14,"trace":"actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in
+        `call''"},{"id":15,"trace":"actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in
+        `call''"},{"id":16,"trace":"rack (2.2.3) lib/rack/runtime.rb:22:in `call''"},{"id":17,"trace":"activesupport
+        (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
+        `call''"},{"id":18,"trace":"actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in
+        `call''"},{"id":19,"trace":"actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in
+        `call''"},{"id":20,"trace":"rack (2.2.3) lib/rack/sendfile.rb:110:in `call''"},{"id":21,"trace":"railties
+        (5.2.6.2) lib/rails/engine.rb:524:in `call''"},{"id":22,"trace":"puma (3.12.6)
+        lib/puma/configuration.rb:227:in `call''"},{"id":23,"trace":"puma (3.12.6)
+        lib/puma/server.rb:706:in `handle_request''"},{"id":24,"trace":"puma (3.12.6)
+        lib/puma/server.rb:476:in `process_client''"},{"id":25,"trace":"puma (3.12.6)
+        lib/puma/server.rb:334:in `block in run''"},{"id":26,"trace":"puma (3.12.6)
+        lib/puma/thread_pool.rb:135:in `block in spawn_thread''"}],"Full Trace":[{"id":0,"trace":"activerecord
+        (5.2.6.2) lib/active_record/migration.rb:579:in `check_pending!''"},{"id":1,"trace":"activerecord
+        (5.2.6.2) lib/active_record/migration.rb:556:in `call''"},{"id":2,"trace":"actionpack
+        (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call''"},{"id":3,"trace":"activesupport
+        (5.2.6.2) lib/active_support/callbacks.rb:98:in `run_callbacks''"},{"id":4,"trace":"actionpack
+        (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call''"},{"id":5,"trace":"actionpack
+        (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"id":6,"trace":"actionpack
+        (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call''"},{"id":7,"trace":"actionpack
+        (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call''"},{"id":8,"trace":"railties
+        (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app''"},{"id":9,"trace":"railties
+        (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call''"},{"id":10,"trace":"activesupport
+        (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged''"},{"id":11,"trace":"activesupport
+        (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged''"},{"id":12,"trace":"activesupport
+        (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged''"},{"id":13,"trace":"railties
+        (5.2.6.2) lib/rails/rack/logger.rb:26:in `call''"},{"id":14,"trace":"actionpack
+        (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call''"},{"id":15,"trace":"actionpack
+        (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call''"},{"id":16,"trace":"rack
+        (2.2.3) lib/rack/runtime.rb:22:in `call''"},{"id":17,"trace":"activesupport
+        (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
+        `call''"},{"id":18,"trace":"actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in
+        `call''"},{"id":19,"trace":"actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in
+        `call''"},{"id":20,"trace":"rack (2.2.3) lib/rack/sendfile.rb:110:in `call''"},{"id":21,"trace":"railties
+        (5.2.6.2) lib/rails/engine.rb:524:in `call''"},{"id":22,"trace":"puma (3.12.6)
+        lib/puma/configuration.rb:227:in `call''"},{"id":23,"trace":"puma (3.12.6)
+        lib/puma/server.rb:706:in `handle_request''"},{"id":24,"trace":"puma (3.12.6)
+        lib/puma/server.rb:476:in `process_client''"},{"id":25,"trace":"puma (3.12.6)
+        lib/puma/server.rb:334:in `block in run''"},{"id":26,"trace":"puma (3.12.6)
+        lib/puma/thread_pool.rb:135:in `block in spawn_thread''"}]}}'
+  recorded_at: Mon, 28 Feb 2022 23:08:30 GMT
+recorded_with: VCR 6.0.0

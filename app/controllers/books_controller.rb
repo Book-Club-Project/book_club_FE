@@ -1,9 +1,10 @@
 class BooksController < ApplicationController
   def index
-    if params[:search]
-      @books = BookFacade.find_book(params[:search])
-    # else
-    #   flash[:error] = "We failed you or this book does not exist"
+    searched_title = params[:search]
+    if params[:search].present?
+      @books = BookFacade.find_book(searched_title)
+    else
+      flash[:error] = "We failed you or this book does not exist"
     end
   end
 
