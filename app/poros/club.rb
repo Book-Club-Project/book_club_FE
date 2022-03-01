@@ -1,10 +1,11 @@
 class Club
   attr_reader :book_id,
               :host_id,
-              :user_id
+              :user_id,
+              :name
   def initialize(data)
-    @book_id = data[:book_id]
-    @host_id = data[:host_id]
-    @user_id = data[:user_id]
+    @name = data[:data][:attributes][:name]
+    @book_id = data[:data][:attributes][:book_id]
+    @host_id = data[:data][:attributes][:host_id]
   end
 end
