@@ -24,5 +24,4 @@ class SessionsController < ApplicationController
   #   found_user = UserFacade.find_user(params[:user_id])
   #   user = User.find_or_create_by(username: auth_hash[‘info][‘email]) session[:user_id] = user.id
   # end
-
 end
