@@ -15,7 +15,6 @@ RSpec.describe 'Books Discover/Index' do
     visit('/discover')
     expect(page).to have_button('Search')
 
-
     fill_in :search, with: ""
     click_button 'Search'
     expect(current_path).to eq('/discover')
@@ -29,7 +28,7 @@ RSpec.describe 'Books Discover/Index' do
     click_button 'Search'
 
     click_link 'Pride and Prejudice'
-  
+
     expect(current_path).to match('/books/')
   end
 end
