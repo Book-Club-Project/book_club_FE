@@ -5,10 +5,8 @@ class Book
               :reviews,
               :book_cover,
               :rating,
-              :genre,
-              :id
+              :genre
   def initialize(data)
-    @id = data[:id]
     @title = data[:attributes][:title]
     @author = data[:attributes][:author]
     @summary = data[:attributes][:description]
