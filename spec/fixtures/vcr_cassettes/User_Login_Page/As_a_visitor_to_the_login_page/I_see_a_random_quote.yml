@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/quote
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"507b4ee64194060bdb966ec4a8800024"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 550498c3-a120-498b-85a5-30476a208fdd
+      X-Runtime:
+      - '0.853298'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjpudWxsLCJ0eXBlIjoicXVvdGUiLCJhdHRyaWJ1dGVzIjp7InF1b3RlIjoiV2hhdCBJIGhhdmUgZG9uZSBpcyBhIGR1dHkgdGhhdCBhbnkgTmljYXJhZ3VhbiB3aG8gdHJ1bHkgbG92ZXMgaGlzIGNvdW50cnkgc2hvdWxkIGhhdmUgZG9uZSBhIGxvbmcgdGltZSBhZ28uIiwiYXV0aG9yIjoiUmlnb2JlcnRvIEzDs3BleiBQw6lyZXoifX19
+  recorded_at: Tue, 01 Mar 2022 20:36:23 GMT
+recorded_with: VCR 6.0.0
