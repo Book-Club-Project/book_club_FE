@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/books/s1gVAAAAYAAJ
+    uri: http://localhost:3000/api/v1/books/gwgON2IwgDUC
     body:
       encoding: US-ASCII
       string: ''
@@ -21,18 +21,20 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"70dc5b1e6bd8234ffd7ead33d848348d"
+      - W/"82ad4ddc7db974be3cacb0bf45ab86fb"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 56640dce-a40e-4e5b-8a28-adf2db12ac32
+      - b5fe93b7-0008-411f-8edc-6264cbff47ee
       X-Runtime:
-      - '0.442954'
+      - '0.181081'
       Transfer-Encoding:
       - chunked
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJkYXRhIjp7ImlkIjoiczFnVkFBQUFZQUFKIiwidHlwZSI6ImJvb2siLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiUHJpZGUgYW5kIFByZWp1ZGljZSIsImF1dGhvcnMiOlsiSmFuZSBBdXN0ZW4iXSwiZ2VucmVzIjpudWxsLCJkZXNjcmlwdGlvbiI6IkF1c3RlbuKAmXMgbW9zdCBjZWxlYnJhdGVkIG5vdmVsIHRlbGxzIHRoZSBzdG9yeSBvZiBFbGl6YWJldGggQmVubmV0LCBhIGJyaWdodCwgbGl2ZWx5IHlvdW5nIHdvbWFuIHdpdGggZm91ciBzaXN0ZXJzLCBhbmQgYSBtb3RoZXIgZGV0ZXJtaW5lZCB0byBtYXJyeSB0aGVtIHRvIHdlYWx0aHkgbWVuLiBBdCBhIHBhcnR5IG5lYXIgdGhlIEJlbm5ldHPigJkgaG9tZSBpbiB0aGUgRW5nbGlzaCBjb3VudHJ5c2lkZSwgRWxpemFiZXRoIG1lZXRzIHRoZSB3ZWFsdGh5LCBwcm91ZCBGaXR6d2lsbGlhbSBEYXJjeS4gRWxpemFiZXRoIGluaXRpYWxseSBmaW5kcyBEYXJjeSBoYXVnaHR5IGFuZCBpbnRvbGVyYWJsZSwgYnV0IGNpcmN1bXN0YW5jZXMgY29udGludWUgdG8gdW5pdGUgdGhlIHBhaXIuIE1yLiBEYXJjeSBmaW5kcyBoaW1zZWxmIGNhcHRpdmF0ZWQgYnkgRWxpemFiZXRo4oCZcyB3aXQgYW5kIGNhbmRvciwgd2hpbGUgaGVyIHJlc2VydmF0aW9ucyBhYm91dCBoaXMgY2hhcmFjdGVyIHNsb3dseSB2YW5pc2guIFRoZSBzdG9yeSBpcyBhcyBtdWNoIGEgc29jaWFsIGNyaXRpcXVlIGFzIGl0IGlzIGEgbG92ZSBzdG9yeSwgYW5kIHRoZSBwcm9zZSBjcmFja2xlcyB3aXRoIEF1c3RlbuKAmXMgd3J5IHdpdC4iLCJyYXRpbmciOjR9fX0=
-  recorded_at: Mon, 28 Feb 2022 20:18:44 GMT
+      encoding: UTF-8
+      string: '{"data":{"id":"gwgON2IwgDUC","type":"book","attributes":{"title":"Pride
+        and Prejudice","authors":["Jane Austen"],"genres":["Fiction / Classics"],"description":"Insight
+        edition with engaging side notes that offer background on social customs,
+        thoughts on the book''s themes of faith, and other engaging information.","rating":5}}}'
+  recorded_at: Tue, 01 Mar 2022 00:32:41 GMT
 recorded_with: VCR 6.0.0

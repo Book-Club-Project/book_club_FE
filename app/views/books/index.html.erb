@@ -13,6 +13,7 @@
         </div>
     </div>
 </div>
+
 <div class="container">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
@@ -26,9 +27,12 @@
 <div class="container">
   <div class="row">
     <div class="col-md-6 col-md-offset-3">
-        <% @books.each do |book| %>
-          <p><%= book.title %></p>
-        <% end %>
+
+    <% if @books %>
+      <% @books.each do |book| %>
+        <p> <%= link_to book.title, "/books/#{book.id}" %> </p>
+      <% end %>
+    <% end  %>
     </div>
   </div>
 </div>
