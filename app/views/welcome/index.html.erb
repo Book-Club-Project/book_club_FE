@@ -1,0 +1,8 @@
+<% if current_user %>
+  <p>This is foo</p>
+  <%= link_to 'Logout', 'logout', method: :delete %>
+  <% else %>
+  <p>howdy yall</p>
+  <%= link_to 'Login', auth_google_oauth2_path, method: :get %>
+  <%= link_to 'Register', auth_google_oauth2_callback_path, method: :get %>
+<% end %>
