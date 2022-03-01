@@ -38,12 +38,12 @@
 
       <%= f.password_field :password_confirmation, required: true, placeholder: 'confirm password' %><br><br>
 
-      <%= f.submit 'Submit' %><br><br>
+      <%= f.submit 'Register' %><br><br>
     <% end %>
   </div>
 
   <p text-align="center">--- OR ---</p><br>
 
-  <%= button_to 'Sign up with Google', '/auth/google_oauth2/', method: :get, params: {client_id: "#{ENV['GOOGLE_CLIENT_ID']}" } %>
+  <%= button_to 'Register with Google', '/auth/google_oauth2/', method: :get, params: {client_id: "#{ENV['GOOGLE_CLIENT_ID']}" } %>
 </div>
 </body>

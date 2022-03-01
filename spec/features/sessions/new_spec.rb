@@ -1,8 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe 'Users New/Register Page', type: :feature do
-  describe 'As a visitor to the register page', :vcr do
-    before(:each) { visit '/register' }
+RSpec.describe 'User Login Page', type: :feature do
+  describe 'As a visitor to the login page', :vcr do
+    before(:each) { visit '/login' }
+
     scenario 'I see the app name' do
       expect(page).to have_content("The Book Club")
     end
@@ -22,24 +23,21 @@ RSpec.describe 'Users New/Register Page', type: :feature do
       expect(page).to have_css('#random-quote')
     end
 
-    scenario 'I see a form to create a new user' do
-      expect(page).to have_field(:name)
+    scenario 'I see a form to login a new user' do
       expect(page).to have_field(:email)
       expect(page).to have_field(:password)
-      expect(page).to have_field(:password_confirmation)
-      expect(page).to have_button('Register')
+      expect(page).to have_button('Login')
     end
 
-    scenario 'I see a sign in option for Google OAuth' do
-      expect(page).to have_button('Register with Google')
+    scenario 'I see a login option for Google OAuth' do
+      expect(page).to have_button('Login with Google')
     end
   end
 
   describe 'As a logged in user' do
     # I see a logout button
     # I do not see login/register buttons
-    # I do not see a form or button to register with google
-    # I instead see a message that says "You're already logged in. If you would like to register a new user, please logout first."
+    # I do not see a form or button to login with google
+    # I instead see a message that says "You're already logged in. If you would like to login as a different user, please logout first."
   end
-
 end
