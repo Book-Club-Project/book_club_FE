@@ -25,9 +25,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 757f2908-a1f8-4dc4-a033-d3f2b8396d35
+      - faf87c85-76a5-495a-a08e-b39faa8755f3
       X-Runtime:
-      - '0.003324'
+      - '0.006004'
       Transfer-Encoding:
       - chunked
     body:
@@ -36,5 +36,5 @@ http_interactions:
         Blah","user_id":2,"club_id":1}},{"id":"3","type":"comment","attributes":{"title":"Coolio","body":"Blah
         Blah Blah","user_id":3,"club_id":1}},{"id":"4","type":"comment","attributes":{"title":"Goodbye","body":"Blah
         Blah Blah Blah","user_id":4,"club_id":1}}]}'
-  recorded_at: Tue, 01 Mar 2022 01:13:14 GMT
+  recorded_at: Tue, 01 Mar 2022 18:13:37 GMT
 recorded_with: VCR 6.0.0

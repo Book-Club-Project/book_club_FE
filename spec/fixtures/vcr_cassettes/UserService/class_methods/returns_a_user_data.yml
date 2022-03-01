@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/clubs/1
+    uri: http://localhost:3000/api/v1/users/1
     body:
       encoding: US-ASCII
       string: ''
@@ -21,17 +21,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"3287fa94f3b17c8b61a1ecede7cb1dd7"
+      - W/"2c0bb0bd4871b32c8f26e798ce68c84a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d5aedd79-3ffc-4942-b1b0-80f40aa825d7
+      - b52bfde8-8359-4913-8c04-fdc98dba2779
       X-Runtime:
-      - '0.002327'
+      - '0.095498'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":3}}}'
-  recorded_at: Tue, 01 Mar 2022 18:13:37 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}}}'
+  recorded_at: Tue, 01 Mar 2022 18:22:09 GMT
 recorded_with: VCR 6.0.0

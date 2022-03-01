@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/clubs/1
+    uri: http://localhost:3000/api/v1/quote
     body:
       encoding: US-ASCII
       string: ''
@@ -21,17 +21,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"3287fa94f3b17c8b61a1ecede7cb1dd7"
+      - W/"64b7807300f6b4f8527dfdcb0790c0a5"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d5aedd79-3ffc-4942-b1b0-80f40aa825d7
+      - 7b3378b3-6a06-4b95-9640-16c14c1ecbb7
       X-Runtime:
-      - '0.002327'
+      - '0.399450'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":3}}}'
-  recorded_at: Tue, 01 Mar 2022 18:13:37 GMT
+      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"To describe
+        happiness is to diminish it.","author":"Stendhal"}}}'
+  recorded_at: Tue, 01 Mar 2022 18:13:34 GMT
 recorded_with: VCR 6.0.0

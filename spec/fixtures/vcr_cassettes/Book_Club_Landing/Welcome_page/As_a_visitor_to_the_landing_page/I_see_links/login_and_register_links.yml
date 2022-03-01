@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/clubs/1
+    uri: http://localhost:3000/api/v1/quote
     body:
       encoding: US-ASCII
       string: ''
@@ -21,17 +21,20 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"3287fa94f3b17c8b61a1ecede7cb1dd7"
+      - W/"be156ca7e1f375ce6ad2497e40d30628"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d5aedd79-3ffc-4942-b1b0-80f40aa825d7
+      - 19cd2096-c740-457e-9f2e-318d2a1493e5
       X-Runtime:
-      - '0.002327'
+      - '0.338199'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":3}}}'
-  recorded_at: Tue, 01 Mar 2022 18:13:37 GMT
+      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"If you don''t
+        know what to do with many of the papers piled on your desk, stick a dozen
+        colleagues initials on them and pass them along. When in doubt, route.","author":"Malcolm
+        Forbes"}}}'
+  recorded_at: Tue, 01 Mar 2022 18:13:36 GMT
 recorded_with: VCR 6.0.0

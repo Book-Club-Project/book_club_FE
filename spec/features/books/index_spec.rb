@@ -29,7 +29,7 @@ RSpec.describe 'Books Discover/Index' do
     click_button 'Search'
 
     click_link 'Pride and Prejudice'
-
-    expect(current_path).to eq('/books/gwgON2IwgDUC')
+  
+    expect(current_path).to match('/books/')
   end
 end

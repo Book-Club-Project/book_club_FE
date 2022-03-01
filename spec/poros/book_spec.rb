@@ -3,13 +3,13 @@ require 'rails_helper'
 RSpec.describe Book do
   it 'exists with attributes' do
 
-    data = { data: {attributes: {title: "Pride and Prejudice",
-      
+    data = {id: "gwgON2IwgDUC", attributes: {title: "Pride and Prejudice",
+
 #     data = {
 #       id: "gwgON2IwgDUC",
 #       attributes: {
 #              title: "Pride and Prejudice",
-      
+
              authors: "Jane Austen",
              description: "marriage plot",
              reviews: "wow, so good",
@@ -17,7 +17,7 @@ RSpec.describe Book do
              rating: 8.5,
              genres: "Historical Fiction"
 
-           }}}
+           }}
 
     book = Book.new(data)
 
