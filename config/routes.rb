@@ -3,5 +3,10 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get '/books/:id', to: "books#show"
   # get '/discover', to: 'books#index'
+  resources :clubs, only: [:show, :create] do
+    resources :users, only: [:index], controller: 'club_users'
+    resources :comments, only: [:index], controller: 'club_comments'
+  end
+  
   get '/auth/google_oauth2/callback', to: 'users#create'
 end
