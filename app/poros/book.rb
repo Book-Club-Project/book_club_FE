@@ -10,11 +10,12 @@ class Book
   def initialize(data)
     @id = data[:id]
     @title = data[:attributes][:title]
-    @author = data[:attributes][:authors][0]
+    @author = data[:attributes][:author]
     @summary = data[:attributes][:description]
     # @reviews = data[:attributes][:reviews]
     # @book_cover = data[:book_cover]
     @rating = data[:attributes][:rating]
-    @genre = data[:attributes][:genres]#[0]
+    @genre = data[:attributes][:genre]
   end
+
 end

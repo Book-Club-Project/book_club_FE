@@ -1,7 +1,10 @@
 <h1><%= @book.title %></h1>
-
 <p><%= @book.author %></p>
 <p><%= @book.summary %></p>
 <p><%= @book.rating %></p>
-<p><%= @book.genre %></p>
+
+<p>Genres: <% @book.genre.each do |genre| %>
+  <%= genre %>
+<% end %></p>
 <%# link_to "Create Book Club", club_path(club.id) %>
+<%# work in progress  %>
