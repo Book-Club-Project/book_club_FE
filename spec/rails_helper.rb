@@ -22,7 +22,7 @@ require 'rspec/rails'
 # directory. Alternatively, in the individual `*_spec.rb` files, manually
 # require only the support files necessary.
 #
-# Dir[Rails.root.join('spec', 'support', '**', '*.rb')].sort.each { |f| require f }
+Dir[Rails.root.join('spec', 'support', '**', '*.rb')].sort.each { |f| require f }
 
 # Checks for pending migrations and applies them before tests are run.
 # If you are not using ActiveRecord, you can remove these lines.
@@ -63,6 +63,24 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+
+  config.before(:each, :type => :feature) do
+    quote_response = File.read('./spec/support/stubbed_api_responses/quote_response.json')
+
+    stub_request(:get, "http://localhost:3000/api/v1/quote").to_return(body: quote_response, status: 200)
+  end
+
+  config.before(:each, :type => :facade) do
+    quote_response = File.read('./spec/support/stubbed_api_responses/quote_response.json')
+
+    stub_request(:get, "http://localhost:3000/api/v1/quote").to_return(body: quote_response, status: 200)
+  end
+
+  config.before(:each, :type => :service) do
+    quote_response = File.read('./spec/support/stubbed_api_responses/quote_response.json')
+
+    stub_request(:get, "http://localhost:3000/api/v1/quote").to_return(body: quote_response, status: 200)
+  end
 end
 
 
