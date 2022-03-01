@@ -6,6 +6,7 @@ RSpec.describe User do
             username: "Book_Worm",
             password_digest: "seeeecret"
           }}
+    
     user = User.new(data)
 
     expect(user).to be_a(User)

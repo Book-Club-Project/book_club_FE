@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>BookClubFe</title>
     <%= csrf_meta_tags %>
@@ -7,10 +8,14 @@
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
-    <%= link_to "Home", root_path %>
   </head>
 
   <body>
+    <% flash.each do |type, notice| %>
+        <div class="alert alert-info">
+          <p><%= notice %></p>
+        </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>
