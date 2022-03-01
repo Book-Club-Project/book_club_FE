@@ -8,7 +8,7 @@ RSpec.describe BookFacade do
   end
 
   it 'returns book by id', :vcr do
-    books = BookFacade.book_show("ZV9DDwAAQBAJ")
-    expect(books).to be_a(Book)
+    book = BookFacade.book_show("ZV9DDwAAQBAJ")
+    expect(book).to be_a(Book)
   end
 end
