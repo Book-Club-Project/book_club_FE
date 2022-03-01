@@ -9,14 +9,23 @@ class Book
               :id
 
   def initialize(data)
-    @id = data[:id]
-    @title = data[:attributes][:title]
-    @author = data[:attributes][:authors]
-    @summary = data[:attributes][:description]
-    # @reviews = data[:attributes][:reviews]
+
+    @title = data[:data][:attributes][:title]
+    @author = data[:data][:attributes][:authors]
+    @summary = data[:data][:attributes][:description]
+    # @reviews = data[:data][:attributes][:reviews]
     # @book_cover = data[:book_cover]
-    @rating = data[:attributes][:rating]
-    @genre = data[:attributes][:genres]
+    @rating = data[:data][:attributes][:rating]
+    @genre = data[:data][:attributes][:genres]
+
+#     @id = data[:id]
+#     @title = data[:attributes][:title]
+#     @author = data[:attributes][:authors]
+#     @summary = data[:attributes][:description]
+#     # @reviews = data[:attributes][:reviews]
+#     # @book_cover = data[:book_cover]
+#     @rating = data[:attributes][:rating]
+#     @genre = data[:attributes][:genres]
 
   end
 
