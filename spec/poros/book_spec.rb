@@ -6,12 +6,12 @@ RSpec.describe Book do
       id: "gwgON2IwgDUC",
       attributes: {
              title: "Pride and Prejudice",
-             author: "Jane Austen",
+             authors: "Jane Austen",
              description: "marriage plot",
              reviews: "wow, so good",
              book_cover: "cover_art_path",
              rating: 8.5,
-             genre: "Historical Fiction"
+             genres: "Historical Fiction"
            }
          }
 

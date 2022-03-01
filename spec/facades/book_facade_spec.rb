@@ -7,8 +7,8 @@ RSpec.describe BookFacade do
     expect(book.count).to eq(10)
   end
 
-  xit 'returns book by id', :vcr do
+  it 'returns book by id', :vcr do
     all_books = BookFacade.book_show("ZV9DDwAAQBAJ")
-    expect(all_books).to be_a(Hash)
+    expect(all_books).to be_a(Book)
   end
 end
