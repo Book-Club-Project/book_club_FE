@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/quote
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"246eff36c298e76c6c4b7327a98a4a23"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1a0d2328-e802-43b0-ae19-525ae5f806f1
+      X-Runtime:
+      - '0.317919'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"If you say
+        that money is God, then you should also remember that it is also the root
+        of all evil.","author":"Vikrant Parsai"}}}'
+  recorded_at: Tue, 01 Mar 2022 18:13:33 GMT
+recorded_with: VCR 6.0.0

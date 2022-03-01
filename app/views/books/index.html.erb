@@ -1,3 +1,38 @@
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 <div class="container text-center">
-  <h1>Booooooooooks</h1>
+  <h1>Book Club</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h3>Discover Books</h3>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <%= form_with url: '/discover', method: :get, local: true do |f| %>
+          <%= f.text_field :search, required: true %>
+          <%= f.submit "Search" %>
+          <% end %>
+        </div>
+    </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+
+    <% if @books %>
+      <% @books.each do |book| %>
+        <p> <%= link_to book.title, "/books/#{book.id}" %> </p>
+      <% end %>
+    <% end  %>
+    </div>
+  </div>
 </div>

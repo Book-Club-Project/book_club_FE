@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/quote
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"69b1f75cdb3f69904ea12f3eb92f07b2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b37d4826-5b0b-4fc7-8b32-0ecebad051db
+      X-Runtime:
+      - '0.323871'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"Though ambition
+        in itself is a vice, it often is also the parent of virtue.","author":"Edgar
+        Quinet"}}}'
+  recorded_at: Tue, 01 Mar 2022 18:13:33 GMT
+recorded_with: VCR 6.0.0

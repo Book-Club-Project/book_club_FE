@@ -1,6 +1,11 @@
-
-<p><%= @book.title %></p>
-<p><%= @book.author %></p>
-<p><%= @book.summary %></p>
-<p><%= @book.rating %></p>
-<p><%= @book.genre %></p>
+<h1><%= @book.title %></h1>
+<p>Author: <% @book.author.each do |author| %>
+  <%= author %>
+<% end %>, </p>
+<p>Summary: <%= @book.summary %></p>
+<p>Book rating: <%= @book.rating %></p>
+<p>Genres: <% @book.genre.each do |genre| %>
+  <%= genre %>
+<% end %>, </p>
+<%# link_to "Create Book Club", club_path(club.id) %>
+<%# work in progress  %>

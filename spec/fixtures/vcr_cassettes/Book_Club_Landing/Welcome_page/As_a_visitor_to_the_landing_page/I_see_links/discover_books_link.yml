@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/quote
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"f891cf1fd9a4ee47a091021fc5cf4050"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c4620213-3706-4b39-a943-5c96516b278d
+      X-Runtime:
+      - '0.338813'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"It is only
+        when they go wrong that machines remind you how powerful they are.","author":"Clive
+        James"}}}'
+  recorded_at: Tue, 01 Mar 2022 18:13:35 GMT
+recorded_with: VCR 6.0.0
