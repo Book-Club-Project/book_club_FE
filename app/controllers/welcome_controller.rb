@@ -1,5 +1,7 @@
 class WelcomeController < ApplicationController
-  def index
+  
+  before_action :quote, only: [:index]
 
-  end
+  def index;end
+
 end
