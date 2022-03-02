@@ -21,18 +21,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"447847edce055e2a91f4082a6957a150"
+      - W/"4b483e7ce43c8c91d63ef658cd867496"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 41d7b49c-81f2-4db1-9c79-9a026a97998f
+      - 1538ec67-f22d-461d-8d0e-5dd5e1d2daf1
       X-Runtime:
-      - '0.347762'
+      - '0.329139'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"to terrify
-        children with hell is that good for the world","author":"jacob cox"}}}'
-  recorded_at: Tue, 01 Mar 2022 18:13:34 GMT
+      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"You are who
+        you are, and no one can change that. So be yourself, because no one can do
+        it better.","author":"Meylin D. Bojorge"}}}'
+  recorded_at: Wed, 02 Mar 2022 03:34:20 GMT
 recorded_with: VCR 6.0.0

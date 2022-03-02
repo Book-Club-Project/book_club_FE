@@ -21,19 +21,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"f891cf1fd9a4ee47a091021fc5cf4050"
+      - W/"ec0c40103699ec22af7275f70d5432b0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c4620213-3706-4b39-a943-5c96516b278d
+      - 8bd44c78-f810-4dfa-8f04-f6657cb34b7a
       X-Runtime:
-      - '0.338813'
+      - '0.368111'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"It is only
-        when they go wrong that machines remind you how powerful they are.","author":"Clive
-        James"}}}'
-  recorded_at: Tue, 01 Mar 2022 18:13:35 GMT
+      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"Old foxes
+        want no tutors.","author":"Thomas Fuller"}}}'
+  recorded_at: Wed, 02 Mar 2022 03:34:21 GMT
 recorded_with: VCR 6.0.0

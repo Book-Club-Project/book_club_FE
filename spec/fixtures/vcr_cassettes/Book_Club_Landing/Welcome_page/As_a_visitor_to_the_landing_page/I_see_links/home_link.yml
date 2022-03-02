@@ -21,24 +21,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"1aba91a62248f0d6fca08a8c750ec4db"
+      - W/"6da4289c79a8cf275bfd0d462786d3bb"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 842573a2-00a1-4a1a-9087-fd56e093c919
+      - 448472f2-b6e0-4873-9734-bd047153e985
       X-Runtime:
-      - '0.452335'
+      - '0.377683'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"When I die,
-        my epitaph or whatever you call those signs on gravestones is going to read:
-        I joked about every prominent man of my time, but I never met a man I dident
-        like. I am so proud of that I can hardly wait to die so it can be carved.
-        And when you come to my grave you will find me sitting there, proudly reading
-        it.","author":"Will Rogers"}}}'
-  recorded_at: Tue, 01 Mar 2022 18:13:35 GMT
+      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"I''m not a
+        real movie star. I''ve still got the same wife I started out with twenty-eight
+        years ago.","author":"Will Rogers"}}}'
+  recorded_at: Wed, 02 Mar 2022 03:34:20 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/quote
@@ -64,9 +61,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 150ffc0a-b745-42a6-b934-89bf10601977
+      - bea3c2f7-2e74-4f24-92ab-6f8525939b93
       X-Runtime:
-      - '0.368098'
+      - '0.352479'
       Transfer-Encoding:
       - chunked
     body:
@@ -74,5 +71,5 @@ http_interactions:
       string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"You are who
         you are, and no one can change that. So be yourself, because no one can do
         it better.","author":"Meylin D. Bojorge"}}}'
-  recorded_at: Tue, 01 Mar 2022 18:13:35 GMT
+  recorded_at: Wed, 02 Mar 2022 03:34:20 GMT
 recorded_with: VCR 6.0.0
