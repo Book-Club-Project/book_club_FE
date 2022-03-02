@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
+  before_action :quote, only: [:new]
+  
   def new; end
 
   def destroy

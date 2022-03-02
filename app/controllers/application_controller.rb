@@ -5,8 +5,7 @@ class ApplicationController < ActionController::Base
 
   def current_user
     if session[:user_id]
-      user = UserService.get_user(session[:user_id])
-      User.new(user)
+      UserFacade.find_user(session[:user_id])
     end
   end
 

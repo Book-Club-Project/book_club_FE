@@ -5,7 +5,7 @@ class UserService
 
   def self.parsed_response(url)
     response = conn.get(url)
-    JSON.parse(response.body, symbolize_names: true)
+    JSON.parse(response.body, symbolize_names: true)[:data]
   end
 
   def self.get_user(user_id)

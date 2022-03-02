@@ -40,10 +40,19 @@
 </header>
 
 <body>
-  <%= render partial: '/layouts/partials/random_quote' %>
+  <div class="container">
+    <div id="static-quote">
+      <p>"You will be the same person in five years as you are today except for the people you meet and the books you read." <br>
+
+        - Charlie "Tremendous Jones"
+      </p>
+    </div>
+  </div>
 
   <% if session[:user_id] %>
+    <div class="container">
+      <%= link_to 'My Dashboard', '/dashboard' %>
+    </div>
   <% end %>
 
 </body>
-
