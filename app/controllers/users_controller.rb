@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  before_action :quote, only: [:new]
+  
   def new; end
 
   def create
