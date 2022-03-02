@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe QuoteService do
+RSpec.describe QuoteService, type: :service do
   describe 'class methods' do
     describe 'get_quote' do
       it 'returns a single quote from the BE API', :vcr do

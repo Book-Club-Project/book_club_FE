@@ -13,4 +13,3 @@ class QuoteService
     response = parsed_response("/api/v1/quote")
   end
 end
-''
