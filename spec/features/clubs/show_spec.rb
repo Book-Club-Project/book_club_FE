@@ -9,7 +9,7 @@ RSpec.describe 'Club show page' do
     visit("/clubs/1")
 
     expect(page).to have_content("Cool Cats")
-    # expect(page).to have_content("Club Book: Book Title")
+    expect(page).to have_content("Club Book: Pride")
   end
 
   it "checks for the club users", :vcr do

@@ -21,17 +21,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"3287fa94f3b17c8b61a1ecede7cb1dd7"
+      - W/"5d9b65eb8fa0f86b5bd9cd9fe8789ea9"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d681f74e-f8fb-44ee-85fb-3c47003b63b9
+      - af0a6e64-6e20-49db-85aa-57dcc55d82c1
       X-Runtime:
-      - '0.019306'
+      - '0.003640'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":3}}}'
-  recorded_at: Tue, 01 Mar 2022 22:36:31 GMT
+      string: '{"data":{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":"ZV9DDwAAQBAJ"}}}'
+  recorded_at: Wed, 02 Mar 2022 03:59:35 GMT
 recorded_with: VCR 6.0.0
