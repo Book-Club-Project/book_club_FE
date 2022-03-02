@@ -11,9 +11,9 @@ class ClubService
     get_data("/api/v1/clubs/#{club_id}/comments")
   end
 
-  def self.club_create(club_params)
-    response = conn.post("api/v1/clubs", params: club_params.to_json, headers: {'Content-Type' => 'application/json'})
-  end
+  # def self.club_create(club_params)
+  #   response = conn.post("api/v1/clubs", params: club_params.to_json, headers: {'Content-Type' => 'application/json'})
+  # end
 
   private
     def self.conn

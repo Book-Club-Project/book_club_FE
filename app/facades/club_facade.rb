@@ -1,6 +1,7 @@
 class ClubFacade
   def self.get_club(id)
     club = ClubService.club(id)
+
     Club.new(club)
   end
 
