@@ -14,7 +14,7 @@ class ClubFacade
 
   def self.get_club_comments(id)
     comments = ClubService.club_comments(id)
-    
+
     comments[:data].map do |comment|
       Comment.new(comment)
     end

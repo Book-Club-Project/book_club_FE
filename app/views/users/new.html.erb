@@ -28,7 +28,7 @@
 
   <div class="container">
     <div class="form-container">
-      <%= form_with url: '/users/create', method: :post, local: true do |f| %>
+      <%= form_with url: '/users', method: :post, local: true do |f| %>
 
       <%= f.text_field :name, required: :true, placeholder: 'Name' %><br><br>
 
