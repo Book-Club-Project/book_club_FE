@@ -112,13 +112,6 @@ Implicit
 
 ----------
 
-## Database Schema
-
-![Screen Shot 2022-02-22 at 10 31 07 AM](https://user-images.githubusercontent.com/87088092/155647400-97e86edd-30ad-4652-b53b-f26fd5ac429d.png)
-
-
-----------
-
 ## APIs
 
 see [book club BE repo](https://github.com/Book-Club-Project/book_club_BE)
