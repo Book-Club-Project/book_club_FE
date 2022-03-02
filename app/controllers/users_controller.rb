@@ -1,10 +1,11 @@
 class UsersController < ApplicationController
   before_action :quote, only: [:new]
+
+  def new; end
+
   def show
     @user = current_user
   end
-
-  def new; end
 
   def create
     if params[:password_confirmation]
@@ -28,7 +29,6 @@ class UsersController < ApplicationController
     end
 
     session[:user_id] = user[:id]
-
     redirect_to '/dashboard'
   end
 end

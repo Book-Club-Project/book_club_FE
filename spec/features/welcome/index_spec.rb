@@ -38,15 +38,17 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
 
     scenario 'I do not see links for logged in users' do
       expect(page).to_not have_link('Logout')
-      expect(page).to_not have_link('My Page')
+      expect(page).to_not have_link('My Dashboard')
       expect(page).to_not have_css('#dashboard-link')
     end
   end
 
   #As an authenticated visitor
   xcontext 'As a logged in user visiting the landing page' do
+
     before(:each) do
-      visit '/'
+      visit '/login'
+
       #authenticate user before runing tests
     end
 
@@ -76,7 +78,7 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
       end
 
       scenario 'link to my page' do
-        expect(page).to have_link('My Page')
+        expect(page).to have_link('My Dashboard')
         expect(page).to have_css('#dashboard-link')
       end
 
@@ -86,12 +88,8 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
       end
     end
 
-    scenario 'I see a random quote' do
-      expect(page).to have_css('#random-quote')
-
-      within "#random-quote" do
-        expect(page).to have_content("Quote of the day!")
-      end
+    scenario 'I see a static quote' do
+      expect(page).to have_css('#static-quote')
     end
   end
 end
