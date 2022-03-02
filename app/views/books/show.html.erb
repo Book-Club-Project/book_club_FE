@@ -4,7 +4,9 @@
 <!------ Include the above in your HEAD tag ---------->
 <div class="container text-center">
   <h1> <%= @book.title %> </h1>
-  <img src= <%= @book.image %>>
+  <div id="book-cover">
+    <img id="cover-image" src= <%= @book.image %>>
+  </div>
   <br>
   <button type="button" class="btn btn-primary btn-lg px-3 gap-3">Create Book Club</button>
 </div>
