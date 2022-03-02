@@ -10,7 +10,6 @@ class BookFacade
 
   def self.book_show(book_id)
     book = BookService.book_info(book_id)[:data]
-
     Book.new(book)
   end
 end
