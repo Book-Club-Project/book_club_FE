@@ -21,13 +21,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"0089d17fc9e713e4edb78531e41248b3"
+      - W/"6fe624ac94dd87bdae35369ddbd91256"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2e8cc063-9720-48f4-9e2d-707ff65828cc
+      - 168d3bf4-8ee5-4ba9-9376-69af4be35b78
       X-Runtime:
-      - '0.248411'
+      - '0.254052'
       Transfer-Encoding:
       - chunked
     body:
@@ -35,6 +35,6 @@ http_interactions:
       string: '{"data":{"id":"gwgON2IwgDUC","type":"book","attributes":{"title":"Pride
         and Prejudice","authors":["Jane Austen"],"genres":["Fiction / Classics"],"description":"Insight
         edition with engaging side notes that offer background on social customs,
-        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE73dmT3XBDIErWISQyqLj3k3VWK3YTt-udtPGINVJ03rYrIuZhfvyTb7FiMtPkSiHmzuPuC2M2hBEeAw83eJhR6tfjARODEBnQskoEdAGzfTuUo8JSxz7AOzpfZfm6jKH7HzpWtR\u0026source=gbs_api"}}}'
-  recorded_at: Wed, 02 Mar 2022 17:57:44 GMT
+        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE72O4CAs9L6tuSiRnMI4Sn5dX4JA4UgfHwt_fN-vpfe0UuJjXVsApJscIuKVyHC_DENdVtEaGxAFAnzihxMi2XnuodoDAicUIU4-MlZsynxQ6dRv-OjIzw4OO2VJP9XFAtwdIRrG\u0026source=gbs_api"}}}'
+  recorded_at: Wed, 02 Mar 2022 19:58:37 GMT
 recorded_with: VCR 6.0.0
