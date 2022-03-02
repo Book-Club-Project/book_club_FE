@@ -29,7 +29,7 @@
 
   <div class="container">
     <div class="form-container">
-      <%= form_with url: '/sessions/create', method: :post, local: true do |f|  %>
+      <%= form_with url: '/sessions', method: :post, local: true do |f|  %>
 
       <%= f.email_field :email, required: true, placeholder: 'email@domain.com' %><br><br>
 
