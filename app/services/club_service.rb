@@ -1,6 +1,6 @@
 class ClubService
   def self.club(club_id)
-    p = get_data("/api/v1/clubs/#{club_id}")
+    get_data("/api/v1/clubs/#{club_id}")
   end
 
   def self.club_users(club_id)
