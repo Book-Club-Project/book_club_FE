@@ -1,4 +1,5 @@
-class UserService
+class AuthenticationService
+
   def self.conn
     conn = Faraday.new(url: "http://localhost:3000")
   end
@@ -8,12 +9,7 @@ class UserService
     JSON.parse(response.body, symbolize_names: true)[:data]
   end
 
-  def self.get_user(user_id)
-    parsed_response("/api/v1/users/#{user_id}")
+  def self.authenticate_user_by_email(email, password)
+    parsed_response("/api/v1/authenticate?email=#{email}&password=#{password}")
   end
-
-  def self.get_user_by_email(user_email)
-    parsed_response("/api/v1/users?email=#{user_email}")
-  end
-
 end

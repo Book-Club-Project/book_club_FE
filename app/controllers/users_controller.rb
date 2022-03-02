@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :quote, only: [:new]
+  # before_action :quote, only: [:new]
 
   def new; end
 
@@ -8,13 +8,13 @@ class UsersController < ApplicationController
   end
 
   def create
-    if params[:password_confirmation]
+    if params[:password_confirmation] == params[:password]
       conn = Faraday.new(url: 'http://localhost:3000/')
       response = conn.post('/api/v1/users') do |req|
         req.headers['Content-Type'] = 'application/json'
-        req.body = JSON.generate(user: { username: params[:username], email: params[:email] })
+        req.body = JSON.generate(user: { username: params[:username], email: params[:email], password: params[:password], password_confirmation: params[:password_confirmation] })
       end
-      user = JSON.parse(response.body, symbolize_names: true)
+      user = JSON.parse(response.body, symbolize_names: true)[:data]
 
     else
       conn = Faraday.new(url: 'http://localhost:3000/')
