@@ -18,7 +18,5 @@ Rails.application.routes.draw do
   post  '/login', to: 'sessions#create'
   get   '/logout', to: 'sessions#destroy'
 
-  get   '/bookclub/:id', to: 'clubs#show'
-
   get   '/auth/google_oauth2/callback', to: 'users#create'
 end
