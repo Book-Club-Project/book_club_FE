@@ -1,11 +1,29 @@
-<h1><%= @book.title %></h1>
-<p>Author: <% @book.author.each do |author| %>
-  <%= author %>
-<% end %>, </p>
-<p>Summary: <%= @book.summary %></p>
-<p>Book rating: <%= @book.rating %></p>
-<p>Genres: <% @book.genre.each do |genre| %>
-  <%= genre %>
-<% end %>, </p>
-<%# link_to "Create Book Club", club_path(club.id) %>
-<%# work in progress  %>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div class="container text-center">
+  <h1> <%= @book.title %> </h1>
+  <button type="button" class="btn btn-primary btn-lg px-3 gap-3">Create Book Club</button>
+</div>
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h5>Author(s):</h5>
+          <p><% @book.author.each do |author| %>
+            <%= author %>
+            <% end %>, </p>
+          <br>
+          <h5>Summary: </h5><p> <%= @book.summary %></p>
+          <br>
+          <h5>Book rating: </h5> <p><%= @book.rating %></p>
+          <br>
+          <h5>Genres: </h5><p><% @book.genre.each do |genre| %>
+            <%= genre %>
+          <% end %>, </p>
+        </div>
+
+    </div>
+</div>

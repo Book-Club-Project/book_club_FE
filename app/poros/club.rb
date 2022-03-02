@@ -3,6 +3,7 @@ class Club
               :host_id,
               :name
 
+
   def initialize(data)
     @name = data[:data][:attributes][:name]
     @book_id = data[:data][:attributes][:book_id]
