@@ -15,8 +15,9 @@ RSpec.describe Book do
              reviews: "wow, so good",
              book_cover: "cover_art_path",
              rating: 8.5,
-             genres: "Historical Fiction"
-
+             genres: "Historical Fiction",
+             image:
+    "http://books.google.com/books/publisher/content?id=ZV9DDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE710vah13TyV0fgjfeudOnVYaP3yNeaKEyHqda-BEpDz33sg3mZBn7ONkw-IiUspxCwbK18NQWIW52guRcpMEz8Qhx2Y0zrIsLcLTotaRUWTec_mp3Ye3G9y_bjjIColsk4KctMe&source=gbs_api"
            }}
 
     book = Book.new(data)
