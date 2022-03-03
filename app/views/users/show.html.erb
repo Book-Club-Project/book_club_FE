@@ -24,20 +24,17 @@
 </header>
 
 <body>
+  <%# render partial: '/layouts/partials/random_quote' %> <br><br>
 
-  <h1><%= @user.username %>'s Dashboard</h1>
-
-  <%= button_to 'Create New Book Club', '/registerclub' %>
+  <center><h1><%= current_user.username %>'s Dashboard</h1></center>
 
 
   <div class="container">
-    <div class="book-container">
-      <% @user.books.each do |book| %>
-        <p><%= link_to book.name, book_path(book) %></p>
+    <div class="centered"><h3 class="bookclubs">My Bookclubs:</h3>
+      <% @user.clubs.each do |club| %>
+        <p><%= link_to club.name, club_path(club) %></p>
       <% end %>
     </div>
   </div>
-
-
 
 </body>

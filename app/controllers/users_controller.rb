@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :quote, only: [:new]
+  # before_action :quote, only: [:new]
 
   def new; end
 
@@ -17,5 +17,9 @@ class UsersController < ApplicationController
     session[:user_id] = user[:id]
 
     redirect_to '/'
+  end
+
+  def show
+    @user = current_user
   end
 end

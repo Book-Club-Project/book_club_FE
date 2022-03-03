@@ -19,4 +19,6 @@ Rails.application.routes.draw do
   get   '/logout', to: 'sessions#destroy'
 
   get   '/auth/google_oauth2/callback', to: 'users#create'
+
+  get '/dashboard', to: 'users#show'
 end

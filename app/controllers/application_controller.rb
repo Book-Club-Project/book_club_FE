@@ -10,6 +10,6 @@ class ApplicationController < ActionController::Base
   end
 
   def quote
-    @quote = QuoteFacade.get_quote
+  #   @quote = QuoteFacade.get_quote
   end
 end
