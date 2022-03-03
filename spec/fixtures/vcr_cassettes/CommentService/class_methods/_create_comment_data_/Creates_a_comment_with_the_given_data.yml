@@ -2,15 +2,15 @@
 http_interactions:
 - request:
     method: post
-    uri: http://localhost:3000/api/v1/users
+    uri: http://localhost:3000/api/v1/comments
     body:
       encoding: UTF-8
-      string: '{"user":{"username":"happy22@example.com","email":"happy22@example.com"}}'
+      string: comment%5Bbody%5D=My+comment&comment%5Bclub_id%5D=1&comment%5Btitle%5D=Test123&comment%5Buser_id%5D=1
     headers:
       User-Agent:
       - Faraday v2.2.0
       Content-Type:
-      - application/json
+      - application/x-www-form-urlencoded
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -23,17 +23,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"86d9c73a03e7253a0c8f0b99f8231028"
+      - W/"4bf996d30725cee883ecafb0ee2b138c"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 89f59027-02f6-4fc2-9095-e803d1fd634c
+      - 476a7a2a-421d-4b12-b9a3-79987777124d
       X-Runtime:
-      - '0.004066'
+      - '0.033246'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"6","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}}'
-  recorded_at: Thu, 03 Mar 2022 19:08:10 GMT
+      string: '{"data":{"id":"25","type":"comment","attributes":{"title":"Test123","body":"My
+        comment","user_id":1,"club_id":1}}}'
+  recorded_at: Thu, 03 Mar 2022 19:08:12 GMT
 recorded_with: VCR 6.0.0
