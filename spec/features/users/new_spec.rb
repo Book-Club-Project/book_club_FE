@@ -35,6 +35,7 @@ RSpec.describe 'Users New/Register Page', type: :feature do
       expect(page).to have_button('Register')
     end
 
+    # Don't have test for clicking Google button and redirecting to dashboard.
     scenario 'I see a sign-in option for Google OAuth' do
       expect(page).to have_button('Register with Google')
     end
