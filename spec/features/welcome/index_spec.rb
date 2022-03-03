@@ -51,6 +51,10 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
     user = User.new({ id: '1', attributes: { name: "Raccoon22", email: "happy22@example.com" } })
 
     OmniAuth.config.test_mode = true
+    
+    #we are getting CSRF get vs. post errors, and have chosen to ignore them
+    OmniAuth.config.silence_get_warning = true
+
     OmniAuth.config.add_mock(:google, {:uid => '12345'})
     Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:google_oauth2]
 
