@@ -33,25 +33,21 @@
     <h1> <%= @book.title %> </h1>
     <div id="book-cover">
       <img id="cover-image" src= <%= @book.image %>>
+    </div><br>
+
+    <div id="create-club">
+      <% if session[:user_id] %>
+        <div class="container" id="create-club-button">
+          <%= button_to "Create Book Club", "/clubs/new", params: {book_id: @book.id} , method: :get %>
+        </div>
+      <% else %>
+        <div class="container" id="need-login-message">
+          <p>To start a club with this book, please <%= link_to 'Login', '/login' %>.</p>
+        </div>
+      <% end %>
     </div>
-    <br>
+  </div><br><br>
 
-  <div id="create-club">
-    <% if session[:user_id] %>
-      <div class="container" id="create-club-button">
-        <%= button_to "Create Book Club", "/clubs/new", params: {book_id: @book.id} , method: :get %>
-      </div>
-    <% else %>
-      <div class="container" id="need-login-message">
-        <p>To start a club with this book, please <%= link_to 'Login', '/login' %>.</p>
-      </div>
-    <% end %>
-  </div>
-
-
-  </div>
-  <br>
-  <br>
   <div class="container">
       <div class="row">
           <div class="col-md-6 col-md-offset-3">
@@ -66,9 +62,8 @@
             <br>
             <h5>Genres: </h5><p><% @book.genre.each do |genre| %>
               <%= genre %>
-            <% end %>, </p>
+            <% end %> </p>
           </div>
-
       </div>
   </div>
 </body>
