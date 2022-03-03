@@ -56,7 +56,7 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
       Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:google_oauth2]
 
       visit '/auth/google_oauth2/'
-      #authenticate user before runing tests
+      #authenticate user before runing tests difference
     end
 
     scenario 'I am on the root directory' do
