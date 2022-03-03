@@ -5,6 +5,7 @@ class User
               :id
 
   def initialize(data)
+
     @id = data[:id]
     @email = data[:attributes][:email]
     @username = data[:attributes][:username]

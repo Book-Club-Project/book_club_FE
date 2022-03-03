@@ -1,35 +1,21 @@
 class UsersController < ApplicationController
-
-  # before_action :quote, only: [:new]
+  before_action :quote, only: [:new]
 
   def new; end
 
-  def show
-    @user = current_user
-  end
-
   def create
-    if params[:password_confirmation] == params[:password]
-      conn = Faraday.new(url: 'http://localhost:3000/')
-      response = conn.post('/api/v1/users') do |req|
-        req.headers['Content-Type'] = 'application/json'
-        req.body = JSON.generate(user: { username: params[:username], email: params[:email], password: params[:password], password_confirmation: params[:password_confirmation] })
-      end
-      user = JSON.parse(response.body, symbolize_names: true)[:data]
+    conn = Faraday.new(url: 'http://localhost:3000/')
+    auth_hash = request.env['omniauth.auth']
+    email = auth_hash['info']['email']
 
-    else
-      conn = Faraday.new(url: 'http://localhost:3000/')
-      auth_hash = request.env['omniauth.auth']
-      email = auth_hash['info']['email']
-
-      response = conn.post('/api/v1/users') do |req|
-        req.headers['Content-Type'] = 'application/json'
-        req.body = JSON.generate(user: { username: email, email: email })
-      end
-      user = JSON.parse(response.body, symbolize_names: true)[:data]
+    response = conn.post('/api/v1/users') do |req|
+      req.headers['Content-Type'] = 'application/json'
+      req.body = JSON.generate(user: { username: email, email: email })
     end
-
+    
+    user = JSON.parse(response.body, symbolize_names: true)[:data]
     session[:user_id] = user[:id]
-    redirect_to '/dashboard'
+
+    redirect_to '/'
   end
 end
