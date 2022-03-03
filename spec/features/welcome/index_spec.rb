@@ -101,8 +101,14 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
 
       scenario 'I see logout and dashboard links' do
         expect(page).to have_link('Logout', href: '/logout')
-        expect(page).to have_link('My Dashboard')
-        expect(page).to have_css('#dashboard-link')
+
+        within '#dashboard-link' do
+          expect(page).to have_link('My Dashboard', href: '/dashboard')
+        end
+
+        within '#nav-bar' do
+          expect(page).to have_link('My Dashboard', href: '/dashboard')
+        end
       end
 
       scenario 'I do not see login and register links' do
@@ -124,9 +130,18 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
         expect(page).to have_current_path('/discover')
       end
 
-      scenario 'I click the dashboard link' do
-        click_link 'My Dashboard'
-        expect(page).to have_current_path('/dashboard')
+      scenario 'I click the dashboard link in nav-bar' do
+        within '#nav-bar' do
+          click_link 'My Dashboard'
+          expect(page).to have_current_path('/dashboard')
+        end
+      end
+      
+      scenario 'I click the dashboard link in body' do
+        within '#dashboard-link' do
+          click_link 'My Dashboard'
+          expect(page).to have_current_path('/dashboard')
+        end
       end
 
       scenario 'I click the logout link' do
@@ -137,7 +152,7 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
 
     scenario 'I see a static quote' do
       visit '/'
-      
+
       expect(page).to have_css('#static-quote')
 
       within "#static-quote" do
