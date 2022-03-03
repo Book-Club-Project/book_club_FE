@@ -21,5 +21,6 @@ class UsersController < ApplicationController
 
   def show
     @user = current_user
+    @clubs = UserFacade.user_clubs(@user.id)
   end
 end

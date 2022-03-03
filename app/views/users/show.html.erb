@@ -25,13 +25,12 @@
 
 <body>
   <%# render partial: '/layouts/partials/random_quote' %> <br><br>
-
-  <center><h1><%= current_user.username %>'s Dashboard</h1></center>
+  <center><h1><%= @user.username %>'s Dashboard</h1></center>
 
 
   <div class="container">
     <div class="centered"><h3 class="bookclubs">My Bookclubs:</h3>
-      <% @user.clubs.each do |club| %>
+      <% @clubs.each do |club| %>
         <p><%= link_to club.name, club_path(club) %></p>
       <% end %>
     </div>

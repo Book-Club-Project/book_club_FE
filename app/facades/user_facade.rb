@@ -12,4 +12,11 @@ class UserFacade
       User.new(user)
     end
   end
+
+  def self.user_clubs(user_id)
+    clubs = UserService.user_clubs(user_id)
+    clubs.map do |club|
+      Club.new(club)
+    end
+  end 
 end
