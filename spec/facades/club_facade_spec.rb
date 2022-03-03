@@ -29,4 +29,11 @@ RSpec.describe ClubFacade do
       end
     end
   end
+  describe '::create_club(data)' do
+    it 'returns the response for creating a club', :vcr do
+      data = {:name=>"Hello123", :book_id=>"gwgON2IwgDUC", :host_id=>3}
+      created_club = ClubFacade.create_club(data)
+      expect(created_club).to be_an Club
+    end
+  end
 end
