@@ -12,7 +12,9 @@ Rails.application.routes.draw do
   end
 
   resources :comments, only: [:create]
-  
+
+  get '/dashboard', to: 'users#show'
+
   get   '/register', to: 'users#new'
   post  '/register', to: 'users#create'
 

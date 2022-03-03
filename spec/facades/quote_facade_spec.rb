@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe QuoteFacade, type: :facade do
   describe 'class methods' do
     describe 'get_quote' do
-      it 'returns a single quote object' do
+      it 'returns a single quote object', :vcr do
         quote = QuoteFacade.get_quote
 
         expect(quote).to be_a Quote
