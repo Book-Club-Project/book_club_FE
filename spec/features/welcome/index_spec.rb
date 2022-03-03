@@ -25,6 +25,28 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
         expect(page).to have_link('Register', href: '/register')
       end
 
+      context 'Clicking links directs me to the proper page' do
+        scenario 'I click the home button' do
+          click_link 'Home'
+          expect(page).to have_current_path('/')
+        end
+
+        scenario 'I click the discover books link' do
+          click_link 'Discover Books'
+          expect(page).to have_current_path('/discover')
+        end
+
+        scenario 'I click the register link' do
+          click_link 'Register'
+          expect(page).to have_current_path('/register')
+        end
+
+        scenario 'I click the login link' do
+          click_link 'Login'
+          expect(page).to have_current_path('/login')
+        end
+      end
+
       scenario 'I do not see logout and my dashboard links' do
         expect(page).to_not have_link('Logout')
         expect(page).to_not have_link('My Dashboard')
@@ -55,9 +77,11 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
       # Silence CSRF attack warnings
       OmniAuth.config.silence_get_warning = true
 
+      # Mock OAuth user authentication
       OmniAuth.config.add_mock(:google, {:uid => '12345'})
       Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:google_oauth2]
 
+      # Set current user
       allow_any_instance_of(ApplicationController)
           .to receive(:current_user).and_return(user)
 
@@ -73,6 +97,8 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
     end
 
     context 'Different links appear when logged in' do
+      before(:each) { visit '/' }
+
       scenario 'I see logout and dashboard links' do
         expect(page).to have_link('Logout', href: '/logout')
         expect(page).to have_link('My Dashboard')
@@ -85,7 +111,33 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
       end
     end
 
+    context 'Clicking links directs me to the proper page' do
+      before(:each) { visit '/' }
+
+      scenario 'I click the home button' do
+        click_link 'Home'
+        expect(page).to have_current_path('/')
+      end
+
+      scenario 'I click the discover books link' do
+        click_link 'Discover Books'
+        expect(page).to have_current_path('/discover')
+      end
+
+      scenario 'I click the dashboard link' do
+        click_link 'My Dashboard'
+        expect(page).to have_current_path('/dashboard')
+      end
+
+      scenario 'I click the logout link' do
+        click_link 'Logout'
+        expect(page).to have_current_path('/')
+      end
+    end
+
     scenario 'I see a static quote' do
+      visit '/'
+      
       expect(page).to have_css('#static-quote')
 
       within "#static-quote" do
