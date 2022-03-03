@@ -23,17 +23,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"198a2b21a3c0913c518e97bf24ad0858"
+      - W/"1b613e43141589446ed51844f8ad8b16"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 700a6f49-e219-41e2-ad28-97b89a642c2e
+      - cb8b458d-9773-41d6-a90d-6bd05efc2f34
       X-Runtime:
-      - '0.003109'
+      - '0.004130'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"18","type":"club","attributes":{"name":"Hello123","host_id":3,"book_id":"gwgON2IwgDUC"}}}'
-  recorded_at: Thu, 03 Mar 2022 03:23:29 GMT
+      string: '{"data":{"id":"21","type":"club","attributes":{"name":"Hello123","host_id":3,"book_id":"gwgON2IwgDUC"}}}'
+  recorded_at: Thu, 03 Mar 2022 03:36:44 GMT
 recorded_with: VCR 6.0.0

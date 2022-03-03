@@ -21,13 +21,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"60ad98246c009d5d7070ad38d5abb47a"
+      - W/"286453258d185289886575fa2d9ee178"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e82bb5b3-0791-4e36-ae2e-95f7a4e2f763
+      - d0cf2dc7-b212-46c3-b70c-9f0ce408fd70
       X-Runtime:
-      - '0.119230'
+      - '0.145790'
       Transfer-Encoding:
       - chunked
     body:
@@ -35,8 +35,8 @@ http_interactions:
       string: '{"data":{"id":"gwgON2IwgDUC","type":"book","attributes":{"title":"Pride
         and Prejudice","authors":["Jane Austen"],"genres":["Fiction / Classics"],"description":"Insight
         edition with engaging side notes that offer background on social customs,
-        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE7351Bn0t_e_40Rb5-Wj8ROhZbfJXYHvHYyE2o7hBci7-KkpE3gM-Z6iQNrv7BGS2JH2inpnx7MINuwFoYmL25G8yBATkyN4ADbFsUrnfpkujBolz3b_TO8KftBNNBuRVDMwBOcJ\u0026source=gbs_api"}}}'
-  recorded_at: Thu, 03 Mar 2022 03:23:26 GMT
+        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE71BTOxXbMBPL0OQpvkDlqV1wgkwNECWEV8dno_gtI0X7CBCNHXKK4BOosHzkKqNnYi1Ko42MQgf6DFU5qYiW_HB559hJ0koPRGKYIe1Pw1O79vWdKPTMBSRP1JuxmUGVCtp4C2c\u0026source=gbs_api"}}}'
+  recorded_at: Thu, 03 Mar 2022 03:36:41 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/users
@@ -62,13 +62,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3997734b-d0ee-4a41-a1ac-6764b1955b67
+      - 153435de-eebf-4594-8726-07bee4472450
       X-Runtime:
-      - '0.002982'
+      - '0.003240'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}},{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}]}'
-  recorded_at: Thu, 03 Mar 2022 03:23:26 GMT
+  recorded_at: Thu, 03 Mar 2022 03:36:41 GMT
 recorded_with: VCR 6.0.0
