@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
   #As an un-authenticated visitor
   context 'As a visitor to the landing page', :vcr do
+
     before(:each) { visit '/' }
 
     scenario 'I am on the root directory' do
@@ -37,6 +38,7 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
     end
 
     scenario 'I do not see links for logged in users' do
+
       expect(page).to_not have_link('Logout')
       expect(page).to_not have_link('My Page')
       expect(page).to_not have_css('#dashboard-link')
@@ -44,11 +46,26 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
   end
 
   #As an authenticated visitor
-  xcontext 'As a logged in user visiting the landing page' do
+  context 'As a logged in user visiting the landing page', :vcr do
     before(:each) do
-      visit '/'
-      #authenticate user before runing tests
+    user = User.new({ id: '1', attributes: { name: "Raccoon22", email: "happy22@example.com" } })
+
+    OmniAuth.config.test_mode = true
+    
+    #we are getting CSRF get vs. post errors, and have chosen to ignore them
+    OmniAuth.config.silence_get_warning = true
+
+    OmniAuth.config.add_mock(:google, {:uid => '12345'})
+    Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:google_oauth2]
+
+    allow_any_instance_of(ApplicationController)
+        .to receive(:current_user).and_return(user)
+        visit "/auth/google_oauth2"
     end
+    # before(:each) do
+    #   visit '/'
+    #   #authenticate user before runing tests
+    # end
 
     scenario 'I am on the root directory' do
       expect(page).to have_current_path('/')
@@ -75,7 +92,7 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
         expect(page).to have_link('Logout', href: '/logout')
       end
 
-      scenario 'link to my page' do
+      xscenario 'link to my page' do
         expect(page).to have_link('My Page')
         expect(page).to have_css('#dashboard-link')
       end
@@ -86,7 +103,7 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
       end
     end
 
-    scenario 'I see a random quote' do
+    xscenario 'I see a random quote' do
       expect(page).to have_css('#random-quote')
 
       within "#random-quote" do

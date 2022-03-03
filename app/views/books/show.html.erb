@@ -4,7 +4,13 @@
 <!------ Include the above in your HEAD tag ---------->
 <div class="container text-center">
   <h1> <%= @book.title %> </h1>
-  <button type="button" class="btn btn-primary btn-lg px-3 gap-3">Create Book Club</button>
+  <div id="book-cover">
+    <img id="cover-image" src= <%= @book.image %>>
+  </div>
+  <br>
+
+    <%= button_to "Create Book Club", "/clubs/new", params: {book_id: @book.id} , method: :get %>
+  
 </div>
 <br>
 <br>

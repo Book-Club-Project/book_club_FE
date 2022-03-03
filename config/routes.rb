@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get   '/discover', to: 'books#index'
   resources :books
 
-  resources :clubs, only: [:show, :create] do
+  resources :clubs, only: [:show, :create, :new] do
     resources :users, only: [:index], controller: 'club_users'
     resources :comments, only: [:index], controller: 'club_comments'
   end

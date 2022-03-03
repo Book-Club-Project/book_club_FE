@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :quote, only: [:new]
-  
+
   def new; end
 
   def create
@@ -12,7 +12,7 @@ class UsersController < ApplicationController
       req.headers['Content-Type'] = 'application/json'
       req.body = JSON.generate(user: { username: email, email: email })
     end
-    
+
     user = JSON.parse(response.body, symbolize_names: true)[:data]
     session[:user_id] = user[:id]
 

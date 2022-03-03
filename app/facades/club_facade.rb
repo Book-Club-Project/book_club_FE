@@ -20,4 +20,9 @@ class ClubFacade
       Comment.new(comment)
     end
   end
+
+  def self.create_club(data)
+    club = ClubService.create_club(data)
+    Club.new(club)
+  end
 end
