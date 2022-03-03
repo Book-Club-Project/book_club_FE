@@ -7,7 +7,8 @@ describe 'user dashboard' do
             password_digest: "seeeecret"
           }}
 
-    @user = User.new(data)
+    user = User.new(data)
+    visit dashboard_path(user)
   end
 
   describe 'display' do
@@ -18,7 +19,7 @@ describe 'user dashboard' do
     end
 
     it 'username' do
-      expect(page).to have_content("#{@user.username}'s Dashboard")
+      expect(page).to have_content("#{@user}'s Dashboard")
     end
 
     it 'literary quote' do
