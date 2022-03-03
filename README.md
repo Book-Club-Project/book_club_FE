@@ -30,7 +30,7 @@ reference: [Turing documentation](https://backend.turing.edu/module3/projects/co
     <li>
       <a href="#APIs">Book Club API</a>
     </li>
-    <li><a href="#contributors">Collaborators</a></li>
+    <li><a href="#contributors ([emoji key])">Collaborators</a></li>
   </ol>
 </details>
 
