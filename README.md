@@ -30,7 +30,7 @@ reference: [Turing documentation](https://backend.turing.edu/module3/projects/co
     <li>
       <a href="#APIs">Book Club API</a>
     </li>
-    <li><a href="#contributors ([emoji key])">Collaborators</a></li>
+    <li><a href="#project">Collaborators</a></li>
   </ol>
 </details>
 
@@ -158,7 +158,7 @@ See [book club BE repo](https://github.com/Book-Club-Project/book_club_BE)
 
 ----------
 
-## Contributors ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+## Project ## Contributors ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
