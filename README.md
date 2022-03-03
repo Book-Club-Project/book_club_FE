@@ -28,7 +28,7 @@ reference: [Turing documentation](https://backend.turing.edu/module3/projects/co
       </ul>
     </li>
     <li>
-      <a href="#book-club-api">Book Club API</a>
+      <a href="#APIs">Book Club API</a>
     </li>
     <li><a href="#collaborators">Collaborators</a></li>
   </ol>
