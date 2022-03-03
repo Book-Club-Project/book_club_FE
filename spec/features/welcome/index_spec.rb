@@ -48,13 +48,14 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
     let!(:user) { User.new({ id: '1', attributes: { email: 'user@email.com', username: 'user', password_digest: 'xyz' } }) }
 
     before(:each) do
-      allow(UserFacade).to receive(:find_user).with(anything).and_return(user)
-      visit '/'
-      # OmniAuth.config.test_mode = true
-      # OmniAuth.config.add_mock(:google, {:uid => '12345'})
-      # Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:google_oauth2]
+      # allow(UserFacade).to receive(:find_user).with(anything).and_return(user)
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
 
+      OmniAuth.config.test_mode = true
+      OmniAuth.config.add_mock(:google, {:uid => '12345'})
+      Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:google_oauth2]
 
+      visit '/auth/google_oauth2/'
       #authenticate user before runing tests
     end
 
@@ -82,11 +83,12 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
       scenario 'I see links for logged in user have taken place of those for logged out user' do
         # click_link 'Register'
         # click_button 'Register with Google'
-        require "pry"; binding.pry
-        save_and_open_page
+        # require "pry"; binding.pry
+        # save_and_open_page
         expect(page).to have_link('Logout')
         expect(page).to have_link('My Dashboard')
         expect(page).to have_css('#dashboard-link')
+
         expect(page).to_not have_link('Login')
         expect(page).to_not have_link('Register')
       end

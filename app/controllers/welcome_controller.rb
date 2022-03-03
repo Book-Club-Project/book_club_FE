@@ -4,7 +4,7 @@ class WelcomeController < ApplicationController
   before_action :current_user
 
   def index
-    require "pry"; binding.pry
+    # require "pry"; binding.pry
   end
 
 end
