@@ -27,11 +27,11 @@
   <%= render partial: '/layouts/partials/random_quote' %> <br><br>
 
   <div class="container">
-  
-      <div class="form-container">
-        <%= form_with url: '/users/create', method: :post, local: true do |f| %>
 
-          <%= f.text_field :name, required: :true, placeholder: 'Name' %><br><br>
+    <div class="form-container">
+      <%= form_with url: '/users', method: :post, local: true do |f| %>
+
+          <%= f.text_field :username, required: :true, placeholder: 'Name' %><br><br>
 
           <%= f.email_field :email, required: true, placeholder: 'email@domain.com' %><br><br>
 

@@ -38,58 +38,96 @@ reference: [Turing documentation](https://backend.turing.edu/module3/projects/co
 
 ## Getting Started
 
+### Set Up
+On your local system, open a terminal session to run the following commands:
+1. Clone this repository `$ git clone git@github.com:Book-Club-Project/book_club_FE.git`
+2. Navigate to the newly cloned directory `$ cd book_club_FE`
+3. If bundler is not installed run `$ gem install bundler`
+4. If or after bundler is installed run `$ bundle install` to install the required Gems
+5. If errors occur, check for proper installation and versions of `bundler`, `ruby`, and `rails`
+6. Set up the database locally with `$ rails db:{:drop,:create,:migrate,:seed}`
+7. Open your text editor and check to see that `schema.rb` exists
+8. You may also run the RSpec test suite locally with the command `$ bundle exec rspec` to ensure everything is functioning as expected.
+
+### Use of this Backend Repository
+On your command line:
+1. Run `$ rails s` in order to start the server locally to access the app through a web browser
+2. Open a web browser and navigate to http://localhost:5000/
+3. Now you may explore the web application!
+
+### Use of the BookClub Application
+On you command line:
+1. Start the Backend server with `$ rails s` and navigate to http://localhost:3000/ to interact with the [Backend](https://github.com/Book-Club-Project/book_club_BE)
+
+### Google OAuth2
+Book Club Consultancy Project uses Google OAuth2 to register and login a user. In order to login and register with Google OAuth2, you must set up Google OAuth2 and and set the client id for the web application.
+
+  1. Open Google API Console Credentials page https://console.cloud.google.com/apis/credentials?project=services-oauth
+  2. Use an existing Google project or create a new project
+  3. Select + Create Credentials, then OAuth client ID
+  4. It's possible that you may be prompted to set a product name on the Consent screen; if so, click Configure consent screen, supply the requested information, and click Save to return to the Credentials screen.
+  5. Select Web Application as the Application type and enter any additional information.
+  6. For the Authorized Redirect URIs, make sure the enter the following URLs for local development: http://localhost:3000, then click + ADD URI. This is the default URL when starting Book Club Consultancy Project in development mode.
+  7. Click Create
+  8. Navigate to the Book Club Front End directory using terminal `$ cd book_club_FE`
+  9. While in terminal run `bundle exec figaro install` (this will create a file your need for you to store client id and client secret)
+  9. Copy the client id and client secret, and in book_club_FE (config/application.yml) enter both as shown
+    ```yaml
+    GOOGLE_CLIENT_ID: YOUR_CLIENT_ID
+    GOOGLE_CLIENT_SECRET: YOUR_CLIENT_SECRET
+    ```
 ----------
 
-## Project Description 
+## Project Description
 
 This is a back-end project designed to exercise the fundamental basics of exposing and consuming an API.  Book Club builds community through literature. Users can connect through groups, messaging, and a bountiful resource of books. Functionality is achieved by combining our own database, the Google Books API, and external communication APIs to allow real-time communication, discussions, and recommendations.
 
 ----------
 
-## Learning Goals for Project: 
+## Learning Goals for Project:
 
-Explicit 
-- Expose an API 
-- Consume an API 
-- Use serializers to format JSON responses 
-- Implement CircleCI 
+Explicit
+- Expose an API
+- Consume an API
+- Use serializers to format JSON responses
+- Implement CircleCI
 - Implement OAuth2
 
-Implicit 
+Implicit
 - Project planning
-- Reading/Writing documentation 
-- Time Management/Prioritizing Work 
-- Breaking down a large project into small pieces 
+- Reading/Writing documentation
+- Time Management/Prioritizing Work
+- Breaking down a large project into small pieces
 - Breaking down a problem into small steps
-- Experience in 'sprints' 
-- GitHub workflow 
+- Experience in 'sprints'
+- GitHub workflow
 
----------- 
+----------
 
-### Inception 
+### Inception
 
-- Miro Board: [Group Brainstorm](https://miro.com/app/board/uXjVOL7SYZg=/) 
+- Miro Board: [Group Brainstorm](https://miro.com/app/board/uXjVOL7SYZg=/)
   (including mission statement, initial feature dump, initial MVP design, determined stretch features)
 
-- Wireframes: [Wireframes Board](https://miro.com/app/board/uXjVOLawnDs=/) 
+- Wireframes: [Wireframes Board](https://miro.com/app/board/uXjVOLawnDs=/)
 
 - Project Board: [User Stories](https://github.com/devin-p-lay/book_club_FE/projects/1)
 
-- User Flow: [Mind Map](https://miro.com/app/board/uXjVOLajDBA=/) 
+- User Flow: [Mind Map](https://miro.com/app/board/uXjVOLajDBA=/)
 
 - Group DTR: [DTR responses](https://docs.google.com/document/d/1dr8PcOvEctROQARJs0yk_TheJf21qY06tW8OX3wtlSw/edit)
 
 
 ----------
 
-### Versions 
+### Versions
 
-- Ruby 2.7.2 
-- Rails 5.2.6 
+- Ruby 2.7.2
+- Rails 5.2.6
 
----------- 
+----------
 
-### Important Gems 
+### Important Gems
 
 - Testing: [rspec-rails](https://github.com/rspec/rspec-rails), [simplecov](https://github.com/simplecov-ruby/simplecov), [factory_bot_rails](https://github.com/thoughtbot/factory_bot_rails), [faker](https://github.com/vajradog/faker-rails)
 
@@ -98,14 +136,7 @@ Implicit
 
 ----------
 
-## Database Schema 
-
-![Screen Shot 2022-02-22 at 10 31 07 AM](https://user-images.githubusercontent.com/87088092/155647400-97e86edd-30ad-4652-b53b-f26fd5ac429d.png)
-
-
-----------
-
-## APIs 
+## APIs
 
 see [book club BE repo](https://github.com/Book-Club-Project/book_club_BE)
 

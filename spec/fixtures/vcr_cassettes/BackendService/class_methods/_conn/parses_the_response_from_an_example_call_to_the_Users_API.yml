@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/clubs/1/users
+    uri: http://localhost:3000/api/v1/users
     body:
       encoding: US-ASCII
       string: ''
@@ -25,13 +25,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - bfbe4ff5-80c4-4819-b9ca-ddad1295324c
+      - 47634b2a-4538-4f42-9fd8-9121f5e02722
       X-Runtime:
-      - '0.033492'
+      - '0.165976'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}}]}'
-  recorded_at: Wed, 02 Mar 2022 19:58:33 GMT
+  recorded_at: Wed, 02 Mar 2022 18:29:15 GMT
 recorded_with: VCR 6.0.0
