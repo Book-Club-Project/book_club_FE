@@ -20,7 +20,8 @@ RSpec.describe ClubService do
         expect(response[:data][:attributes][:host_id]).to be_an Integer
 
         expect(response[:data][:attributes]).to have_key :book_id
-        expect(response[:data][:attributes][:book_id]).to be_an Integer
+
+        expect(response[:data][:attributes][:book_id]).to be_an String
       end
     end
 
