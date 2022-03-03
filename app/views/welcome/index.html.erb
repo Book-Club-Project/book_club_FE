@@ -49,13 +49,15 @@
     </div>
   </div>
 
-<div id="dashboard-link">
-  <% if session[:user_id] %>
-    <div class="container">
-      <%= link_to 'My Dashboard', '/dashboard' %>
-    </div>
-  <% end %>
-</div>
 
+  <div class="container">
+    <div id="dashboard-link">
+      <% if session[:user_id] %>
+        <div class="container">
+          <%= link_to 'My Dashboard', '/dashboard' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
 
 </body>
