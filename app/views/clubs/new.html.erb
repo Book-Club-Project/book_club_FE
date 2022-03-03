@@ -9,16 +9,18 @@
           <%= f.text_field :club_name, required: true %>
 
           <%= f.hidden_field :book_id, value: @book_id %>
+          <%= f.hidden_field :host_id, value: session[:id] %>
 
           <% @users.each do |user| %>
 
             <% if user.id != current_user.id %>
-            <p><%= f.check_box "#{user.username}" %>
+            <p><%= check_box_tag('user_ids[]', user.id, nil, :id => user.username) %>
                <%= f.label "#{user.username}" %></p>
             <% end  %>
           <% end  %>
 
           <%= f.submit "Create" %>
+          
           <% end %>
         </div>
     </div>
