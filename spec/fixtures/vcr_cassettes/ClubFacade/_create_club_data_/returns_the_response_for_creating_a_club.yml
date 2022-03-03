@@ -2,15 +2,15 @@
 http_interactions:
 - request:
     method: post
-    uri: http://localhost:3000/api/v1/users
+    uri: http://localhost:3000/api/v1/clubs
     body:
       encoding: UTF-8
-      string: '{"user":{"username":"happy22@example.com","email":"happy22@example.com"}}'
+      string: club%5Bbook_id%5D=gwgON2IwgDUC&club%5Bhost_id%5D=3&club%5Bname%5D=Hello123
     headers:
       User-Agent:
       - Faraday v2.2.0
       Content-Type:
-      - application/json
+      - application/x-www-form-urlencoded
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -23,17 +23,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"a9873768ab148a5082422c4df8126a2b"
+      - W/"025b31f328423acac9df6161896ba162"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 73326a0d-3b75-42ef-840a-a80ea4ebfd38
+      - d009e3c5-a2b7-41a4-9279-6a166aebf9f8
       X-Runtime:
-      - '0.003091'
+      - '0.005445'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"7","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}}'
-  recorded_at: Thu, 03 Mar 2022 02:52:05 GMT
+      string: '{"data":{"id":"22","type":"club","attributes":{"name":"Hello123","host_id":3,"book_id":"gwgON2IwgDUC"}}}'
+  recorded_at: Thu, 03 Mar 2022 03:40:04 GMT
 recorded_with: VCR 6.0.0

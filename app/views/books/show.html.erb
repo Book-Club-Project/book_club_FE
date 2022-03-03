@@ -8,7 +8,9 @@
     <img id="cover-image" src= <%= @book.image %>>
   </div>
   <br>
-  <button type="button" class="btn btn-primary btn-lg px-3 gap-3">Create Book Club</button>
+
+    <%= button_to "Create Book Club", "/clubs/new", params: {book_id: @book.id} , method: :get %>
+  
 </div>
 <br>
 <br>

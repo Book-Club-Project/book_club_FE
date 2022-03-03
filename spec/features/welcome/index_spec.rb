@@ -92,7 +92,7 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
         expect(page).to have_link('Logout', href: '/logout')
       end
 
-      scenario 'link to my page' do
+      xscenario 'link to my page' do
         expect(page).to have_link('My Page')
         expect(page).to have_css('#dashboard-link')
       end
