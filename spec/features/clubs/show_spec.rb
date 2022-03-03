@@ -58,6 +58,8 @@ RSpec.describe 'Club show page' do
     click_button "Submit"
 
     expect(current_path).to eq("/clubs/1")
+    # within "#comment-17" do
     expect(page).to have_content('My title')
+    # end
   end
 end

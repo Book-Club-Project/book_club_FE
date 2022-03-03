@@ -21,13 +21,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"97a48851d0bac35fe6be14dea4896237"
+      - W/"03fee8291279e284903352f875b54ebd"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d5569529-1e9f-4121-991c-e5d0d335a78e
+      - a101fd28-7d51-4bb4-b43a-4f0d88f474bc
       X-Runtime:
-      - '0.004181'
+      - '0.007222'
       Transfer-Encoding:
       - chunked
     body:
@@ -51,6 +51,9 @@ http_interactions:
         title","body":"My body","user_id":1,"club_id":1}},{"id":"22","type":"comment","attributes":{"title":"Test123","body":"My
         comment","user_id":1,"club_id":1}},{"id":"23","type":"comment","attributes":{"title":"Test123","body":"My
         comment","user_id":1,"club_id":1}},{"id":"24","type":"comment","attributes":{"title":"My
+        title","body":"My body","user_id":1,"club_id":1}},{"id":"25","type":"comment","attributes":{"title":"Test123","body":"My
+        comment","user_id":1,"club_id":1}},{"id":"26","type":"comment","attributes":{"title":"Test123","body":"My
+        comment","user_id":1,"club_id":1}},{"id":"27","type":"comment","attributes":{"title":"My
         title","body":"My body","user_id":1,"club_id":1}}]}'
-  recorded_at: Thu, 03 Mar 2022 19:08:12 GMT
+  recorded_at: Thu, 03 Mar 2022 20:04:28 GMT
 recorded_with: VCR 6.0.0

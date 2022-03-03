@@ -5,14 +5,14 @@ Rails.application.routes.draw do
 
   get   '/discover', to: 'books#index'
   resources :books
+  resources :comments, only: [:create]
 
   resources :clubs, only: [:show, :create, :new] do
-    resources :users, only: [:index], controller: 'club_users'
-    resources :comments, only: [:index], controller: 'club_comments'
+    resources :users #only: [:index], controller: 'club_users'
+    resources :comments # only: [:index], controller: 'club_comments'
   end
 
-  resources :comments, only: [:create]
-  
+
   get   '/register', to: 'users#new'
   post  '/register', to: 'users#create'
 

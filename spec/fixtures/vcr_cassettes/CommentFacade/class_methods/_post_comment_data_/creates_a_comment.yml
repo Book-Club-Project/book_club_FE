@@ -23,18 +23,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"3e27e893cda6bf2c7560aa65b2ac122c"
+      - W/"bd3d1c53024a95a252d13be60d582deb"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e5a932f3-e9a8-4249-aa94-236e2e15a9fc
+      - 631d849d-bba0-43f4-a3eb-4a4f2a144f42
       X-Runtime:
-      - '0.007833'
+      - '0.030772'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"23","type":"comment","attributes":{"title":"Test123","body":"My
+      string: '{"data":{"id":"26","type":"comment","attributes":{"title":"Test123","body":"My
         comment","user_id":1,"club_id":1}}}'
-  recorded_at: Thu, 03 Mar 2022 19:08:02 GMT
+  recorded_at: Thu, 03 Mar 2022 20:04:19 GMT
 recorded_with: VCR 6.0.0

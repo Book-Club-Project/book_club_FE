@@ -27,15 +27,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8d117101-ab46-4b21-9ded-bea45502cb78
+      - f893f01d-20c8-4597-b4a0-b9cddb47a621
       X-Runtime:
-      - '0.004678'
+      - '0.008236'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"6","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}}'
-  recorded_at: Thu, 03 Mar 2022 19:08:06 GMT
+  recorded_at: Thu, 03 Mar 2022 20:04:23 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/books/gwgON2IwgDUC
@@ -57,13 +57,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"de8f12526e3b7ae040af711b2277d0dd"
+      - W/"300d4c6ad5adb536b726b1afec83878f"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f83a65f7-c45d-486f-a760-05a1f004ec7b
+      - afcf584e-d5e6-45eb-8844-dc040d658d95
       X-Runtime:
-      - '0.252833'
+      - '0.264235'
       Transfer-Encoding:
       - chunked
     body:
@@ -71,8 +71,8 @@ http_interactions:
       string: '{"data":{"id":"gwgON2IwgDUC","type":"book","attributes":{"title":"Pride
         and Prejudice","authors":["Jane Austen"],"genres":["Fiction / Classics"],"description":"Insight
         edition with engaging side notes that offer background on social customs,
-        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE72NVa2GCilw8zRLpraDAg59x-2yLgmI7bBg9DnnnwNY6CzvgW4VmjPogeADUvz-whp4TaPWQ0ehVYNvXSZ8S347R23UwcO1pdeBGsIf3kalnKQb5R2P6d-SAxT0s1XSVa3ZBCOV\u0026source=gbs_api"}}}'
-  recorded_at: Thu, 03 Mar 2022 19:08:06 GMT
+        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE73OxDQUWVW1rpGLNB2I8P8aADuCuRUUJ2n42KHSKxFHWnhoD5i7afK-tECm7VZ9isvCfQ0xbOUEoHVKMR4UuaFFayYRlbxCHIGIydkG0csw2FYV_UBCmIhvH2fs38eaU4k7Mxvl\u0026source=gbs_api"}}}'
+  recorded_at: Thu, 03 Mar 2022 20:04:23 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/users
@@ -98,13 +98,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1dc66528-394b-4165-ab1e-2f2f2fea553a
+      - e4992a21-cc2c-475d-991e-908e4e3e5adc
       X-Runtime:
-      - '0.003287'
+      - '0.002316'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}},{"id":"5","type":"user","attributes":{"username":"sierra.tucker121@gmail.com","email":"sierra.tucker121@gmail.com"}},{"id":"6","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}]}'
-  recorded_at: Thu, 03 Mar 2022 19:08:06 GMT
+  recorded_at: Thu, 03 Mar 2022 20:04:23 GMT
 recorded_with: VCR 6.0.0

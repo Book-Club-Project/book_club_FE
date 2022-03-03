@@ -27,13 +27,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f34d806a-c4c6-41ee-ae45-4f2aa4359fb3
+      - 8071f4ab-bc36-4d0a-8304-366616272525
       X-Runtime:
-      - '0.003227'
+      - '0.003109'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"6","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}}'
-  recorded_at: Thu, 03 Mar 2022 19:08:10 GMT
+  recorded_at: Thu, 03 Mar 2022 20:04:27 GMT
 recorded_with: VCR 6.0.0
