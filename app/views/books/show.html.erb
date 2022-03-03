@@ -1,35 +1,74 @@
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-<div class="container text-center">
-  <h1> <%= @book.title %> </h1>
-  <div id="book-cover">
-    <img id="cover-image" src= <%= @book.image %>>
+<head>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+
+<header>
+  <style>
+    .container {
+      margin: auto;
+      width: 50%;
+      padding: 10px;
+      position: relative;
+      text-align: center;
+      justify-content: center;
+    }
+  </style>
+
+  <div class="logo">
+    <!-- Logo/App Name -->
+    <%= render partial: '/layouts/partials/app_logo_banner' %>
+    <!-- Logo/App Name -->
+
+    <!-- Navbar -->
+    <%= render partial: '/layouts/partials/nav_bar', locals: {links: {uri: '/', link_text: 'Home'}} %>
+    <!-- Navbar -->
+  </div><br>
+
+</header>
+
+<body>
+  <div class="container text-center">
+    <h1> <%= @book.title %> </h1>
+    <div id="book-cover">
+      <img id="cover-image" src= <%= @book.image %>>
+    </div>
+    <br>
+
+  <div id="create-club">
+    <% if session[:user_id] %>
+      <div class="container" id="create-club-button">
+        <%= button_to "Create Book Club", "/clubs/new", params: {book_id: @book.id} , method: :get %>
+      </div>
+    <% else %>
+      <div class="container" id="need-login-message">
+        <p>To start a club with this book, please <%= link_to 'Login', '/login' %>.</p>
+      </div>
+    <% end %>
+  </div>
+
+
   </div>
   <br>
-
-    <%= button_to "Create Book Club", "/clubs/new", params: {book_id: @book.id} , method: :get %>
-  
-</div>
-<br>
-<br>
-<div class="container">
-    <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <h5>Author(s):</h5>
-          <p><% @book.author.each do |author| %>
-            <%= author %>
+  <br>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <h5>Author(s):</h5>
+            <p><% @book.author.each do |author| %>
+              <%= author %>
+              <% end %>, </p>
+            <br>
+            <h5>Summary: </h5><p> <%= @book.summary %></p>
+            <br>
+            <h5>Book rating: </h5> <p><%= @book.rating %></p>
+            <br>
+            <h5>Genres: </h5><p><% @book.genre.each do |genre| %>
+              <%= genre %>
             <% end %>, </p>
-          <br>
-          <h5>Summary: </h5><p> <%= @book.summary %></p>
-          <br>
-          <h5>Book rating: </h5> <p><%= @book.rating %></p>
-          <br>
-          <h5>Genres: </h5><p><% @book.genre.each do |genre| %>
-            <%= genre %>
-          <% end %>, </p>
-        </div>
+          </div>
 
-    </div>
-</div>
+      </div>
+  </div>
+</body>
