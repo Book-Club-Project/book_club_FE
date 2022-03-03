@@ -107,6 +107,13 @@ RSpec.describe 'Books Show Page' do
           expect(page).to have_css("#cover-image")
         end
       end
+
+      scenario 'I click create club button and am taken to a form to create new club' do
+        within '#create-club-button' do
+          click_button 'Create Book Club'
+          expect(current_path).to match('/clubs/new')
+        end
+      end
     end
   end
 end
