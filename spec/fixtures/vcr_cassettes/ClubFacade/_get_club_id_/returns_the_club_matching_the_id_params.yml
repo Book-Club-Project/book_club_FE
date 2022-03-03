@@ -25,13 +25,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 767c5da9-a290-4200-9b76-89a996c37476
+      - 75c4fb38-3c1b-43ae-a0c7-3dffe6506ca2
       X-Runtime:
-      - '0.046474'
+      - '0.004865'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":"ZV9DDwAAQBAJ"}}}'
-  recorded_at: Thu, 03 Mar 2022 19:08:02 GMT
+  recorded_at: Thu, 03 Mar 2022 20:38:50 GMT
 recorded_with: VCR 6.0.0

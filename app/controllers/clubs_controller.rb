@@ -1,6 +1,7 @@
 class ClubsController < ApplicationController
 
   def show
+    club_host = current_user
     club_id = params[:id]
     @club = ClubFacade.get_club(club_id)
     @club_users = ClubFacade.get_club_users(club_id)
