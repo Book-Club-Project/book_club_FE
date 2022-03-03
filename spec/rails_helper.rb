@@ -81,6 +81,7 @@ RSpec.configure do |config|
 
     stub_request(:get, "http://localhost:3000/api/v1/quote").to_return(body: quote_response, status: 200)
   end
+  config.include IntegrationSpecHelper, :type => :request
 end
 
 
@@ -90,3 +91,17 @@ VCR.configure do |config|
   # config.filter_sensitive_data('<api_key>') { ENV[''] }
   config.configure_rspec_metadata!
 end
+
+OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new({
+   :provider => "google_oauth2",
+   :uid => "123456789",
+   :info => {
+     :name => "Raccoon22",
+     :email => "happy22@example.com"
+   },
+   :credentials => {
+     :token => "token",
+     :refresh_token => "refresh token"
+   }
+ }
+)
