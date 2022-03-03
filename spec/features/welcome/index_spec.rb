@@ -44,14 +44,19 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
   end
 
   #As an authenticated visitor
-  context 'As a logged in user visiting the landing page' do
-    let(:user) { UserFacade.find_user(1) }
+
+  context 'As a logged in user visiting the landing page', :vcr do
+    let!(:user) { User.new({ id: '1', attributes: { email: 'user@email.com', username: 'user', password_digest: 'xyz' } }) }
 
     before(:each) do
-      visit '/'
-      login_as(user, :scope => :user)
+      # allow(UserFacade).to receive(:find_user).with(anything).and_return(user)
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
 
-      #authenticate user before runing tests
+      OmniAuth.config.test_mode = true
+      OmniAuth.config.add_mock(:google, {:uid => '12345'})
+      Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:google_oauth2]
+
+      visit '/auth/google_oauth2/'
     end
 
     scenario 'I am on the root directory' do
@@ -75,16 +80,13 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
         expect(page).to have_current_path('/discover')
       end
 
-      scenario 'logout link' do
-        expect(page).to have_link('Logout', href: '/logout')
-      end
+      scenario 'I see links for logged in user have taken place of those for logged out user' do
+      
+        expect(page).to have_link('Logout')
 
-      scenario 'link to my page' do
         expect(page).to have_link('My Dashboard')
         expect(page).to have_css('#dashboard-link')
-      end
 
-      scenario 'I do not see links for unauthenticated visitors' do
         expect(page).to_not have_link('Login')
         expect(page).to_not have_link('Register')
       end

@@ -27,20 +27,21 @@
   <%= render partial: '/layouts/partials/random_quote' %> <br><br>
 
   <div class="container">
+
     <div class="form-container">
       <%= form_with url: '/users', method: :post, local: true do |f| %>
 
-      <%= f.text_field :username, required: :true, placeholder: 'Name' %><br><br>
+          <%= f.text_field :username, required: :true, placeholder: 'Name' %><br><br>
 
-      <%= f.email_field :email, required: true, placeholder: 'email@domain.com' %><br><br>
+          <%= f.email_field :email, required: true, placeholder: 'email@domain.com' %><br><br>
 
-      <%= f.password_field :password, required: true, placeholder: 'password' %><br><br>
+          <%= f.password_field :password, required: true, placeholder: 'password' %><br><br>
 
-      <%= f.password_field :password_confirmation, required: true, placeholder: 'confirm password' %><br><br>
+          <%= f.password_field :password_confirmation, required: true, placeholder: 'confirm password' %><br><br>
 
-      <%= f.submit 'Register' %><br><br>
-    <% end %>
-  </div>
+          <%= f.submit 'Register' %><br><br>
+        <% end %>
+      </div>
 
   <p text-align="center">--- OR ---</p><br>
 
