@@ -7,4 +7,7 @@ class UserService < BackendService
     parsed_response("/api/v1/users")[:data]
   end
 
+  def self.user_clubs(user_id)
+    
+  end
 end
