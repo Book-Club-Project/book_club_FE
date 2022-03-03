@@ -4,4 +4,12 @@ class UserFacade
     user = UserService.get_user(user_id)
     User.new(user)
   end
+
+  def self.all_users
+    users = UserService.get_all_users
+
+    users.map do |user|
+      User.new(user)
+    end
+  end
 end

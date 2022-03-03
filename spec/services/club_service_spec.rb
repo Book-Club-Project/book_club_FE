@@ -69,15 +69,30 @@ RSpec.describe ClubService do
       end
     end
 
-    # context '::club_create(club_params, headers)' do
-    #   it 'creates a new club in the database', :vcr do
-    #     params = { name: "Cool Club",
-    #       host_id: 1,
-    #       book_id: 2 }
-    #     response = ClubService.club_create(params)
-    #     club = ClubService.club(2)
-    #     require "pry"; binding.pry
-    #   end
-    # end
+    context '::create_club' do
+      it 'Creates a club with the given data', :vcr do
+        data = {:name=>"Hello123", :book_id=>"gwgON2IwgDUC", :host_id=>3}
+
+        response = ClubService.create_club(data)
+
+        expect(response).to be_a Hash
+        expect(response).to have_key :data
+
+        expect(response[:data]).to have_key :id
+        expect(response[:data][:id]).to be_a String
+
+        expect(response[:data]).to have_key :attributes
+        expect(response[:data][:attributes]).to be_a Hash
+
+        expect(response[:data][:attributes]).to have_key :name
+        expect(response[:data][:attributes][:name]).to be_a String
+
+        expect(response[:data][:attributes]).to have_key :host_id
+        expect(response[:data][:attributes][:host_id]).to be_a Integer
+
+        expect(response[:data][:attributes]).to have_key :book_id
+        expect(response[:data][:attributes][:book_id]).to be_a String
+      end
+    end
   end
 end

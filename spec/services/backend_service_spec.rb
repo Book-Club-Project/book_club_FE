@@ -15,5 +15,13 @@ RSpec.describe BackendService do
         expect(response).to have_key(:data)
       end
     end
+
+    describe '::parsed_post_response'
+      it 'parses the response from an example call to post a Club', :vcr do
+        data = {club: {:name=>"Hello123", :book_id=>"gwgON2IwgDUC", :host_id=>3}}
+
+        response = BackendService.parsed_post_response("/api/v1/clubs", data)
+        expect(response).to be_a Hash
+      end
+    end
   end
-end
