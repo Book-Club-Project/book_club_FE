@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/clubs
+    body:
+      encoding: UTF-8
+      string: club%5Bclub%5D%5Bbook_id%5D=gwgON2IwgDUC&club%5Bclub%5D%5Bhost_id%5D=3&club%5Bclub%5D%5Bname%5D=Hello123
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 0257f009-aa78-44bb-b2a6-7afcb1b0ebd8
+      X-Runtime:
+      - '0.002885'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"error":{"exception":"Validation failed: Name can''t be blank, Book
+        can''t be blank, Host can''t be blank"}}'
+  recorded_at: Thu, 03 Mar 2022 02:58:53 GMT
+recorded_with: VCR 6.0.0

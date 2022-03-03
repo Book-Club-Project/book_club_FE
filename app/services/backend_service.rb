@@ -7,4 +7,11 @@ class BackendService
     response = conn.get(url)
     JSON.parse(response.body, symbolize_names: true)
   end
+
+  def self.parsed_post_response(url, data)
+    response = conn.post(url) do |req|
+      req.body = {club: data}
+    end
+    JSON.parse(response.body, symbolize_names: true)
+  end
 end
