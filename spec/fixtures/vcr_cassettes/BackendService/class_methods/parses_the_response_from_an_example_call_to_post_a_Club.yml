@@ -25,14 +25,14 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - de124647-ddc4-41e4-965a-a72c46238779
+      - 5f4dff87-0ff6-42c8-bf85-8b8f0bbae88b
       X-Runtime:
-      - '0.169291'
+      - '0.005972'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"error":{"exception":"Validation failed: Name can''t be blank, Book
         can''t be blank, Host can''t be blank"}}'
-  recorded_at: Thu, 03 Mar 2022 03:36:43 GMT
+  recorded_at: Thu, 03 Mar 2022 03:40:10 GMT
 recorded_with: VCR 6.0.0
