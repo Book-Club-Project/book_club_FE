@@ -18,19 +18,19 @@ reference: [Turing documentation](https://backend.turing.edu/module3/projects/co
         <li><a href="#inception">Inception</a></li>
       </ul>
       <ul>
+        <li><a href="#app-screenshots">Example Pages From App</a></li>
+      </ul>
+      <ul>
         <li><a href="#versions">Versions</a></li>
       </ul>
       <ul>
         <li><a href="#important-gems">Important Gems</a></li>
       </ul>
-      <ul>
-        <li><a href="#database-schema">Database Schema</a></li>
-      </ul>
     </li>
     <li>
       <a href="#APIs">Book Club API</a>
     </li>
-    <li><a href="#collaborators">Collaborators</a></li>
+    <li><a href="#contributors">Collaborators</a></li>
   </ol>
 </details>
 
@@ -131,6 +131,9 @@ Implicit
 
 
 ----------
+
+### App Screenshots
+
 
 ### Versions
 
