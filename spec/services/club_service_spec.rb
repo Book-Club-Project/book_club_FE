@@ -7,7 +7,6 @@ RSpec.describe ClubService do
         response = ClubService.club(1)
 
         expect(response).to be_a Hash
-
         expect(response).to have_key :data
 
         expect(response[:data]).to have_key :id
@@ -20,7 +19,6 @@ RSpec.describe ClubService do
         expect(response[:data][:attributes][:host_id]).to be_an Integer
 
         expect(response[:data][:attributes]).to have_key :book_id
-
         expect(response[:data][:attributes][:book_id]).to be_an String
       end
     end
@@ -30,7 +28,6 @@ RSpec.describe ClubService do
         response = ClubService.club_users(1)
 
         expect(response).to be_a Hash
-
         expect(response).to have_key :data
 
         expect(response[:data].first).to have_key :id
@@ -49,7 +46,6 @@ RSpec.describe ClubService do
         response = ClubService.club_comments(1)
 
         expect(response).to be_a Hash
-
         expect(response).to have_key :data
 
         expect(response[:data].first).to have_key :id
@@ -71,7 +67,11 @@ RSpec.describe ClubService do
 
     context '::create_club' do
       it 'Creates a club with the given data', :vcr do
-        data = {:name=>"Hello123", :book_id=>"gwgON2IwgDUC", :host_id=>3}
+        data = {
+          :name=>"Hello123",
+          :book_id=>"gwgON2IwgDUC",
+          :host_id=>3
+        }
 
         response = ClubService.create_club(data)
 

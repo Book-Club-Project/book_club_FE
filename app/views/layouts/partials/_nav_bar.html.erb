@@ -9,7 +9,7 @@
   </style>
 
 </header>
-<div class="container">
+<div id="nav-bar" class="container">
   <div class="nav-container">
     <ul class="nav">
       <li class="nav-item">
@@ -24,6 +24,10 @@
         <li class="nav-item">
           <a class="nav-link" href="/logout">Logout</a> <p> Logged in as <%= current_user.username %> </p>
 
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/dashboard">My Dashboard</a>
         </li>
       <% else %>
         <li class="nav-item">

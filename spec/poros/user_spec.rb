@@ -2,11 +2,14 @@ require 'rails_helper'
 
 RSpec.describe User do
   it 'exists with attributes' do
-    data = {attributes: {email: "my_email@email.com",
-            username: "Book_Worm",
-            password_digest: "seeeecret"
-          }}
-    
+    data = {
+      attributes: {
+        email: "my_email@email.com",
+        username: "Book_Worm",
+        password_digest: "seeeecret"
+      }
+    }
+
     user = User.new(data)
 
     expect(user).to be_a(User)

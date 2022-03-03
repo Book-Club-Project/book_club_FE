@@ -26,24 +26,34 @@
 <body>
   <%# render partial: '/layouts/partials/random_quote' %> <br><br>
 
-  <div class="container">
-    <div class="form-container">
-      <%= form_with url: '/register', method: :post, local: true do |f| %>
+  <% if session[:user_id] %>
+    <div class="container">
+      <div id="logged-in-user-message">
+        <p text-align="center">You are already logged in.</p><br>
+        <p text-align="center">If you would like to register a new user, please <%= link_to "Logout", '/logout' %> first.</p>
+      </div>
+    </div>
 
-      <%= f.text_field :name, required: :true, placeholder: 'Name' %><br><br>
+  <% else %>
+    <div class="container">
+      <div class="form-container">
+        <%= form_with url: '/register', method: :post, local: true do |f| %>
 
-      <%= f.email_field :email, required: true, placeholder: 'email@domain.com' %><br><br>
+        <%= f.text_field :name, required: :true, placeholder: 'Name' %><br><br>
 
-      <%= f.password_field :password, required: true, placeholder: 'password' %><br><br>
+        <%= f.email_field :email, required: true, placeholder: 'email@domain.com' %><br><br>
 
-      <%= f.password_field :password_confirmation, required: true, placeholder: 'confirm password' %><br><br>
+        <%= f.password_field :password, required: true, placeholder: 'password' %><br><br>
 
-      <%= f.submit 'Register' %><br><br>
-    <% end %>
-  </div>
+        <%= f.password_field :password_confirmation, required: true, placeholder: 'confirm password' %><br><br>
 
-  <p text-align="center">--- OR ---</p><br>
+        <%= f.submit 'Register' %><br><br>
+        <% end %>
+      </div>
 
-  <%= button_to 'Register with Google', '/auth/google_oauth2/', method: :get, params: {client_id: "#{ENV['GOOGLE_CLIENT_ID']}" } %>
-</div>
+      <p text-align="center">--- OR ---</p><br>
+
+      <%= button_to 'Register with Google', '/auth/google_oauth2/', method: :get, params: {client_id: "#{ENV['GOOGLE_CLIENT_ID']}" } %>
+    </div>
+  <% end %>
 </body>

@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/users
+    body:
+      encoding: UTF-8
+      string: '{"user":{"username":"happy22@example.com","email":"happy22@example.com"}}'
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"d03e84698f5e370effa03523b8867102"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 45b31783-5fd7-4a69-a3c1-86b2c883f2f4
+      X-Runtime:
+      - '0.132109'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}}'
+  recorded_at: Thu, 03 Mar 2022 20:37:04 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/books/gwgON2IwgDUC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"18bd03f440a79cb6a6a5b36aaaf8b4ba"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4edb08c1-dac1-4aa7-9aef-0488149c3d01
+      X-Runtime:
+      - '0.191508'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"gwgON2IwgDUC","type":"book","attributes":{"title":"Pride
+        and Prejudice","authors":["Jane Austen"],"genres":["Fiction / Classics"],"description":"Insight
+        edition with engaging side notes that offer background on social customs,
+        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE73ilEV36bG3QZFFA-Cc8ye3cU9i5WBToTIj7HkuR_p2soDbhQbGhaley366BUl3aFP1h77w9XSU_YHjRgGqZlC6VXXeNZ41_pOvzns8p1w0DFE02EVeGr0usC9BvHvZkjgDps7k\u0026source=gbs_api"}}}'
+  recorded_at: Thu, 03 Mar 2022 20:37:04 GMT
+recorded_with: VCR 6.0.0
