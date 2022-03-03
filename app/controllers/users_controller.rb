@@ -1,7 +1,9 @@
 class UsersController < ApplicationController
-  before_action :quote, only: [:new]
+  # before_action :quote, only: [:new]
 
   def new; end
+
+  def show;end
 
   def create
     conn = Faraday.new(url: 'http://localhost:3000/')
@@ -16,6 +18,6 @@ class UsersController < ApplicationController
     user = JSON.parse(response.body, symbolize_names: true)[:data]
     session[:user_id] = user[:id]
 
-    redirect_to '/'
+    redirect_to '/dashboard'
   end
 end

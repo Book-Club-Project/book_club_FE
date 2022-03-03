@@ -1,19 +1,13 @@
 class User
-  attr_reader :email,
+  attr_reader :id,
+              :email,
               :username,
-              :password_digest,
-              :id
-
+              :password_digest
+              
   def initialize(data)
-
     @id = data[:id]
     @email = data[:attributes][:email]
     @username = data[:attributes][:username]
     @password_digest = data[:attributes][:password_digest]
-
-#     @email = data[:email]
-#     @username = data[:username]
-#     @password_digest = data[:password_digest]
-
   end
 end
