@@ -44,9 +44,17 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
   end
 
   #As an authenticated visitor
-  xcontext 'As a logged in user visiting the landing page' do
+  context 'As a logged in user visiting the landing page', :vcr do
+    let!(:user) { User.new({ id: '1', attributes: { email: 'user@email.com', username: 'user', password_digest: 'xyz' } }) }
+
     before(:each) do
+      allow(UserFacade).to receive(:find_user).with(anything).and_return(user)
       visit '/'
+      # OmniAuth.config.test_mode = true
+      # OmniAuth.config.add_mock(:google, {:uid => '12345'})
+      # Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:google_oauth2]
+
+
       #authenticate user before runing tests
     end
 
@@ -71,27 +79,21 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
         expect(page).to have_current_path('/discover')
       end
 
-      scenario 'logout link' do
-        expect(page).to have_link('Logout', href: '/logout')
-      end
-
-      scenario 'link to my page' do
-        expect(page).to have_link('My Page')
+      scenario 'I see links for logged in user have taken place of those for logged out user' do
+        # click_link 'Register'
+        # click_button 'Register with Google'
+        require "pry"; binding.pry
+        save_and_open_page
+        expect(page).to have_link('Logout')
+        expect(page).to have_link('My Dashboard')
         expect(page).to have_css('#dashboard-link')
-      end
-
-      scenario 'I do not see links for unauthenticated visitors' do
         expect(page).to_not have_link('Login')
         expect(page).to_not have_link('Register')
       end
     end
 
-    scenario 'I see a random quote' do
-      expect(page).to have_css('#random-quote')
-
-      within "#random-quote" do
-        expect(page).to have_content("Quote of the day!")
-      end
+    scenario 'I see a static quote' do
+      expect(page).to have_css('#static-quote')
     end
   end
 end
