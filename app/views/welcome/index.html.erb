@@ -1,5 +1,17 @@
 <header>
   <style>
+    .logo {
+      position: relative;
+      top: 10;
+      left:10;
+    }
+
+    .logo-container {
+      height: 80px;
+      width: 80px;
+      display: inline-block;
+    }
+
     .banner {
       width: 100%;
       opacity: 0.5;
@@ -24,7 +36,6 @@
     }
 
   </style>
-
   <div class="container">
     <!-- Content here -->
     <img class="banner" src="<%= asset_path 'landing_banner_2.jpg' %>" alt="Bookclub landing page banner image">
@@ -41,6 +52,14 @@
 
 <body>
   <div class="container">
+    <div class="logo">
+      <div id="logo" class="logo-container">
+        <img class="banner" src="<%= asset_path 'logo.png' %>" alt="Book club logo">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
     <div id="static-quote">
       <p>"You will be the same person in five years as you are today except for the people you meet and the books you read." <br>
 
@@ -50,7 +69,7 @@
   </div>
 
   <% if session[:user_id] %>
-    <div class="container">
+    <div id="dashboard-link" class="container">
       <%= link_to 'My Dashboard', '/dashboard' %>
     </div>
   <% end %>
