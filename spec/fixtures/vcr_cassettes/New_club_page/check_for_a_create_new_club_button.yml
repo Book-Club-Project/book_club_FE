@@ -21,13 +21,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"8f796bfc359a8f930cabc36734166c7a"
+      - W/"60ad98246c009d5d7070ad38d5abb47a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 05dd0029-4e6a-4084-9c6d-472fb0acd506
+      - e82bb5b3-0791-4e36-ae2e-95f7a4e2f763
       X-Runtime:
-      - '0.152118'
+      - '0.119230'
       Transfer-Encoding:
       - chunked
     body:
@@ -35,8 +35,8 @@ http_interactions:
       string: '{"data":{"id":"gwgON2IwgDUC","type":"book","attributes":{"title":"Pride
         and Prejudice","authors":["Jane Austen"],"genres":["Fiction / Classics"],"description":"Insight
         edition with engaging side notes that offer background on social customs,
-        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE73yX-Nficoom447Lxv_fa6gXx2wl3LPuDkr_UGYHhrXaaXb3hozXYarNbXLgJzWkEWarCiLZMQiCbi1UdMhHL2lFrl8OPrPRVNh7jjRwMqaHos8jCL-j292fO04m085l1Pi5FD3\u0026source=gbs_api"}}}'
-  recorded_at: Thu, 03 Mar 2022 02:58:51 GMT
+        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE7351Bn0t_e_40Rb5-Wj8ROhZbfJXYHvHYyE2o7hBci7-KkpE3gM-Z6iQNrv7BGS2JH2inpnx7MINuwFoYmL25G8yBATkyN4ADbFsUrnfpkujBolz3b_TO8KftBNNBuRVDMwBOcJ\u0026source=gbs_api"}}}'
+  recorded_at: Thu, 03 Mar 2022 03:23:26 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/users
@@ -58,17 +58,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"4436a0b6ee66f1e7c8b42bf3a17d4454"
+      - W/"f5335dde282619a408411e9b65439eb8"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5491f094-f420-4366-9273-4b2623b3a882
+      - 3997734b-d0ee-4a41-a1ac-6764b1955b67
       X-Runtime:
-      - '0.002377'
+      - '0.002982'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}}]}'
-  recorded_at: Thu, 03 Mar 2022 02:58:51 GMT
+      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}},{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}]}'
+  recorded_at: Thu, 03 Mar 2022 03:23:26 GMT
 recorded_with: VCR 6.0.0

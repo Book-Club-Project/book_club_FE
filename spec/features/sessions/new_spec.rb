@@ -19,7 +19,7 @@ RSpec.describe 'User Login Page', type: :feature do
       expect(page).to_not have_link('Logout')
     end
 
-    scenario 'I see a random quote' do
+    xscenario 'I see a random quote' do
       expect(page).to have_css('#random-quote')
     end
 
