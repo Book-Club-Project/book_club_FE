@@ -1,12 +1,10 @@
 class Book
-  attr_reader :title,
+  attr_reader :id,
+              :title,
               :author,
               :summary,
-              :reviews,
-              :book_cover,
               :rating,
               :genre,
-              :id,
               :image
 
   def initialize(data)
