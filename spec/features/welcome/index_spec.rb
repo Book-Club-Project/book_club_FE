@@ -45,9 +45,16 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
 
   #As an authenticated visitor
   xcontext 'As a logged in user visiting the landing page' do
+    let!(:user) { User.new({ id: '1', attributes: { email: 'user@email.com', username: 'user', password_digest: 'xyz' } }) }
+    
     before(:each) do
-      visit '/'
-      #authenticate user before runing tests
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
+
+      OmniAuth.config.test_mode = true
+      OmniAuth.config.add_mock(:google, {:uid => '12345'})
+      Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:google_oauth2]
+
+      visit '/auth/google_oauth2/'
     end
 
     scenario 'I am on the root directory' do
