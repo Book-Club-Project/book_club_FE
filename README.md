@@ -49,15 +49,27 @@ On your local system, open a terminal session to run the following commands:
 7. Open your text editor and check to see that `schema.rb` exists
 8. You may also run the RSpec test suite locally with the command `$ bundle exec rspec` to ensure everything is functioning as expected.
 
-### Use of this Backend Repository
+### Use of this Repository
+In order to run this application you need both this Frontend Repository and the associated [Backend Repository](https://github.com/Book-Club-Project/book_club_BE)
+
+**Backend Server**
+ 
+For a full explanation to set-up the backend server, please see the docs [Here](https://github.com/Book-Club-Project/book_club_BE#readme)
+
+On you command line:
+1. Navigate to the local directory where the backend repo is housed
+2. Start the Backend server with `$ rails s` and navigate to http://localhost:3000/ in your web browser. Here you are able to interact with the API endpoints.
+
+**Frontend Server**
+ 
 On your command line:
-1. Run `$ rails s` in order to start the server locally to access the app through a web browser
-2. Open a web browser and navigate to http://localhost:5000/
-3. Now you may explore the web application!
+1. Navigate to local directory where the frontend repo is housed
+2. Run `$ rails s` to run the server locally
+3. Open a web browser and navigate to http://localhost:5000/
+4. Now you may explore the web application!
 
 ### Use of the BookClub Application
-On you command line:
-1. Start the Backend server with `$ rails s` and navigate to http://localhost:3000/ to interact with the [Backend](https://github.com/Book-Club-Project/book_club_BE)
+
 
 ### Google OAuth2
 Book Club Consultancy Project uses Google OAuth2 to register and login a user. In order to login and register with Google OAuth2, you must set up Google OAuth2 and and set the client id for the web application.
@@ -67,20 +79,21 @@ Book Club Consultancy Project uses Google OAuth2 to register and login a user. I
   3. Select + Create Credentials, then OAuth client ID
   4. It's possible that you may be prompted to set a product name on the Consent screen; if so, click Configure consent screen, supply the requested information, and click Save to return to the Credentials screen.
   5. Select Web Application as the Application type and enter any additional information.
-  6. For the Authorized Redirect URIs, make sure the enter the following URLs for local development: http://localhost:3000, then click + ADD URI. This is the default URL when starting Book Club Consultancy Project in development mode.
+  6. For the Authorized Redirect URIs, make sure to enter the following URLs for local development: http://localhost:3000, then click + ADD URI. This is the default URL when starting Book Club Consultancy Project in development mode.
   7. Click Create
   8. Navigate to the Book Club Front End directory using terminal `$ cd book_club_FE`
   9. While in terminal run `bundle exec figaro install` (this will create a file your need for you to store client id and client secret)
   9. Copy the client id and client secret, and in book_club_FE (config/application.yml) enter both as shown
-    ```yaml
+
+```yml
     GOOGLE_CLIENT_ID: YOUR_CLIENT_ID
     GOOGLE_CLIENT_SECRET: YOUR_CLIENT_SECRET
-    ```
+ ```
 ----------
 
 ## Project Description
 
-This is a back-end project designed to exercise the fundamental basics of exposing and consuming an API.  Book Club builds community through literature. Users can connect through groups, messaging, and a bountiful resource of books. Functionality is achieved by combining our own database, the Google Books API, and external communication APIs to allow real-time communication, discussions, and recommendations.
+This is a back-end project designed to explore the fundamentals of exposing and consuming an API in order to develop an app that integrates microservices. Book Club builds community through literature. Users can connect through groups, messaging, and a bountiful resource of books. Functionality is achieved by combining our own database, the Google Books API, and external communication APIs to allow real-time communication, discussions, and recommendations.
 
 ----------
 
@@ -97,10 +110,9 @@ Implicit
 - Project planning
 - Reading/Writing documentation
 - Time Management/Prioritizing Work
-- Breaking down a large project into small pieces
-- Breaking down a problem into small steps
-- Experience in 'sprints'
-- GitHub workflow
+- Break down large project goals into manageable steps
+- Implement agile workflows
+- GitHub workflow and project management tools
 
 ----------
 
@@ -129,16 +141,17 @@ Implicit
 
 ### Important Gems
 
-- Testing: [rspec-rails](https://github.com/rspec/rspec-rails), [simplecov](https://github.com/simplecov-ruby/simplecov), [factory_bot_rails](https://github.com/thoughtbot/factory_bot_rails), [faker](https://github.com/vajradog/faker-rails)
+- Testing: [rspec-rails](https://github.com/rspec/rspec-rails), [simplecov](https://github.com/simplecov-ruby/simplecov), [capybara](https://github.com/teamcapybara/capybara), [webmock](https://github.com/bblimke/webmock), [vcr](https://github.com/vcr/vcr)
 
-- API: [jsonapi-serializer](https://github.com/fotinakis/jsonapi-serializers), [figaro](https://medium.com/@MinimalGhost/the-figaro-gem-an-easier-way-to-securely-configure-rails-applications-c6f963b7e993)
+- API: [jsonapi-serializer](https://github.com/fotinakis/jsonapi-serializers), [figaro](https://medium.com/@MinimalGhost/the-figaro-gem-an-easier-way-to-securely-configure-rails-applications-c6f963b7e993), [faraday](https://github.com/lostisland/faraday)
 
+- User Authentication and Security: [omniauth-google-oauth2](https://github.com/zquestz/omniauth-google-oauth2)
 
 ----------
 
 ## APIs
 
-see [book club BE repo](https://github.com/Book-Club-Project/book_club_BE)
+See [book club BE repo](https://github.com/Book-Club-Project/book_club_BE)
 
 ----------
 
