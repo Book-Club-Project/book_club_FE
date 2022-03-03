@@ -16,7 +16,7 @@ class ClubsController < ApplicationController
 
   def create
     @book_id = params[:book_id]
-    @club = ClubFacade.create_club(name: params[:club_name], book_id: params[:book_id], host_id: 3)
+    @club = ClubFacade.create_club(name: params[:club_name], book_id: params[:book_id], host_id: current_user)
     redirect_to "/clubs/#{@club.id}"
   end
 end

@@ -11,6 +11,8 @@ Rails.application.routes.draw do
     resources :comments, only: [:index], controller: 'club_comments'
   end
 
+  resources :comments, only: [:create]
+  
   get   '/register', to: 'users#new'
   post  '/register', to: 'users#create'
 

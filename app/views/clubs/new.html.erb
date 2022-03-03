@@ -11,8 +11,8 @@
           <%= f.hidden_field :book_id, value: @book_id %>
 
           <% @users.each do |user| %>
-          
-            <% if user.id != current_user %>
+
+            <% if user.id != current_user.id %>
             <p><%= f.check_box "#{user.username}" %>
                <%= f.label "#{user.username}" %></p>
             <% end  %>
