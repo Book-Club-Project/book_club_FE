@@ -9,12 +9,14 @@
     .container {
       margin: auto;
       width: 50%;
+      border: 3px solid green;
       padding: 10px;
       position: relative;
       text-align: center;
       justify-content: center;
     }
   </style>
+
 
   <div class="logo">
     <!-- Logo/App Name -->
@@ -29,7 +31,7 @@
 </header>
 
 <body>
-  <div class="container text-center">
+  <div class="container">
     <h1> <%= @book.title %> </h1>
     <div id="book-cover">
       <img id="cover-image" src= <%= @book.image %>>
@@ -37,7 +39,7 @@
 
     <div id="create-club">
       <% if session[:user_id] %>
-        <div class="container" id="create-club-button">
+        <div  class="button" id="create-club-button">
           <%= button_to "Create Book Club", "/clubs/new", params: {book_id: @book.id} , method: :get %>
         </div>
       <% else %>
@@ -51,27 +53,27 @@
   <div class="container">
       <div class="row">
           <div class="col-md-6 col-md-offset-3">
-            <h5>Author(s):</h5>
+            <h3>Author(s):</h3>
             <p><% @book.author.each do |author| %>
               <%= author %>
               <% end %>, </p>
             <br>
             <% if @book.summary == nil %>
-             <h5> Summary: </h5> <p>n/a</p>
+             <h3> Summary: </h3> <p>n/a</p>
             <% else %>
-            <h5>Summary: </h5><p> <%= @book.summary %></p>
+            <h3>Summary: </h3><p> <%= @book.summary %></p>
             <% end %>
             <br>
             <% if @book.rating == nil%>
-             <h5>Rating: </h5> <p>n/a</p>
+             <h3>Rating: </h3> <p>n/a</p>
             <% else %>
-            <h5>Book rating: </h5> <p><%= @book.rating %></p>
+            <h3>Book rating: </h3> <p><%= @book.rating %></p>
             <% end %>
             <br>
             <% if @book.genre == nil%>
-                <h5> Genre(s): </h5> <p>n/a</p>
+                <h3> Genre(s): </h3> <p>n/a</p>
             <% else %>
-            <h5>Genre(s): </h5><p><% @book.genre.each do |genre| %>
+            <h3>Genre(s): </h3><p><% @book.genre.each do |genre| %>
               <%= genre %>
               <% end %>
             <% end %> </p>
