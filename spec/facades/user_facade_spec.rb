@@ -25,5 +25,20 @@ RSpec.describe UserFacade do
         end
       end
     end
+
+    describe 'user_clubs' do
+      it 'returns all clubs a user has', :vcr do
+
+      clubs = UserFacade.user_clubs("1")
+
+        clubs.each do |club|
+          expect(club).to be_a Club
+          expect(club.id).to_not be_nil
+          expect(club.name).to_not be_nil
+          expect(club.book_id).to_not be_nil
+          expect(club.host_id).to_not be_nil
+        end
+      end
+    end
   end
 end
