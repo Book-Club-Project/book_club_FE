@@ -1,7 +1,6 @@
 class ClubFacade
   def self.get_club(id)
-    club = ClubService.club(id)
-
+    club = ClubService.club(id)[:data]
     Club.new(club)
   end
 
@@ -22,7 +21,7 @@ class ClubFacade
   end
 
   def self.create_club(data)
-    club = ClubService.create_club(data)
+    club = ClubService.create_club(data)[:data]
     Club.new(club)
   end
 end
