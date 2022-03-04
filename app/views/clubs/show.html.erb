@@ -29,28 +29,18 @@
           <% end %>
         </div>
     </div>
-    <div class="col-sm">
-      <form id="algin-form">
-          <div class="form-group">
-              <h4>Add a Comment...</h4>
-              <div class="container">
-                <div class="form-container">
-                  <%= form_with url: '/comments', method: :post, local: true do |f| %>
-
-                  <%= f.text_field :title, required: :true, placeholder: 'Comment Title' %><br><br>
-
-                  <%= f.text_area :body, required: true, placeholder: 'Your message here' %>
-
-                  <%= f.hidden_field :user_id, value: current_user.id %>
-
-                  <%= f.hidden_field :club_id, value: @club.id %>
-    
-                  <%= f.submit 'Submit', method: :post %><br><br>
-                <% end %>
-              </div>
-            </div>
-          </div>
-      </form>
-    </div>
   </div>
 </div>
+<h4>Add a Comment...</h4>
+<%= form_with url: '/comments', method: :post, local: true do |f| %>
+
+<%= f.text_field :title, required: :true, placeholder: 'Comment Title' %><br><br>
+
+<%= f.text_area :body, required: true, placeholder: 'Your message here' %>
+
+<%= f.hidden_field :user_id, value: current_user.id %>
+
+<%= f.hidden_field :club_id, value: @club.id %>
+
+<%= f.submit 'Submit', method: :post %><br><br>
+<% end %>
