@@ -27,15 +27,49 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 43d633ae-179d-4f85-b412-4e01c34c48bc
+      - 33a00c40-a6ce-4b9e-bb0e-5b68d8429a64
       X-Runtime:
-      - '0.057017'
+      - '0.196926'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}}'
-  recorded_at: Thu, 03 Mar 2022 20:38:35 GMT
+  recorded_at: Fri, 04 Mar 2022 04:10:33 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/users/1/clubs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"f7d8f677d5e2a6e8c75ca0710055ddb6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 538227f5-a556-475a-a6f0-1f4ecbb3c308
+      X-Runtime:
+      - '0.215108'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":"ZV9DDwAAQBAJ"}},{"id":"4","type":"club","attributes":{"name":"Braniacs","host_id":6,"book_id":"5CzZzQEACAAJ"}},{"id":"5","type":"club","attributes":{"name":"thing","host_id":6,"book_id":"5CzZzQEACAAJ"}},{"id":"6","type":"club","attributes":{"name":"thing","host_id":6,"book_id":"5CzZzQEACAAJ"}}]}'
+  recorded_at: Fri, 04 Mar 2022 04:10:33 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/books/gwgON2IwgDUC
@@ -57,13 +91,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"71a936fea1458a473cdb189cd8761f0b"
+      - W/"2122f911eb76046eb0b5bdcf22a26be4"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 61da1012-d6e5-4993-935c-f0d99a86db4d
+      - 0fd42b36-540d-4b47-abde-2ecf8ae89f17
       X-Runtime:
-      - '0.245514'
+      - '0.205939'
       Transfer-Encoding:
       - chunked
     body:
@@ -71,6 +105,6 @@ http_interactions:
       string: '{"data":{"id":"gwgON2IwgDUC","type":"book","attributes":{"title":"Pride
         and Prejudice","authors":["Jane Austen"],"genres":["Fiction / Classics"],"description":"Insight
         edition with engaging side notes that offer background on social customs,
-        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE70nfMGy7SixBCmE3wUHEmYM3IcOtty3mZByVRnCbN24oqyr9UyKtxhFgTiTx-eGyv5i_LY0Zr-7HXO5XiypepudCB5OUAjfu3glg_lmjFrbv71gwo2wCzzWd3naNTS5FcinK87H\u0026source=gbs_api"}}}'
-  recorded_at: Thu, 03 Mar 2022 20:38:35 GMT
+        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE72zFQJWygUY6lSMt15OkcyVi-FQSg6nTrwY_mcArWpX4jc_eazy3e8hGQR1-4RBnuEzMgJl_6qGG1KZ8TMNsOOxDyUh9bk3nIm33iBJSE57WV-7urH5LiXfaKdUOA1c3wmFqdCC\u0026source=gbs_api"}}}'
+  recorded_at: Fri, 04 Mar 2022 04:10:33 GMT
 recorded_with: VCR 6.0.0
