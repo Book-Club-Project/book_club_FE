@@ -143,7 +143,7 @@ Implicit
 
 ----------
 ### App Screenshots
-<details open="open">
+<details open="closed">
 
 ![Screen Shot 2022-03-03 at 10 33 43 PM](https://user-images.githubusercontent.com/89213429/156705612-1c63fac3-8d92-4254-95d9-a3e2601b0348.png)
 
