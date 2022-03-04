@@ -52,7 +52,7 @@ RSpec.describe UserService do
           expect(club[:attributes][:name]).to be_a String
 
           expect(club[:attributes]).to have_key :host_id
-          expect(club[:attributes][:host_id]).to be_a String
+          expect(club[:attributes][:host_id]).to be_a Integer
 
           expect(club[:attributes]).to have_key :book_id
           expect(club[:attributes][:book_id]).to be_a String
