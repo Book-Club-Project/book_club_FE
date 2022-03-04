@@ -27,20 +27,30 @@
 <body>
   <%# render partial: '/layouts/partials/random_quote' %> <br><br>
 
-  <div class="container">
-    <div class="form-container">
-      <%= form_with url: '/sessions/create', method: :post, local: true do |f|  %>
-
-      <%= f.email_field :email, required: true, placeholder: 'email@domain.com' %><br><br>
-
-      <%= f.password_field :password, required: true, placeholder: 'password' %><br><br>
-
-      <%= f.submit 'Login' %><br><br>
-      <% end %>
+  <% if session[:user_id] %>
+    <div class="container">
+      <div id="logged-in-user-message">
+        <p text-align="center">You are already logged in.</p><br>
+        <p text-align="center">If you would like to login a different user, please <%= link_to "Logout", '/logout' %> first.</p>
+      </div>
     </div>
 
-    <p text-align="center">--- OR ---</p><br>
+  <% else %>
+    <div class="container">
+      <div class="form-container">
+        <%= form_with url: '/sessions/create', method: :post, local: true do |f|  %>
 
-    <%= button_to 'Login with Google', '/auth/google_oauth2/', method: :get, params: {client_id: "#{ENV['GOOGLE_CLIENT_ID']}" }  %>
-  </div>
+          <%= f.email_field :email, required: true, placeholder: 'email@domain.com' %><br><br>
+
+          <%= f.password_field :password, required: true, placeholder: 'password' %><br><br>
+
+          <%= f.submit 'Login' %><br><br>
+        <% end %>
+      </div>
+
+      <p text-align="center">--- OR ---</p><br>
+
+      <%= button_to 'Login with Google', '/auth/google_oauth2/', method: :get, params: {client_id: "#{ENV['GOOGLE_CLIENT_ID']}" }  %>
+    </div>
+  <% end %>
 </body>

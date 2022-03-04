@@ -12,6 +12,6 @@ class ClubService < BackendService
   end
 
   def self.create_club(data)
-    parsed_post_response("/api/v1/clubs", data)
+    parsed_club_post_response("/api/v1/clubs", data)
   end
 end

@@ -1,0 +1,110 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/users
+    body:
+      encoding: UTF-8
+      string: '{"user":{"username":"happy22@example.com","email":"happy22@example.com"}}'
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"d03e84698f5e370effa03523b8867102"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f7042c2c-5bc4-4ba1-82e0-dc15889f139f
+      X-Runtime:
+      - '0.163338'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}}'
+  recorded_at: Thu, 03 Mar 2022 20:43:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/books/gwgON2IwgDUC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"2e79c261928e152c9b29f62e7cd76998"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 798856a9-09d1-4808-8843-e6d22d0b2a53
+      X-Runtime:
+      - '0.471546'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"gwgON2IwgDUC","type":"book","attributes":{"title":"Pride
+        and Prejudice","authors":["Jane Austen"],"genres":["Fiction / Classics"],"description":"Insight
+        edition with engaging side notes that offer background on social customs,
+        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE70JSpgCoeRKU1l-5MTsUORhwLm_oZzHoXHk1zLCEsQk9ww_4B1AFus_0VAbThMlnF-SuzmTYTZLNfxWvjHy-BAPj9Ic3cE2gwAA4xihpWad1mpgYktScnQblyOXYYu-zgxH8BVL\u0026source=gbs_api"}}}'
+  recorded_at: Thu, 03 Mar 2022 20:43:03 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"0c0f2eed71f39bd3172cc28f0e2a28d7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e4f48fed-8397-494b-a089-e6fdaa7adba6
+      X-Runtime:
+      - '0.033435'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}},{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}},{"id":"6","type":"user","attributes":{"username":"dabrad@gmail.com","email":"dabrad@gmail.com"}}]}'
+  recorded_at: Thu, 03 Mar 2022 20:43:03 GMT
+recorded_with: VCR 6.0.0

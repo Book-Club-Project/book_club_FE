@@ -3,6 +3,8 @@ class UsersController < ApplicationController
 
   def new; end
 
+  def show;end
+
   def create
     conn = Faraday.new(url: 'http://localhost:3000/')
     auth_hash = request.env['omniauth.auth']
@@ -16,7 +18,7 @@ class UsersController < ApplicationController
     user = JSON.parse(response.body, symbolize_names: true)[:data]
     session[:user_id] = user[:id]
 
-    redirect_to '/'
+    redirect_to '/dashboard'
   end
 
   def show
