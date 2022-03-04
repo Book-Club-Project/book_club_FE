@@ -30,7 +30,7 @@ RSpec.describe "New club page" do
 
     click_button "Create Book Club"
 
-    fill_in :club_name, with: "Hello123"
+    fill_in :name, with: "Hello123"
 
     click_button "Create"
 

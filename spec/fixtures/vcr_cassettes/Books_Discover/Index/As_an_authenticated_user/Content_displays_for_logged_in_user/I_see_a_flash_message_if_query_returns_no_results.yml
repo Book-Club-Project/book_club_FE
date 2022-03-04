@@ -27,15 +27,49 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b04b8f04-9118-4233-aa28-dec8749ef4f1
+      - 152fd5d8-4756-4d7f-8b7d-d0ba0e493502
       X-Runtime:
-      - '0.009882'
+      - '0.002265'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}}'
-  recorded_at: Thu, 03 Mar 2022 19:03:23 GMT
+  recorded_at: Fri, 04 Mar 2022 04:09:46 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/users/1/clubs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"f7d8f677d5e2a6e8c75ca0710055ddb6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 82b09330-573e-4fe0-8eeb-85cd67c54178
+      X-Runtime:
+      - '0.002983'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":"ZV9DDwAAQBAJ"}},{"id":"4","type":"club","attributes":{"name":"Braniacs","host_id":6,"book_id":"5CzZzQEACAAJ"}},{"id":"5","type":"club","attributes":{"name":"thing","host_id":6,"book_id":"5CzZzQEACAAJ"}},{"id":"6","type":"club","attributes":{"name":"thing","host_id":6,"book_id":"5CzZzQEACAAJ"}}]}'
+  recorded_at: Fri, 04 Mar 2022 04:09:46 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/books/search?title=jh21g31yiu2g3
@@ -57,9 +91,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       X-Request-Id:
-      - 80973102-e675-465a-b8e6-b0fa3d58363b
+      - 12b99b98-a11f-4906-b23f-f33d81d76224
       X-Runtime:
-      - '0.356484'
+      - '0.423751'
       Content-Length:
       - '10272'
     body:
@@ -172,5 +206,5 @@ http_interactions:
         lib/puma/server.rb:476:in `process_client''"},{"id":52,"trace":"puma (3.12.6)
         lib/puma/server.rb:334:in `block in run''"},{"id":53,"trace":"puma (3.12.6)
         lib/puma/thread_pool.rb:135:in `block in spawn_thread''"}]}}'
-  recorded_at: Thu, 03 Mar 2022 19:03:23 GMT
+  recorded_at: Fri, 04 Mar 2022 04:09:47 GMT
 recorded_with: VCR 6.0.0

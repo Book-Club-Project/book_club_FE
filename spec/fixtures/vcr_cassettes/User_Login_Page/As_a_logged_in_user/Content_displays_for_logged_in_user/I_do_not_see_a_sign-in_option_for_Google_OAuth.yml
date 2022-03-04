@@ -27,13 +27,47 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a9027a4a-6e29-4d37-830d-3ff9a8b8eb74
+      - 0e6e9f2e-d5d1-43e3-96c2-542e5d859e6a
       X-Runtime:
-      - '0.006907'
+      - '0.002048'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}}'
-  recorded_at: Thu, 03 Mar 2022 18:39:53 GMT
+  recorded_at: Fri, 04 Mar 2022 04:13:16 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/users/1/clubs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"f7d8f677d5e2a6e8c75ca0710055ddb6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ed18ba23-4eee-42c9-a3a0-722a9a3c29cb
+      X-Runtime:
+      - '0.002122'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":"ZV9DDwAAQBAJ"}},{"id":"4","type":"club","attributes":{"name":"Braniacs","host_id":6,"book_id":"5CzZzQEACAAJ"}},{"id":"5","type":"club","attributes":{"name":"thing","host_id":6,"book_id":"5CzZzQEACAAJ"}},{"id":"6","type":"club","attributes":{"name":"thing","host_id":6,"book_id":"5CzZzQEACAAJ"}}]}'
+  recorded_at: Fri, 04 Mar 2022 04:13:16 GMT
 recorded_with: VCR 6.0.0
