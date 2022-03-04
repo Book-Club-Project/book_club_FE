@@ -56,12 +56,24 @@
               <%= author %>
               <% end %>, </p>
             <br>
+            <% if @book.summary == nil %>
+             <h5> Summary: </h5> <p>n/a</p>
+            <% else %>
             <h5>Summary: </h5><p> <%= @book.summary %></p>
+            <% end %>
             <br>
+            <% if @book.rating == nil%>
+             <h5>Rating: </h5> <p>n/a</p>
+            <% else %>
             <h5>Book rating: </h5> <p><%= @book.rating %></p>
+            <% end %>
             <br>
-            <h5>Genres: </h5><p><% @book.genre.each do |genre| %>
+            <% if @book.genre == nil%>
+                <h5> Genre(s): </h5> <p>n/a</p>
+            <% else %>
+            <h5>Genre(s): </h5><p><% @book.genre.each do |genre| %>
               <%= genre %>
+              <% end %>
             <% end %> </p>
           </div>
       </div>
