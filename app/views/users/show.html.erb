@@ -24,16 +24,25 @@
 </header>
 
 <body>
-  <%# render partial: '/layouts/partials/random_quote' %> <br><br>
-  <center><h1><%= @user.username %>'s Dashboard</h1></center>
+  <% if session[:user_id].nil? %>
 
-
-  <div class="container">
-    <div class="centered"><h3 class="bookclubs">My Bookclubs:</h3>
-      <% @clubs.each do |club| %>
-        <p><%= link_to club.name, club_path(club) %></p>
-      <% end %>
+    <div class="container">
+      <div id="not_logged_in">
+        <p text-align="center">Yo, you gotta <%= link_to 'login', '/login' %> first, dawg...</p>
+      </div>
     </div>
-  </div>
 
+  <% else %>
+  
+    <%# render partial: '/layouts/partials/random_quote' %> <br><br>
+    <center><h1><%= @user.username %>'s Dashboard</h1></center>
+
+    <div class="container">
+      <div class="centered"><h3 class="bookclubs">My Bookclubs:</h3>
+        <% @clubs.each do |club| %>
+        <p><%= link_to club.name, club_path(club) %></p>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
 </body>

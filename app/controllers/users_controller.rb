@@ -20,7 +20,9 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = current_user
-    @clubs = UserFacade.user_clubs(@user.id)
+    if current_user != nil
+      @user = current_user
+      @clubs = UserFacade.user_clubs(@user.id)
+    end 
   end
 end
