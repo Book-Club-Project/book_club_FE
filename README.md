@@ -8,28 +8,30 @@ reference: [Turing documentation](https://backend.turing.edu/module3/projects/co
   <ol>
     <li>
       <a href="#getting-started">Getting Started</a>
+       <ul>
+       <li><a href="#set-up">Set Up</a></li>
+         <li>
+           <a href="#use-of-this-repository">Use of this Repository</a>
+           <ul>
+             <li>Backend Server</li>
+             <li>Frontend Server</li>
+           </ul>
+         </li>
+         <li><a href="#use-of-the-bookclub-application">Use of BookClub Application</a></li>
+         <li><a href="#google-oauth2">Google OAuth2</a></li>
+       </ul>
     </li>
     <li>
       <a href="#project-description">About This Project</a>
       <ul>
         <li><a href="#learning-goals-for-project">Learning Goals for Project</a></li>
-      </ul>
-       <ul>
         <li><a href="#inception">Inception</a></li>
-      </ul>
-      <ul>
         <li><a href="#app-screenshots">Example Pages From App</a></li>
-      </ul>
-      <ul>
         <li><a href="#versions">Versions</a></li>
-      </ul>
-      <ul>
         <li><a href="#important-gems">Important Gems</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#APIs">Book Club API</a>
-    </li>
+    <li><a href="#apis">Book Club API</a></li>
     <li><a href="#project-contributors">Collaborators</a></li>
   </ol>
 </details>
