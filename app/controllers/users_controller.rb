@@ -3,7 +3,12 @@ class UsersController < ApplicationController
 
   def new; end
 
-  def show;end
+  def show
+    if current_user != nil
+      @user = current_user
+      @clubs = UserFacade.user_clubs(@user.id)
+    end
+  end
 
   def create
     conn = Faraday.new(url: 'http://localhost:3000/')
