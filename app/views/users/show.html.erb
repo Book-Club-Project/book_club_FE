@@ -1,1 +1,48 @@
-<h1>this is a dashboard</h1>
+<header>
+  <style>
+    .container {
+      margin: auto;
+      width: 50%;
+      border: 3px solid green;
+      padding: 10px;
+      position: relative;
+      text-align: center;
+      justify-content: center;
+    }
+  </style>
+
+  <div class="logo">
+    <!-- Logo/App Name -->
+    <%= render partial: '/layouts/partials/app_logo_banner' %>
+    <!-- Logo/App Name -->
+
+    <!-- Navbar -->
+    <%= render partial: '/layouts/partials/nav_bar', locals: {links: {uri: '/', link_text: 'Home'}} %>
+    <!-- Navbar -->
+  </div><br>
+
+</header>
+
+<body>
+  <% if session[:user_id].nil? %>
+
+    <div class="container">
+      <div id="not_logged_in">
+        <p text-align="center">Yo, you gotta <%= link_to 'login', '/login' %> first, dawg...</p>
+      </div>
+    </div>
+
+  <% else %>
+    <%# render partial: '/layouts/partials/random_quote' %> <br><br>
+
+    <center><h1><%= @user.username %>'s Dashboard</h1></center>
+
+    <div class="container">
+      <div class="centered"><h3 class="bookclubs">My Bookclubs:</h3>
+        <% @clubs.each do |club| %>
+        <p><%= link_to club.name, club_path(club.id) %></p>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</body>
