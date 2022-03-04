@@ -144,10 +144,7 @@ Implicit
 ----------
 
 ### App Screenshots
-![Screen Shot 2022-03-03 at 10 49 27 PM](https://user-images.githubusercontent.com/69017022/156707471-89a2f7e7-a41e-40f2-a920-f9593d0c1d0f.png)
-![Screen Shot 2022-03-03 at 10 53 05 PM](https://user-images.githubusercontent.com/69017022/156707636-14a16946-a0b1-4d89-9c9d-b05155259cbc.png)
-![Screen Shot 2022-03-03 at 10 50 28 PM](https://user-images.githubusercontent.com/69017022/156707542-9f75f383-5162-4156-8f96-4a2d0c2b55cc.png)
-![Screen Shot 2022-03-03 at 10 50 44 PM](https://user-images.githubusercontent.com/69017022/156707556-19c79bbc-1702-42a3-8a1f-a4c8a3a2aa80.png)
+
 
 
 ### Versions
