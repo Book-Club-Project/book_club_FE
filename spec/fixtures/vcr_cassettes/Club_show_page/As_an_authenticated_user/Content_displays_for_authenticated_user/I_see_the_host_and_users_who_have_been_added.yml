@@ -1,0 +1,461 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/users
+    body:
+      encoding: UTF-8
+      string: '{"user":{"username":"happy22@example.com","email":"happy22@example.com"}}'
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"d03e84698f5e370effa03523b8867102"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 36eaa0e3-6183-49ab-b817-117addb199e6
+      X-Runtime:
+      - '0.132349'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}}'
+  recorded_at: Fri, 04 Mar 2022 05:12:22 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/users/1/clubs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"e9d6829b6c6f2b3e07d6ee64536c6751"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f6379128-ec00-4c59-945a-1d7813ba97ef
+      X-Runtime:
+      - '0.018626'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":"ZV9DDwAAQBAJ"}},{"id":"4","type":"club","attributes":{"name":"Braniacs","host_id":6,"book_id":"5CzZzQEACAAJ"}},{"id":"5","type":"club","attributes":{"name":"thing","host_id":6,"book_id":"5CzZzQEACAAJ"}},{"id":"6","type":"club","attributes":{"name":"thing","host_id":6,"book_id":"5CzZzQEACAAJ"}},{"id":"15","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"16","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"18","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"19","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"20","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"21","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"22","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"23","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}}]}'
+  recorded_at: Fri, 04 Mar 2022 05:12:22 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/books/gwgON2IwgDUC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"03b86509b2fe702e33d8f22a80464c2a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a08082b7-18df-4bda-90ab-08320a7f8b39
+      X-Runtime:
+      - '0.273235'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"gwgON2IwgDUC","type":"book","attributes":{"title":"Pride
+        and Prejudice","authors":["Jane Austen"],"genres":["Fiction / Classics"],"description":"Insight
+        edition with engaging side notes that offer background on social customs,
+        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE714StQJj4WCNmbIz0WruDIET2E6bsJGA6JG7X7z78ii9ECxrfR14LXnOtiFUongHs7b2Om8dY-J8HRYRWjFH8zFwGxOSQMEQ3IOEM8TwZ5Hww4LW3BJSg7XdnfomFc-mvjYZNJx\u0026source=gbs_api"}}}'
+  recorded_at: Fri, 04 Mar 2022 05:12:23 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"0c0f2eed71f39bd3172cc28f0e2a28d7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8b142366-5ee8-4d47-a1fa-ae615e208445
+      X-Runtime:
+      - '0.003593'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}},{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}},{"id":"6","type":"user","attributes":{"username":"dabrad@gmail.com","email":"dabrad@gmail.com"}}]}'
+  recorded_at: Fri, 04 Mar 2022 05:12:23 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/clubs
+    body:
+      encoding: UTF-8
+      string: club%5Bbook_id%5D=gwgON2IwgDUC&club%5Bhost_id%5D=1&club%5Bname%5D=Hello123&club%5Bparams%5D%5B%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"7da73935cff23fe2c9cfa0e683bedfac"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 21d28d87-f00d-46c5-a27f-1e5674c0baf1
+      X-Runtime:
+      - '0.025553'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"24","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}}}'
+  recorded_at: Fri, 04 Mar 2022 05:12:23 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/clubs/24
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"7da73935cff23fe2c9cfa0e683bedfac"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 02d97b09-3bda-4c0b-873b-bd75c02c8a9b
+      X-Runtime:
+      - '0.003657'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"24","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}}}'
+  recorded_at: Fri, 04 Mar 2022 05:12:23 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/clubs/24/users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"2f3da8eaea413591c724a68762f798a5"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9016f528-81e6-4600-b415-f9bfb05d9831
+      X-Runtime:
+      - '0.004357'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}}]}'
+  recorded_at: Fri, 04 Mar 2022 05:12:23 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/books/gwgON2IwgDUC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"914ef114c00a4c23c2dbd3385193e21e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0f09f499-09b3-49ce-968c-6bd585a1c781
+      X-Runtime:
+      - '0.224742'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"gwgON2IwgDUC","type":"book","attributes":{"title":"Pride
+        and Prejudice","authors":["Jane Austen"],"genres":["Fiction / Classics"],"description":"Insight
+        edition with engaging side notes that offer background on social customs,
+        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE72jgptTQ_IHlr3nKsZMPhwMH8muvmiwKT_M8Q55Oe-w_2AHvBGk5gFf0bHEQxG6gPnbbnaDaOOrZ_8lKYiPsAfxQPVGgwZFMMZF64NmdfmvJzlanUe9rwSIdhMXkHd5ImqKLJkp\u0026source=gbs_api"}}}'
+  recorded_at: Fri, 04 Mar 2022 05:12:23 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/clubs/24/comments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b4be180b-b0df-451a-b7bc-91f16e9c752f
+      X-Runtime:
+      - '0.012382'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Fri, 04 Mar 2022 05:12:23 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/clubs/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"5d9b65eb8fa0f86b5bd9cd9fe8789ea9"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6bdad6dd-f540-4176-a0b8-301f8cc91349
+      X-Runtime:
+      - '0.003171'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":"ZV9DDwAAQBAJ"}}}'
+  recorded_at: Fri, 04 Mar 2022 05:12:23 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/clubs/1/users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4436a0b6ee66f1e7c8b42bf3a17d4454"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3afc70d4-2e10-40dc-9fae-be7a79aadeb8
+      X-Runtime:
+      - '0.013411'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}}]}'
+  recorded_at: Fri, 04 Mar 2022 05:12:23 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/books/ZV9DDwAAQBAJ
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"336c1f12d73b630b26f74e7a0f529afa"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c004c31b-c2d8-4d87-bed6-b496fc13a076
+      X-Runtime:
+      - '0.182048'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiWlY5RER3QUFRQkFKIiwidHlwZSI6ImJvb2siLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiUHJpZGUiLCJhdXRob3JzIjpbIkliaSBab2JvaSJdLCJnZW5yZXMiOlsiWW91bmcgQWR1bHQgRmljdGlvbiAvIERpdmVyc2l0eSBcdTAwMjYgTXVsdGljdWx0dXJhbCIsIllvdW5nIEFkdWx0IEZpY3Rpb24gLyBTb2NpYWwgVGhlbWVzIC8gQ2xhc3MgRGlmZmVyZW5jZXMiLCJZb3VuZyBBZHVsdCBGaWN0aW9uIC8gUm9tYW5jZSAvIENvbnRlbXBvcmFyeSJdLCJkZXNjcmlwdGlvbiI6Ilx1MDAzY3BcdTAwM2VJbiBhIHRpbWVseSB1cGRhdGUgb2YgSmFuZSBBdXN0ZW4nc8KgUHJpZGUgYW5kIFByZWp1ZGljZSzCoE5hdGlvbmFsIEJvb2sgQXdhcmQgZmluYWxpc3TCoEliaSBab2JvaSBza2lsbGZ1bGx5IGJhbGFuY2VzIGN1bHR1cmFsIGlkZW50aXR5LCBjbGFzcywgYW5kIGdlbnRyaWZpY2F0aW9uIGFnYWluc3QgdGhlIGhlYWR5IG1hZ2ljIG9mIGZpcnN0IGxvdmUgaW4gaGVyIHZpYnJhbnQgcmVpbWFnaW5pbmcgb2YgdGhpcyBiZWxvdmVkIGNsYXNzaWMuIEEgc21hcnQsIGZ1bm55LCBnb3JnZW91cyByZXRlbGxpbmcgc3RhcnJpbmcgYWxsIGNoYXJhY3RlcnMgb2YgY29sb3IuwqBcdTAwM2MvcFx1MDAzZVx1MDAzY3BcdTAwM2VadXJpIEJlbml0ZXogaGFzIHByaWRlLiBCcm9va2x5biBwcmlkZSwgZmFtaWx5IHByaWRlLCBhbmQgcHJpZGXCoGluIGhlciBBZnJvLUxhdGlubyByb290cy4gQnV0IHByaWRlIG1pZ2h0IG5vdCBiZSBlbm91Z2ggdG8gc2F2ZSBoZXIgcmFwaWRseSBnZW50cmlmeWluZyBuZWlnaGJvcmhvb2QgZnJvbSBiZWNvbWluZyB1bnJlY29nbml6YWJsZS4gXHUwMDNjL3BcdTAwM2VcdTAwM2NwXHUwMDNlV2hlbiB0aGUgd2VhbHRoeSBEYXJjeSBmYW1pbHkgbW92ZXMgaW4gYWNyb3NzIHRoZSBzdHJlZXQsIFp1cmkgd2FudHMgbm90aGluZyB0byBkbyB3aXRoIHRoZWlyIHR3byB0ZWVuYWdlIHNvbnMsIGV2ZW4gYXMgaGVyIG9sZGVyIHNpc3RlciwgSmFuYWUsIHN0YXJ0cyB0byBmYWxsIGZvciB0aGUgY2hhcm1pbmcgQWluc2xleS4gU2hlIGVzcGVjaWFsbHkgY2Fu4oCZdCBzdGFuZCB0aGUganVkZ21lbnRhbCBhbmQgYXJyb2dhbnQgRGFyaXVzLiBZZXQgYXMgWnVyaSBhbmQgRGFyaXVzIGFyZSBmb3JjZWQgdG8gZmluZCBjb21tb24gZ3JvdW5kLCB0aGVpciBpbml0aWFsIGRpc2xpa2Ugc2hpZnRzIGludG8gYW4gdW5leHBlY3RlZCB1bmRlcnN0YW5kaW5nLlx1MDAzYy9wXHUwMDNlXHUwMDNjcFx1MDAzZUJ1dCB3aXRoIGZvdXIgd2lsZCBzaXN0ZXJzIHB1bGxpbmcgaGVyIGluIGRpZmZlcmVudCBkaXJlY3Rpb25zLCBjdXRlIGJveSBXYXJyZW4gdnlpbmcgZm9yIGhlciBhdHRlbnRpb24sIGFuZCBjb2xsZWdlIGFwcGxpY2F0aW9ucyBob3ZlcmluZyBvbiB0aGUgaG9yaXpvbiwgWnVyaSBmaWdodHMgdG8gZmluZCBoZXIgcGxhY2UgaW4gQnVzaHdpY2vigJlzIGNoYW5naW5nIGxhbmRzY2FwZSwgb3IgbG9zZSBpdCBhbGwuXHUwMDNjL3BcdTAwM2VcdTAwM2NwXHUwMDNlXCJab2JvaSBza2lsbGZ1bGx5IGRlcGljdHMgdGhlIHZpY2lzc2l0dWRlcyBvZiB0ZWVuYWdlIHJlbGF0aW9uc2hpcHMsIGFuZCBadXJp4oCZcyBvdXRzaXplIHByaWRlIGFuZCBwb2V0aWMgc2Vuc2liaWxpdHkgbWFrZSBoZXIgYSBzeW1wYXRoZXRpYyB0ZWVuYWdlciBpbiBhIGNvbnRlbXBvcmFyeSBzdG9yeSBhYm91dCByYWNlLCBnZW50cmlmaWNhdGlvbiwgYW5kIHlvdW5nIGxvdmUuXCLCoChQdWJsaXNoZXJzIFdlZWtseSwgXCJBbiBBbnRpLVJhY2lzdCBDaGlsZHJlbidzIGFuZCBZQSBSZWFkaW5nIExpc3RcIilcdTAwM2MvcFx1MDAzZSIsInJhdGluZyI6NCwiaW1hZ2UiOiJodHRwOi8vYm9va3MuZ29vZ2xlLmNvbS9ib29rcy9wdWJsaXNoZXIvY29udGVudD9pZD1aVjlERHdBQVFCQUpcdTAwMjZwcmludHNlYz1mcm9udGNvdmVyXHUwMDI2aW1nPTFcdTAwMjZ6b29tPTVcdTAwMjZlZGdlPWN1cmxcdTAwMjZpbWd0az1BRkxSRTcxTHo3aktteVI3dDhFVnBXd1RISUNpcEg5UldhSGg5RTBHVEVSTjJWYlJoNlZJb3FfQ3ZnazY2aThJOTNGZ2U4M3VQTmdaNXByOWEwVzlqbm5ycUVXZnVRU0RrY0I2U3lSVWlMOWVHV0tXaXM4aXpGRnVQcExjalE5VUZGNnlES3htVWxFa1x1MDAyNnNvdXJjZT1nYnNfYXBpIn19fQ==
+  recorded_at: Fri, 04 Mar 2022 05:12:23 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/clubs/1/comments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"a83f2049bdeabe3480f8434e010a35fc"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fb4026f5-72e1-4a2a-b91b-6f9eff8d38ec
+      X-Runtime:
+      - '0.013300'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"comment","attributes":{"title":"Hello","body":"Blah","user_id":1,"club_id":1}},{"id":"2","type":"comment","attributes":{"title":"Comments","body":"Blah
+        Blah","user_id":2,"club_id":1}},{"id":"3","type":"comment","attributes":{"title":"Coolio","body":"Blah
+        Blah Blah","user_id":3,"club_id":1}},{"id":"4","type":"comment","attributes":{"title":"Goodbye","body":"Blah
+        Blah Blah Blah","user_id":4,"club_id":1}},{"id":"8","type":"comment","attributes":{"title":"My
+        title","body":"My body","user_id":1,"club_id":1}},{"id":"9","type":"comment","attributes":{"title":"My
+        title","body":"My body","user_id":1,"club_id":1}}]}'
+  recorded_at: Fri, 04 Mar 2022 05:12:23 GMT
+recorded_with: VCR 6.0.0
