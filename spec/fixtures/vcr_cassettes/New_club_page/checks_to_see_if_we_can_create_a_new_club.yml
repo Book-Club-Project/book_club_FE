@@ -23,19 +23,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"86d9c73a03e7253a0c8f0b99f8231028"
+      - W/"d03e84698f5e370effa03523b8867102"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2d412038-ee6b-4d04-b6dc-1a834b30f225
+      - a89f066a-aaf3-4a7c-9a51-795ac8ff9ef6
       X-Runtime:
-      - '0.002411'
+      - '0.001941'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"6","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}}'
-  recorded_at: Thu, 03 Mar 2022 19:08:07 GMT
+      string: '{"data":{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}}'
+  recorded_at: Thu, 03 Mar 2022 20:38:54 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/books/gwgON2IwgDUC
@@ -57,13 +57,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"13f5dc6590a201609d925c3fe2661ca0"
+      - W/"81cb19aaf21be89a70943ff0845354eb"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 23b03fe6-6603-43ea-9ff4-2ea662a18ee5
+      - e0b15b78-e374-4acb-9928-18f50914be85
       X-Runtime:
-      - '0.209313'
+      - '0.126569'
       Transfer-Encoding:
       - chunked
     body:
@@ -71,8 +71,8 @@ http_interactions:
       string: '{"data":{"id":"gwgON2IwgDUC","type":"book","attributes":{"title":"Pride
         and Prejudice","authors":["Jane Austen"],"genres":["Fiction / Classics"],"description":"Insight
         edition with engaging side notes that offer background on social customs,
-        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE71MqmZkDAzUGoq_7xzr2qUy0tBTvp4ZpeTIK-sMZqbLB9fiekzGE9b5qEjM8I7N9upHy1K9rCvo4hLt_BA8hNbUcbta1BhQsmVIuOiVJls7Zxtq171nLqeCoLlOyIpOMp8fDp_e\u0026source=gbs_api"}}}'
-  recorded_at: Thu, 03 Mar 2022 19:08:07 GMT
+        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE72Xq9uapMwjlBH9g1cOgckPeOKtPBsIx0Xa3d44W07ktSWsNFaM0N73k3-4f_vABvH2BgMXIpzYl02vbVRoWMfe0UKCvy9vz_1NNo77d7GONJaJilc3wGANa2rXcPOvAItW2eoq\u0026source=gbs_api"}}}'
+  recorded_at: Thu, 03 Mar 2022 20:38:54 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/users
@@ -94,25 +94,25 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"429569a3d272bd08580b3c47c9911507"
+      - W/"bd2d8f831762bafacba4d0b1f60cb53c"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d3548419-5f74-4c99-a9d3-1851259fcf04
+      - ad03525f-533a-4bd9-b676-5af31094e90a
       X-Runtime:
-      - '0.003351'
+      - '0.003628'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}},{"id":"5","type":"user","attributes":{"username":"sierra.tucker121@gmail.com","email":"sierra.tucker121@gmail.com"}},{"id":"6","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}]}'
-  recorded_at: Thu, 03 Mar 2022 19:08:07 GMT
+      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}},{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}},{"id":"6","type":"user","attributes":{"username":"echon92@gmail.com","email":"echon92@gmail.com"}}]}'
+  recorded_at: Thu, 03 Mar 2022 20:38:54 GMT
 - request:
     method: post
     uri: http://localhost:3000/api/v1/clubs
     body:
       encoding: UTF-8
-      string: club%5Bbook_id%5D=gwgON2IwgDUC&club%5Bhost_id%5D=%23%3CUser%3A0x00007f7d735bf278%3E&club%5Bname%5D=Hello123
+      string: club%5Bbook_id%5D=gwgON2IwgDUC&club%5Bhost_id%5D=%23%3CUser%3A0x00007f9c08b14c10%3E&club%5Bname%5D=Hello123
     headers:
       User-Agent:
       - Faraday v2.2.0
@@ -130,22 +130,22 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"7597f2500920920f7d6d529ae23997cf"
+      - W/"f0b6443719a470d01c1a07f584ca7cbd"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - dd411da0-1110-4543-9c40-3edd77ba1ad1
+      - 0be928be-cd98-4a7c-8c2c-b24c831c2887
       X-Runtime:
-      - '0.025075'
+      - '0.004067'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"22","type":"club","attributes":{"name":"Hello123","host_id":0,"book_id":"gwgON2IwgDUC"}}}'
-  recorded_at: Thu, 03 Mar 2022 19:08:07 GMT
+      string: '{"data":{"id":"28","type":"club","attributes":{"name":"Hello123","host_id":0,"book_id":"gwgON2IwgDUC"}}}'
+  recorded_at: Thu, 03 Mar 2022 20:38:54 GMT
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/clubs/22
+    uri: http://localhost:3000/api/v1/clubs/28
     body:
       encoding: US-ASCII
       string: ''
@@ -164,22 +164,22 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"7597f2500920920f7d6d529ae23997cf"
+      - W/"f0b6443719a470d01c1a07f584ca7cbd"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b02f5481-2b93-4369-8880-73434b2bc948
+      - 1d8676ce-1758-4558-bb72-d1baaed1faf5
       X-Runtime:
-      - '0.009291'
+      - '0.002002'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"22","type":"club","attributes":{"name":"Hello123","host_id":0,"book_id":"gwgON2IwgDUC"}}}'
-  recorded_at: Thu, 03 Mar 2022 19:08:07 GMT
+      string: '{"data":{"id":"28","type":"club","attributes":{"name":"Hello123","host_id":0,"book_id":"gwgON2IwgDUC"}}}'
+  recorded_at: Thu, 03 Mar 2022 20:38:54 GMT
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/clubs/22/users
+    uri: http://localhost:3000/api/v1/clubs/28/users
     body:
       encoding: US-ASCII
       string: ''
@@ -202,15 +202,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - dc7a475c-20cc-40a8-9a0c-e04450677521
+      - fba61907-1d18-4b1a-8ac6-0f098857a557
       X-Runtime:
-      - '0.004058'
+      - '0.003741'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[]}'
-  recorded_at: Thu, 03 Mar 2022 19:08:07 GMT
+  recorded_at: Thu, 03 Mar 2022 20:38:54 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/books/gwgON2IwgDUC
@@ -232,13 +232,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"873a212a8084afa0e966441c5aaf1be5"
+      - W/"aee76dab3a5880bdfd9ef20c6e1324cc"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a477fab8-ff52-4806-8498-d748d92b516d
+      - 36401955-61ce-4d6b-8926-a8a54eedd61e
       X-Runtime:
-      - '0.227675'
+      - '0.161671'
       Transfer-Encoding:
       - chunked
     body:
@@ -246,11 +246,11 @@ http_interactions:
       string: '{"data":{"id":"gwgON2IwgDUC","type":"book","attributes":{"title":"Pride
         and Prejudice","authors":["Jane Austen"],"genres":["Fiction / Classics"],"description":"Insight
         edition with engaging side notes that offer background on social customs,
-        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE73_K8mmhTS1-sq4ORumHY4d1Ze88wtFXo66uAoDxUm3TSmvs2WCsr7FiM6uhu5AMMzrJfv2zaXpmwe2Hlho-6KZAqb04YrwXn_Wjbm1aaslMN-OJNC1dprxytY73MX-VFRsD7f8\u0026source=gbs_api"}}}'
-  recorded_at: Thu, 03 Mar 2022 19:08:07 GMT
+        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE71oaibg0xqogx9s9PRBNdDC3YS9GYg-D4PPlRGea2m_0DUkC4C8U9-qvldNw5DAuoDOXnvz1NxmhsJ141ddXd7iHmVENKdlpCZZ3ZMku0plRb3VOPZskyCxogBM8Te5fbAaVBoW\u0026source=gbs_api"}}}'
+  recorded_at: Thu, 03 Mar 2022 20:38:54 GMT
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/clubs/22/comments
+    uri: http://localhost:3000/api/v1/clubs/28/comments
     body:
       encoding: US-ASCII
       string: ''
@@ -273,13 +273,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 83f5de63-9421-4f4b-afd1-e9907891508e
+      - ef19151b-91fd-42d3-b92b-d387656cc464
       X-Runtime:
-      - '0.004159'
+      - '0.004499'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[]}'
-  recorded_at: Thu, 03 Mar 2022 19:08:07 GMT
+  recorded_at: Thu, 03 Mar 2022 20:38:54 GMT
 recorded_with: VCR 6.0.0

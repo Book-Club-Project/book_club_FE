@@ -16,7 +16,7 @@ RSpec.describe "New club page" do
       .to receive(:current_user).and_return(user)
       visit "/auth/google_oauth2"
   end
-  
+
   it "check for a create new club button", :vcr do
     visit("/books/gwgON2IwgDUC")
 
