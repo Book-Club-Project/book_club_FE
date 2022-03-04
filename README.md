@@ -1,4 +1,6 @@
-![th-1](https://user-images.githubusercontent.com/87088092/155640565-91ed61db-0262-4bc9-8096-51b616c21508.jpg)
+![9](https://user-images.githubusercontent.com/69017022/156702035-ca5be6c9-1607-40bd-8e66-34e509eb6cd8.png)
+
+
 # Mod3 Group Consultancy Project
 
 reference: [Turing documentation](https://backend.turing.edu/module3/projects/consultancy)
@@ -62,6 +64,10 @@ On you command line:
 1. Navigate to the local directory where the backend repo is housed
 2. Start the Backend server with `$ rails s` and navigate to http://localhost:3000/ in your web browser. Here you are able to interact with the API endpoints.
 
+OR
+
+1. Navigate to https://boiling-woodland-43020.herokuapp.com/ to interact with the endpoints.
+
 **Frontend Server**
  
 On your command line:
@@ -70,6 +76,9 @@ On your command line:
 3. Open a web browser and navigate to http://localhost:5000/
 4. Now you may explore the web application!
 
+OR
+
+1. Navigate to https://secure-retreat-15276.herokuapp.com/ and take a look around!
 ### Use of the BookClub Application
 
 

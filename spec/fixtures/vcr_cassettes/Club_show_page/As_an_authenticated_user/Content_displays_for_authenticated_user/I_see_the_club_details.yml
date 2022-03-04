@@ -27,15 +27,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - cab7ff9d-5703-47f4-8e18-b7713740a2ca
+      - ee66e608-e64c-4e65-a72a-2584cf53cb43
       X-Runtime:
-      - '0.005162'
+      - '0.006303'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}}'
-  recorded_at: Fri, 04 Mar 2022 04:14:40 GMT
+  recorded_at: Fri, 04 Mar 2022 05:03:27 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/users/1/clubs
@@ -57,19 +57,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"f7d8f677d5e2a6e8c75ca0710055ddb6"
+      - W/"ec3b48b81c9091b7cabfad13016b8a2f"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 13efc6ca-a419-46d0-8c42-90fbb1179d27
+      - 877963cc-8554-4730-8d97-bad23c0e8cb5
       X-Runtime:
-      - '0.028864'
+      - '0.005642'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":"ZV9DDwAAQBAJ"}},{"id":"4","type":"club","attributes":{"name":"Braniacs","host_id":6,"book_id":"5CzZzQEACAAJ"}},{"id":"5","type":"club","attributes":{"name":"thing","host_id":6,"book_id":"5CzZzQEACAAJ"}},{"id":"6","type":"club","attributes":{"name":"thing","host_id":6,"book_id":"5CzZzQEACAAJ"}}]}'
-  recorded_at: Fri, 04 Mar 2022 04:14:40 GMT
+      string: '{"data":[{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":"ZV9DDwAAQBAJ"}},{"id":"4","type":"club","attributes":{"name":"Braniacs","host_id":6,"book_id":"5CzZzQEACAAJ"}},{"id":"5","type":"club","attributes":{"name":"thing","host_id":6,"book_id":"5CzZzQEACAAJ"}},{"id":"6","type":"club","attributes":{"name":"thing","host_id":6,"book_id":"5CzZzQEACAAJ"}},{"id":"15","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"16","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"18","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"19","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}}]}'
+  recorded_at: Fri, 04 Mar 2022 05:03:27 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/books/gwgON2IwgDUC
@@ -91,13 +91,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"8e8374350eb4e6aab0aee3412cbd8983"
+      - W/"9ab77e6e79618dfa92f682094dd83f40"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 69835c58-6fa2-4869-a817-853efe5385c3
+      - b9eeef8c-318a-429e-902e-457c9d0fcbd1
       X-Runtime:
-      - '0.220824'
+      - '0.244984'
       Transfer-Encoding:
       - chunked
     body:
@@ -105,8 +105,8 @@ http_interactions:
       string: '{"data":{"id":"gwgON2IwgDUC","type":"book","attributes":{"title":"Pride
         and Prejudice","authors":["Jane Austen"],"genres":["Fiction / Classics"],"description":"Insight
         edition with engaging side notes that offer background on social customs,
-        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE70Vh4Y6uM-u0L94ldJUMYv_hoMFpw6m2rmTE5GN9LvUOKYJMULq3GcercVwOzw9ujgsCPG1JdhjTX58mttyXbDf8T3Q1ZkpOnY1adWYei1T7xTV-ntsHIYC2LduFkFbMZcHoKCk\u0026source=gbs_api"}}}'
-  recorded_at: Fri, 04 Mar 2022 04:14:40 GMT
+        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE70pD619eNt5f3EGN5v_cPI0tcNgHJoHRlW6rotWQvs39fpEVCkJ8_MJBuIW4Y8Bo-EUptqkYj5t3l5iAUoKkCxZoF6LqSP6DsgByofSYphJd4ge8-4A5zH7T3PZxU3Dw9OB-2Ta\u0026source=gbs_api"}}}'
+  recorded_at: Fri, 04 Mar 2022 05:03:27 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/users
@@ -132,15 +132,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2013b333-cfe6-40bf-b061-6c1a37ef184b
+      - c14a0249-851b-4a05-bb6c-59538546101f
       X-Runtime:
-      - '0.004752'
+      - '0.007659'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}},{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}},{"id":"6","type":"user","attributes":{"username":"dabrad@gmail.com","email":"dabrad@gmail.com"}}]}'
-  recorded_at: Fri, 04 Mar 2022 04:14:40 GMT
+  recorded_at: Fri, 04 Mar 2022 05:03:27 GMT
 - request:
     method: post
     uri: http://localhost:3000/api/v1/clubs
@@ -164,22 +164,22 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"4d05abbfa2a11b6f1d0c4cb54a2f7e44"
+      - W/"e8cf9735645140935470ec70b8753e15"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 525b13ea-92b5-4fcd-a745-9ef1f4f6fb59
+      - 4c47adaf-9016-44a0-a6ce-ff6fc20456e8
       X-Runtime:
-      - '0.095429'
+      - '0.048561'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"15","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}}}'
-  recorded_at: Fri, 04 Mar 2022 04:14:41 GMT
+      string: '{"data":{"id":"20","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}}}'
+  recorded_at: Fri, 04 Mar 2022 05:03:27 GMT
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/clubs/15
+    uri: http://localhost:3000/api/v1/clubs/20
     body:
       encoding: US-ASCII
       string: ''
@@ -198,22 +198,22 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"4d05abbfa2a11b6f1d0c4cb54a2f7e44"
+      - W/"e8cf9735645140935470ec70b8753e15"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c87b3ab0-9d5c-4c3e-a38b-2e6d5b6902d4
+      - e79d0790-2a6b-4e1d-bd95-5493d419e169
       X-Runtime:
-      - '0.002541'
+      - '0.001356'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"15","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}}}'
-  recorded_at: Fri, 04 Mar 2022 04:14:41 GMT
+      string: '{"data":{"id":"20","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}}}'
+  recorded_at: Fri, 04 Mar 2022 05:03:27 GMT
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/clubs/15/users
+    uri: http://localhost:3000/api/v1/clubs/20/users
     body:
       encoding: US-ASCII
       string: ''
@@ -236,15 +236,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 59516404-8dbe-4e17-b1a5-d7a5460c0ef8
+      - f5c0b050-7f93-46f3-8bd5-d19b14b9116d
       X-Runtime:
-      - '0.002245'
+      - '0.006758'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}}]}'
-  recorded_at: Fri, 04 Mar 2022 04:14:41 GMT
+  recorded_at: Fri, 04 Mar 2022 05:03:27 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/books/gwgON2IwgDUC
@@ -266,13 +266,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"9fb13a436fdfea09b57d9b1950e528f9"
+      - W/"7dd97e4a2ebdfc60af7ce79b0adf7f45"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 19d65f9a-e913-4486-8f4d-359411b01d32
+      - cbb6c752-0630-4882-b370-e3a0e6d7ced7
       X-Runtime:
-      - '0.170073'
+      - '0.205115'
       Transfer-Encoding:
       - chunked
     body:
@@ -280,11 +280,11 @@ http_interactions:
       string: '{"data":{"id":"gwgON2IwgDUC","type":"book","attributes":{"title":"Pride
         and Prejudice","authors":["Jane Austen"],"genres":["Fiction / Classics"],"description":"Insight
         edition with engaging side notes that offer background on social customs,
-        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE70SplhQKZ2qmpqrSKkvFk0KxZQY6bCxx356uXPjoPHLLerPQeljbztarhdhxb4CYeFJcQf7yW5ZDeI2YUy9-Tk73nSJBFDe57GHvgQjnvjTuDXxSHtThsi5LnCsWDsDt2tIT6ou\u0026source=gbs_api"}}}'
-  recorded_at: Fri, 04 Mar 2022 04:14:41 GMT
+        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE70Zdvv7dBhi0A-T6tvqJBnsO-IoTWxN1CWz9lrrmAJ7N03qtGQQUSzlDriKb2FXcR0xt0m-LuCIHjD16B3dy4_ka8ZLK3ZoudJmHbcKMnbAIX_N_fY-W20TuxVgxl0tVQS1JlsV\u0026source=gbs_api"}}}'
+  recorded_at: Fri, 04 Mar 2022 05:03:27 GMT
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/clubs/15/comments
+    uri: http://localhost:3000/api/v1/clubs/20/comments
     body:
       encoding: US-ASCII
       string: ''
@@ -307,13 +307,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9eed2254-d0f6-43d0-bd10-1116757b7a70
+      - 6f56a739-1ae8-4404-b38a-db7690400910
       X-Runtime:
-      - '0.003933'
+      - '0.007237'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[]}'
-  recorded_at: Fri, 04 Mar 2022 04:14:41 GMT
+  recorded_at: Fri, 04 Mar 2022 05:03:27 GMT
 recorded_with: VCR 6.0.0
