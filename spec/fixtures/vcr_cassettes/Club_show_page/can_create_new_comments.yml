@@ -1,0 +1,359 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/users
+    body:
+      encoding: UTF-8
+      string: '{"user":{"username":"happy22@example.com","email":"happy22@example.com"}}'
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"d03e84698f5e370effa03523b8867102"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c93118b0-a13b-47de-bb16-b7d976cbb9d1
+      X-Runtime:
+      - '0.002543'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}}'
+  recorded_at: Thu, 03 Mar 2022 20:38:55 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/clubs/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"5d9b65eb8fa0f86b5bd9cd9fe8789ea9"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 01acc411-8ed9-423b-a70f-8bf4a8259b31
+      X-Runtime:
+      - '0.002126'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":"ZV9DDwAAQBAJ"}}}'
+  recorded_at: Thu, 03 Mar 2022 20:38:55 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/clubs/1/users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4436a0b6ee66f1e7c8b42bf3a17d4454"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d17c9291-e626-4f93-a06a-a07a58e6720e
+      X-Runtime:
+      - '0.006268'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}}]}'
+  recorded_at: Thu, 03 Mar 2022 20:38:55 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/books/ZV9DDwAAQBAJ
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"777ee563f34c2d78124f5ddf1e0b7e56"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - bec55f5c-c8fe-4810-8369-71d46dbb3961
+      X-Runtime:
+      - '0.106184'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiWlY5RER3QUFRQkFKIiwidHlwZSI6ImJvb2siLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiUHJpZGUiLCJhdXRob3JzIjpbIkliaSBab2JvaSJdLCJnZW5yZXMiOlsiWW91bmcgQWR1bHQgRmljdGlvbiAvIERpdmVyc2l0eSBcdTAwMjYgTXVsdGljdWx0dXJhbCIsIllvdW5nIEFkdWx0IEZpY3Rpb24gLyBTb2NpYWwgVGhlbWVzIC8gQ2xhc3MgRGlmZmVyZW5jZXMiLCJZb3VuZyBBZHVsdCBGaWN0aW9uIC8gUm9tYW5jZSAvIENvbnRlbXBvcmFyeSJdLCJkZXNjcmlwdGlvbiI6Ilx1MDAzY3BcdTAwM2VJbiBhIHRpbWVseSB1cGRhdGUgb2YgSmFuZSBBdXN0ZW4nc8KgUHJpZGUgYW5kIFByZWp1ZGljZSzCoE5hdGlvbmFsIEJvb2sgQXdhcmQgZmluYWxpc3TCoEliaSBab2JvaSBza2lsbGZ1bGx5IGJhbGFuY2VzIGN1bHR1cmFsIGlkZW50aXR5LCBjbGFzcywgYW5kIGdlbnRyaWZpY2F0aW9uIGFnYWluc3QgdGhlIGhlYWR5IG1hZ2ljIG9mIGZpcnN0IGxvdmUgaW4gaGVyIHZpYnJhbnQgcmVpbWFnaW5pbmcgb2YgdGhpcyBiZWxvdmVkIGNsYXNzaWMuIEEgc21hcnQsIGZ1bm55LCBnb3JnZW91cyByZXRlbGxpbmcgc3RhcnJpbmcgYWxsIGNoYXJhY3RlcnMgb2YgY29sb3IuwqBcdTAwM2MvcFx1MDAzZVx1MDAzY3BcdTAwM2VadXJpIEJlbml0ZXogaGFzIHByaWRlLiBCcm9va2x5biBwcmlkZSwgZmFtaWx5IHByaWRlLCBhbmQgcHJpZGXCoGluIGhlciBBZnJvLUxhdGlubyByb290cy4gQnV0IHByaWRlIG1pZ2h0IG5vdCBiZSBlbm91Z2ggdG8gc2F2ZSBoZXIgcmFwaWRseSBnZW50cmlmeWluZyBuZWlnaGJvcmhvb2QgZnJvbSBiZWNvbWluZyB1bnJlY29nbml6YWJsZS4gXHUwMDNjL3BcdTAwM2VcdTAwM2NwXHUwMDNlV2hlbiB0aGUgd2VhbHRoeSBEYXJjeSBmYW1pbHkgbW92ZXMgaW4gYWNyb3NzIHRoZSBzdHJlZXQsIFp1cmkgd2FudHMgbm90aGluZyB0byBkbyB3aXRoIHRoZWlyIHR3byB0ZWVuYWdlIHNvbnMsIGV2ZW4gYXMgaGVyIG9sZGVyIHNpc3RlciwgSmFuYWUsIHN0YXJ0cyB0byBmYWxsIGZvciB0aGUgY2hhcm1pbmcgQWluc2xleS4gU2hlIGVzcGVjaWFsbHkgY2Fu4oCZdCBzdGFuZCB0aGUganVkZ21lbnRhbCBhbmQgYXJyb2dhbnQgRGFyaXVzLiBZZXQgYXMgWnVyaSBhbmQgRGFyaXVzIGFyZSBmb3JjZWQgdG8gZmluZCBjb21tb24gZ3JvdW5kLCB0aGVpciBpbml0aWFsIGRpc2xpa2Ugc2hpZnRzIGludG8gYW4gdW5leHBlY3RlZCB1bmRlcnN0YW5kaW5nLlx1MDAzYy9wXHUwMDNlXHUwMDNjcFx1MDAzZUJ1dCB3aXRoIGZvdXIgd2lsZCBzaXN0ZXJzIHB1bGxpbmcgaGVyIGluIGRpZmZlcmVudCBkaXJlY3Rpb25zLCBjdXRlIGJveSBXYXJyZW4gdnlpbmcgZm9yIGhlciBhdHRlbnRpb24sIGFuZCBjb2xsZWdlIGFwcGxpY2F0aW9ucyBob3ZlcmluZyBvbiB0aGUgaG9yaXpvbiwgWnVyaSBmaWdodHMgdG8gZmluZCBoZXIgcGxhY2UgaW4gQnVzaHdpY2vigJlzIGNoYW5naW5nIGxhbmRzY2FwZSwgb3IgbG9zZSBpdCBhbGwuXHUwMDNjL3BcdTAwM2VcdTAwM2NwXHUwMDNlXCJab2JvaSBza2lsbGZ1bGx5IGRlcGljdHMgdGhlIHZpY2lzc2l0dWRlcyBvZiB0ZWVuYWdlIHJlbGF0aW9uc2hpcHMsIGFuZCBadXJp4oCZcyBvdXRzaXplIHByaWRlIGFuZCBwb2V0aWMgc2Vuc2liaWxpdHkgbWFrZSBoZXIgYSBzeW1wYXRoZXRpYyB0ZWVuYWdlciBpbiBhIGNvbnRlbXBvcmFyeSBzdG9yeSBhYm91dCByYWNlLCBnZW50cmlmaWNhdGlvbiwgYW5kIHlvdW5nIGxvdmUuXCLCoChQdWJsaXNoZXJzIFdlZWtseSwgXCJBbiBBbnRpLVJhY2lzdCBDaGlsZHJlbidzIGFuZCBZQSBSZWFkaW5nIExpc3RcIilcdTAwM2MvcFx1MDAzZSIsInJhdGluZyI6NCwiaW1hZ2UiOiJodHRwOi8vYm9va3MuZ29vZ2xlLmNvbS9ib29rcy9wdWJsaXNoZXIvY29udGVudD9pZD1aVjlERHdBQVFCQUpcdTAwMjZwcmludHNlYz1mcm9udGNvdmVyXHUwMDI2aW1nPTFcdTAwMjZ6b29tPTVcdTAwMjZlZGdlPWN1cmxcdTAwMjZpbWd0az1BRkxSRTcxaG1INnB5eHhCbk9PbDlkamtRNXdTamlSLV84azFWN0dDZ0VKZUx0ODVDQUZQRTJMTVJVLTFob1hjdGdOYzliS3pWRDRuOTg3LThtRmxsbUNJN0tDbW1Yc2FHdDF1SGs1S2Y3c0t1SF9VUnBTZjVCVXktMDB3a1d5LXlSM0lVN0JpSDRVLVx1MDAyNnNvdXJjZT1nYnNfYXBpIn19fQ==
+  recorded_at: Thu, 03 Mar 2022 20:38:55 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/clubs/1/comments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"0c4644d1a75eba57f1a38dcb1ec2cf5a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1296a484-d2d5-4c53-843a-0546e3362798
+      X-Runtime:
+      - '0.003484'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"comment","attributes":{"title":"Hello","body":"Blah","user_id":1,"club_id":1}},{"id":"2","type":"comment","attributes":{"title":"Comments","body":"Blah
+        Blah","user_id":2,"club_id":1}},{"id":"3","type":"comment","attributes":{"title":"Coolio","body":"Blah
+        Blah Blah","user_id":3,"club_id":1}},{"id":"4","type":"comment","attributes":{"title":"Goodbye","body":"Blah
+        Blah Blah Blah","user_id":4,"club_id":1}},{"id":"7","type":"comment","attributes":{"title":"Test123","body":"My
+        comment","user_id":1,"club_id":1}}]}'
+  recorded_at: Thu, 03 Mar 2022 20:38:55 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/comments
+    body:
+      encoding: UTF-8
+      string: comment%5Bbody%5D=My+body&comment%5Bclub_id%5D=1&comment%5Btitle%5D=My+title&comment%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"e7a6879df916ba41a523705c74f553bc"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0b8ee017-cf97-4b97-abe1-f367d6ebc77a
+      X-Runtime:
+      - '0.009204'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"8","type":"comment","attributes":{"title":"My title","body":"My
+        body","user_id":1,"club_id":1}}}'
+  recorded_at: Thu, 03 Mar 2022 20:38:55 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/clubs/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"5d9b65eb8fa0f86b5bd9cd9fe8789ea9"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ada5a595-4919-4afa-a929-fa531de341d8
+      X-Runtime:
+      - '0.005303'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":"ZV9DDwAAQBAJ"}}}'
+  recorded_at: Thu, 03 Mar 2022 20:38:55 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/clubs/1/users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4436a0b6ee66f1e7c8b42bf3a17d4454"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 72ab4b95-54bf-47fe-b7e7-62536efad403
+      X-Runtime:
+      - '0.004398'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}}]}'
+  recorded_at: Thu, 03 Mar 2022 20:38:55 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/books/ZV9DDwAAQBAJ
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"66f46bda591a476f8e82a45cb3e7fbc1"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 34b213f7-ea91-45c1-b909-eda719c25bfa
+      X-Runtime:
+      - '0.118548'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiWlY5RER3QUFRQkFKIiwidHlwZSI6ImJvb2siLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiUHJpZGUiLCJhdXRob3JzIjpbIkliaSBab2JvaSJdLCJnZW5yZXMiOlsiWW91bmcgQWR1bHQgRmljdGlvbiAvIERpdmVyc2l0eSBcdTAwMjYgTXVsdGljdWx0dXJhbCIsIllvdW5nIEFkdWx0IEZpY3Rpb24gLyBTb2NpYWwgVGhlbWVzIC8gQ2xhc3MgRGlmZmVyZW5jZXMiLCJZb3VuZyBBZHVsdCBGaWN0aW9uIC8gUm9tYW5jZSAvIENvbnRlbXBvcmFyeSJdLCJkZXNjcmlwdGlvbiI6Ilx1MDAzY3BcdTAwM2VJbiBhIHRpbWVseSB1cGRhdGUgb2YgSmFuZSBBdXN0ZW4nc8KgUHJpZGUgYW5kIFByZWp1ZGljZSzCoE5hdGlvbmFsIEJvb2sgQXdhcmQgZmluYWxpc3TCoEliaSBab2JvaSBza2lsbGZ1bGx5IGJhbGFuY2VzIGN1bHR1cmFsIGlkZW50aXR5LCBjbGFzcywgYW5kIGdlbnRyaWZpY2F0aW9uIGFnYWluc3QgdGhlIGhlYWR5IG1hZ2ljIG9mIGZpcnN0IGxvdmUgaW4gaGVyIHZpYnJhbnQgcmVpbWFnaW5pbmcgb2YgdGhpcyBiZWxvdmVkIGNsYXNzaWMuIEEgc21hcnQsIGZ1bm55LCBnb3JnZW91cyByZXRlbGxpbmcgc3RhcnJpbmcgYWxsIGNoYXJhY3RlcnMgb2YgY29sb3IuwqBcdTAwM2MvcFx1MDAzZVx1MDAzY3BcdTAwM2VadXJpIEJlbml0ZXogaGFzIHByaWRlLiBCcm9va2x5biBwcmlkZSwgZmFtaWx5IHByaWRlLCBhbmQgcHJpZGXCoGluIGhlciBBZnJvLUxhdGlubyByb290cy4gQnV0IHByaWRlIG1pZ2h0IG5vdCBiZSBlbm91Z2ggdG8gc2F2ZSBoZXIgcmFwaWRseSBnZW50cmlmeWluZyBuZWlnaGJvcmhvb2QgZnJvbSBiZWNvbWluZyB1bnJlY29nbml6YWJsZS4gXHUwMDNjL3BcdTAwM2VcdTAwM2NwXHUwMDNlV2hlbiB0aGUgd2VhbHRoeSBEYXJjeSBmYW1pbHkgbW92ZXMgaW4gYWNyb3NzIHRoZSBzdHJlZXQsIFp1cmkgd2FudHMgbm90aGluZyB0byBkbyB3aXRoIHRoZWlyIHR3byB0ZWVuYWdlIHNvbnMsIGV2ZW4gYXMgaGVyIG9sZGVyIHNpc3RlciwgSmFuYWUsIHN0YXJ0cyB0byBmYWxsIGZvciB0aGUgY2hhcm1pbmcgQWluc2xleS4gU2hlIGVzcGVjaWFsbHkgY2Fu4oCZdCBzdGFuZCB0aGUganVkZ21lbnRhbCBhbmQgYXJyb2dhbnQgRGFyaXVzLiBZZXQgYXMgWnVyaSBhbmQgRGFyaXVzIGFyZSBmb3JjZWQgdG8gZmluZCBjb21tb24gZ3JvdW5kLCB0aGVpciBpbml0aWFsIGRpc2xpa2Ugc2hpZnRzIGludG8gYW4gdW5leHBlY3RlZCB1bmRlcnN0YW5kaW5nLlx1MDAzYy9wXHUwMDNlXHUwMDNjcFx1MDAzZUJ1dCB3aXRoIGZvdXIgd2lsZCBzaXN0ZXJzIHB1bGxpbmcgaGVyIGluIGRpZmZlcmVudCBkaXJlY3Rpb25zLCBjdXRlIGJveSBXYXJyZW4gdnlpbmcgZm9yIGhlciBhdHRlbnRpb24sIGFuZCBjb2xsZWdlIGFwcGxpY2F0aW9ucyBob3ZlcmluZyBvbiB0aGUgaG9yaXpvbiwgWnVyaSBmaWdodHMgdG8gZmluZCBoZXIgcGxhY2UgaW4gQnVzaHdpY2vigJlzIGNoYW5naW5nIGxhbmRzY2FwZSwgb3IgbG9zZSBpdCBhbGwuXHUwMDNjL3BcdTAwM2VcdTAwM2NwXHUwMDNlXCJab2JvaSBza2lsbGZ1bGx5IGRlcGljdHMgdGhlIHZpY2lzc2l0dWRlcyBvZiB0ZWVuYWdlIHJlbGF0aW9uc2hpcHMsIGFuZCBadXJp4oCZcyBvdXRzaXplIHByaWRlIGFuZCBwb2V0aWMgc2Vuc2liaWxpdHkgbWFrZSBoZXIgYSBzeW1wYXRoZXRpYyB0ZWVuYWdlciBpbiBhIGNvbnRlbXBvcmFyeSBzdG9yeSBhYm91dCByYWNlLCBnZW50cmlmaWNhdGlvbiwgYW5kIHlvdW5nIGxvdmUuXCLCoChQdWJsaXNoZXJzIFdlZWtseSwgXCJBbiBBbnRpLVJhY2lzdCBDaGlsZHJlbidzIGFuZCBZQSBSZWFkaW5nIExpc3RcIilcdTAwM2MvcFx1MDAzZSIsInJhdGluZyI6NCwiaW1hZ2UiOiJodHRwOi8vYm9va3MuZ29vZ2xlLmNvbS9ib29rcy9wdWJsaXNoZXIvY29udGVudD9pZD1aVjlERHdBQVFCQUpcdTAwMjZwcmludHNlYz1mcm9udGNvdmVyXHUwMDI2aW1nPTFcdTAwMjZ6b29tPTVcdTAwMjZlZGdlPWN1cmxcdTAwMjZpbWd0az1BRkxSRTczNUlraTZLVlJ0NzdLamFoRVdPRnRFY1JSdnkxQjhtU0QtaFRtNklsVHF3MmRqQkV3Q3JHbWZqQ1Npd0dlV3puT0pBTTAyTldnbTI4NzlYR2Q3anBoTkpGXzlMdGh3VGtjWFJXX0k2SmNPVDFPSVlkT0Fjcm9Zdi1BaXhOU21OR1RGV1NVN1x1MDAyNnNvdXJjZT1nYnNfYXBpIn19fQ==
+  recorded_at: Thu, 03 Mar 2022 20:38:55 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/clubs/1/comments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"0de8a534f751aa370982fc721fd2ec19"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 63f881cf-2576-4d68-ad8a-5b5967068501
+      X-Runtime:
+      - '0.003916'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"comment","attributes":{"title":"Hello","body":"Blah","user_id":1,"club_id":1}},{"id":"2","type":"comment","attributes":{"title":"Comments","body":"Blah
+        Blah","user_id":2,"club_id":1}},{"id":"3","type":"comment","attributes":{"title":"Coolio","body":"Blah
+        Blah Blah","user_id":3,"club_id":1}},{"id":"4","type":"comment","attributes":{"title":"Goodbye","body":"Blah
+        Blah Blah Blah","user_id":4,"club_id":1}},{"id":"7","type":"comment","attributes":{"title":"Test123","body":"My
+        comment","user_id":1,"club_id":1}},{"id":"8","type":"comment","attributes":{"title":"My
+        title","body":"My body","user_id":1,"club_id":1}}]}'
+  recorded_at: Thu, 03 Mar 2022 20:38:55 GMT
+recorded_with: VCR 6.0.0

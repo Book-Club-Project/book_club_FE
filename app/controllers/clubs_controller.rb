@@ -1,6 +1,7 @@
 class ClubsController < ApplicationController
 
   def show
+    club_host = current_user
     club_id = params[:id]
     @club = ClubFacade.get_club(club_id)
     @club_users = ClubFacade.get_club_users(club_id)
@@ -15,8 +16,17 @@ class ClubsController < ApplicationController
   end
 
   def create
-    @book_id = params[:book_id]
-    @club = ClubFacade.create_club(name: params[:club_name], book_id: params[:book_id], host_id: 3)
-    redirect_to "/clubs/#{@club.id}"
+    if params[:user_ids].nil?
+      params[:user_ids] = []
+      params[:user_ids].push(current_user.id)
+      @book_id = params[:book_id]
+      @club = ClubFacade.create_club(name: params[:club_name], book_id: params[:book_id], host_id: current_user.id, params: params[:user_ids])
+      redirect_to "/clubs/#{@club.id}"
+    else
+      @book_id = params[:book_id]
+      params[:user_ids].push(current_user.id)
+      @club = ClubFacade.create_club(name: params[:club_name], book_id: params[:book_id], host_id: current_user.id, params: params[:user_ids])
+      redirect_to "/clubs/#{@club.id}"
+    end
   end
 end

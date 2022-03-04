@@ -26,13 +26,12 @@ reference: [Turing documentation](https://backend.turing.edu/module3/projects/co
       <ul>
         <li><a href="#learning-goals-for-project">Learning Goals for Project</a></li>
         <li><a href="#inception">Inception</a></li>
+        <li><a href="#app-screenshots">Example Pages From App</a></li>
         <li><a href="#versions">Versions</a></li>
         <li><a href="#important-gems">Important Gems</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#apis">Book Club API</a>
-    </li>
+    <li><a href="#apis">Book Club API</a></li>
     <li><a href="#project-contributors">Collaborators</a></li>
   </ol>
 </details>
@@ -135,6 +134,9 @@ Implicit
 
 ----------
 
+### App Screenshots
+
+
 ### Versions
 
 - Ruby 2.7.2
@@ -158,7 +160,7 @@ See [book club BE repo](https://github.com/Book-Club-Project/book_club_BE)
 
 ----------
 
-## Project Contributors 
+## Project Contributors
 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->

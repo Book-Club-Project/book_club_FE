@@ -1,6 +1,42 @@
 ---
 http_interactions:
 - request:
+    method: post
+    uri: http://localhost:3000/api/v1/users
+    body:
+      encoding: UTF-8
+      string: '{"user":{"username":"happy22@example.com","email":"happy22@example.com"}}'
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"d03e84698f5e370effa03523b8867102"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 18fe0837-1af8-4e25-9b38-5ecb8f537f9e
+      X-Runtime:
+      - '0.003611'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}}'
+  recorded_at: Thu, 03 Mar 2022 20:38:53 GMT
+- request:
     method: get
     uri: http://localhost:3000/api/v1/books/gwgON2IwgDUC
     body:
@@ -21,13 +57,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"22599a1bf6c98d078df9e2875d13eb4b"
+      - W/"b060decf494913a6edf21543ab2cb748"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 255fa266-288a-4c87-957c-fdb1e44d3563
+      - dd4928c8-0b39-4e89-a9b4-b121773d6c37
       X-Runtime:
-      - '0.115961'
+      - '0.129777'
       Transfer-Encoding:
       - chunked
     body:
@@ -35,8 +71,8 @@ http_interactions:
       string: '{"data":{"id":"gwgON2IwgDUC","type":"book","attributes":{"title":"Pride
         and Prejudice","authors":["Jane Austen"],"genres":["Fiction / Classics"],"description":"Insight
         edition with engaging side notes that offer background on social customs,
-        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE73IYJqnUOiQILjJzUuE9dFaf0r1LLvqo1DSg9JJMPnqW4yrV5KERSP5Gi8BM204P-DJ6m6XAmdQN0SskkkmS_PcYx2xb0pTdQc-PbMbTL_H8LmzFG6kfRKVS8w9p7BNfawMHl8P\u0026source=gbs_api"}}}'
-  recorded_at: Thu, 03 Mar 2022 03:40:08 GMT
+        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE702zlqTIN8GwiW6C_XL7t1ieKfbEQM7DNWFVvGwvz2xgGEP0GzIOdhby3MuGW7GhqTSFZbZN9zNi-MddFQ2GH7knWheB5Yl_HEi7hb_uQR7cyhT-b7aZOxypZRc03PZcb_ya1hf\u0026source=gbs_api"}}}'
+  recorded_at: Thu, 03 Mar 2022 20:38:54 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/users
@@ -58,17 +94,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"f5335dde282619a408411e9b65439eb8"
+      - W/"bd2d8f831762bafacba4d0b1f60cb53c"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ed917526-908d-448c-b09d-5bfcb54dd19d
+      - da9c233d-7f14-4948-b649-1db467778939
       X-Runtime:
-      - '0.006631'
+      - '0.002055'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}},{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}]}'
-  recorded_at: Thu, 03 Mar 2022 03:40:08 GMT
+      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}},{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}},{"id":"6","type":"user","attributes":{"username":"echon92@gmail.com","email":"echon92@gmail.com"}}]}'
+  recorded_at: Thu, 03 Mar 2022 20:38:54 GMT
 recorded_with: VCR 6.0.0

@@ -9,7 +9,7 @@
   </style>
 
 </header>
-<div class="container">
+<div id="nav-bar" class="container">
   <div class="nav-container">
     <ul class="nav">
       <li class="nav-item">
@@ -22,7 +22,12 @@
 
       <% if session[:user_id] %>
         <li class="nav-item">
-          <a class="nav-link" href="/logout">Logout</a>
+          <a class="nav-link" href="/logout">Logout</a> 
+
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/dashboard">My Dashboard</a>
         </li>
       <% else %>
         <li class="nav-item">

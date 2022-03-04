@@ -21,17 +21,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"f5335dde282619a408411e9b65439eb8"
+      - W/"bd2d8f831762bafacba4d0b1f60cb53c"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b4d2b520-efca-4a90-b447-7dd785ccafcb
+      - edb5b2ff-3902-4791-bdaa-1effe060df04
       X-Runtime:
-      - '0.002167'
+      - '0.004924'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}},{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}]}'
-  recorded_at: Thu, 03 Mar 2022 03:40:10 GMT
+      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}},{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}},{"id":"6","type":"user","attributes":{"username":"echon92@gmail.com","email":"echon92@gmail.com"}}]}'
+  recorded_at: Thu, 03 Mar 2022 20:38:56 GMT
 recorded_with: VCR 6.0.0
