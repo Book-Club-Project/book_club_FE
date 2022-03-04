@@ -37,5 +37,28 @@ RSpec.describe UserService do
         end
       end
     end
+
+    describe 'user_clubs' do
+      it 'returns data for all user clubs', :vcr do
+        response = UserService.user_clubs(1)
+
+        expect(response).to be_a Array
+
+        response.each do |club|
+          expect(club).to have_key :id
+          expect(club[:id]).to be_a String
+
+          expect(club[:attributes]).to have_key :name
+          expect(club[:attributes][:name]).to be_a String
+
+          expect(club[:attributes]).to have_key :host_id
+          expect(club[:attributes][:host_id]).to be_a Integer
+
+          expect(club[:attributes]).to have_key :book_id
+          expect(club[:attributes][:book_id]).to be_a String
+        end
+      end
+    end
+
   end
 end

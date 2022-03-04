@@ -25,13 +25,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d1f7d72b-8dd1-4d01-957c-79eca840b3a0
+      - c13c9950-8880-4a8c-be01-f19be204e6bd
       X-Runtime:
-      - '0.007183'
+      - '0.003390'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}}]}'
-  recorded_at: Thu, 03 Mar 2022 20:38:56 GMT
+  recorded_at: Fri, 04 Mar 2022 05:52:30 GMT
 recorded_with: VCR 6.0.0

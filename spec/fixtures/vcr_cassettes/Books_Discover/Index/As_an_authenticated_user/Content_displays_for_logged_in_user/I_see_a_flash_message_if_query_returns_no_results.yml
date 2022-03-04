@@ -23,19 +23,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"d03e84698f5e370effa03523b8867102"
+      - W/"86d9c73a03e7253a0c8f0b99f8231028"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 152fd5d8-4756-4d7f-8b7d-d0ba0e493502
+      - 261f7d48-4655-4f09-8b2e-81d2873e4610
       X-Runtime:
-      - '0.002265'
+      - '0.003103'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}}'
-  recorded_at: Fri, 04 Mar 2022 04:09:46 GMT
+      string: '{"data":{"id":"6","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}}'
+  recorded_at: Fri, 04 Mar 2022 05:51:53 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/users/1/clubs
@@ -57,19 +57,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"f7d8f677d5e2a6e8c75ca0710055ddb6"
+      - W/"0e46f423d452b21865cbf0261e703970"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 82b09330-573e-4fe0-8eeb-85cd67c54178
+      - ae6412fe-b7c2-4c1e-90bb-38d06686c985
       X-Runtime:
-      - '0.002983'
+      - '0.004421'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":"ZV9DDwAAQBAJ"}},{"id":"4","type":"club","attributes":{"name":"Braniacs","host_id":6,"book_id":"5CzZzQEACAAJ"}},{"id":"5","type":"club","attributes":{"name":"thing","host_id":6,"book_id":"5CzZzQEACAAJ"}},{"id":"6","type":"club","attributes":{"name":"thing","host_id":6,"book_id":"5CzZzQEACAAJ"}}]}'
-  recorded_at: Fri, 04 Mar 2022 04:09:46 GMT
+      string: '{"data":[{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":"ZV9DDwAAQBAJ"}},{"id":"4","type":"club","attributes":{"name":"hello8","host_id":5,"book_id":"ZV9DDwAAQBAJ"}},{"id":"9","type":"club","attributes":{"name":"hello8","host_id":5,"book_id":"ZV9DDwAAQBAJ"}},{"id":"10","type":"club","attributes":{"name":"hello8","host_id":5,"book_id":"ZV9DDwAAQBAJ"}},{"id":"11","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"12","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"13","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"14","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"15","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"16","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"17","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"18","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"19","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"20","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"21","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"22","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"23","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"24","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"25","type":"club","attributes":{"name":"club1","host_id":6,"book_id":"ZV9DDwAAQBAJ"}},{"id":"27","type":"club","attributes":{"name":"club3","host_id":5,"book_id":"ZV9DDwAAQBAJ"}}]}'
+  recorded_at: Fri, 04 Mar 2022 05:51:53 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v1/books/search?title=jh21g31yiu2g3
@@ -91,9 +91,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       X-Request-Id:
-      - 12b99b98-a11f-4906-b23f-f33d81d76224
+      - c1031f91-1b3d-4d39-b744-0f7ddc44b40f
       X-Runtime:
-      - '0.423751'
+      - '0.265560'
       Content-Length:
       - '10272'
     body:
@@ -206,5 +206,5 @@ http_interactions:
         lib/puma/server.rb:476:in `process_client''"},{"id":52,"trace":"puma (3.12.6)
         lib/puma/server.rb:334:in `block in run''"},{"id":53,"trace":"puma (3.12.6)
         lib/puma/thread_pool.rb:135:in `block in spawn_thread''"}]}}'
-  recorded_at: Fri, 04 Mar 2022 04:09:47 GMT
+  recorded_at: Fri, 04 Mar 2022 05:51:53 GMT
 recorded_with: VCR 6.0.0
