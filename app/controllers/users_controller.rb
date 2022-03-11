@@ -20,20 +20,21 @@ class UsersController < ApplicationController
       req.headers['Content-Type'] = 'application/json'
       req.body = JSON.generate(user: { username: email, email: email })
     end
+  
     
-
-    if response.status == 400
-      response = conn.get('/api/v1/users') do |req|
-        req.headers['Content-Type'] = 'application/json'
-        req.body = JSON.generate(user: { username: email, email: email })
-      end
-      user = JSON.parse(response.body, symbolize_names: true)[:data]
-      session[:user_id] = user[0][:id]
-    else
-      user = JSON.parse(response.body, symbolize_names: true)[:data]
-      session[:user_id] = user[:id]
-    end
-    redirect_to '/dashboard'
+    # if response.status == 400
+    #   response = conn.get('/api/v1/users') do |req|
+    #     req.headers['Content-Type'] = 'application/json'
+    #     req.body = JSON.generate(user: { username: email, email: email })
+    #   end
+    #   user = JSON.parse(response.body, symbolize_names: true)[:data]
+    #   binding.pry
+    #   session[:user_id] = user[0][:id]
+    # else
+    #   user = JSON.parse(response.body, symbolize_names: true)[:data]
+    #   session[:user_id] = user[:id]
+    # end
+    # redirect_to '/dashboard'
 
     # if response.status == 400
     #   response = conn.get('/api/v1/users') do |req|
@@ -41,9 +42,9 @@ class UsersController < ApplicationController
     #     req.body = JSON.generate(user: { username: email, email: email })
     #   end
     # end
-    # user = JSON.parse(response.body, symbolize_names: true)[:data]
+    user = JSON.parse(response.body, symbolize_names: true)[:data]
     # binding.pry
-    # session[:user_id] = user[:id]
-    # redirect_to '/dashboard'
+    session[:user_id] = user[:id]
+    redirect_to '/dashboard'
   end
 end
