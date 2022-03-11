@@ -21,26 +21,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 17:59:39 GMT
+      - Fri, 11 Mar 2022 20:17:00 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"8f645589a026779429dc2e2caf05e57b"
+      - W/"b5056e13ea3b0198ee4ddef55e3f27ba"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ba396f44-b43d-4ede-81fd-b0546ec52d4f
+      - f90281af-5abf-4aba-a34a-fdcf9db39461
       X-Runtime:
-      - '0.197570'
+      - '0.401748'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"Spend and
-        be spent.","author":"Theodore Roosevelt, sign posted at his grave site"}}}'
-  recorded_at: Fri, 11 Mar 2022 17:59:39 GMT
+      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"You can complain
+        about the house where the husband is the wife.","author":"Vikrant Parsai"}}}'
+  recorded_at: Fri, 11 Mar 2022 20:17:01 GMT
 recorded_with: VCR 6.0.0

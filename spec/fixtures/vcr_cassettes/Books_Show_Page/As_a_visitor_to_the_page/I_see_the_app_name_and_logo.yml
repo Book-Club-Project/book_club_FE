@@ -21,19 +21,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 17:59:51 GMT
+      - Fri, 11 Mar 2022 20:17:09 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"6272546e9cbdc1b8f6afcca66755bf62"
+      - W/"5d78537e7f811f70ef3b5fa62e2410ea"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6998ab5e-8868-4a47-a925-824a119f0bc9
+      - 5611e25a-7d17-4a9b-bdaf-a9f489c7b7ca
       X-Runtime:
-      - '0.173011'
+      - '0.304992'
       Transfer-Encoding:
       - chunked
       Via:
@@ -43,6 +43,6 @@ http_interactions:
       string: '{"data":{"id":"gwgON2IwgDUC","type":"book","attributes":{"title":"Pride
         and Prejudice","authors":["Jane Austen"],"genres":["Fiction / Classics"],"description":"Insight
         edition with engaging side notes that offer background on social customs,
-        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE728Z4CtHGKKQwIBDDphlFBCg8wfd0VeFCHdA3H4KJ0cXs51suHtwe1YwMI82dF1QgFbWoY2O4ep0S2jMD7pFEM08EYvBURyJWqWoaOjhVO3uubO2YuUypRczXDTcUUpcjEdFuna\u0026source=gbs_api"}}}'
-  recorded_at: Fri, 11 Mar 2022 17:59:51 GMT
+        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE73RjMRu4VvejIUi-66ZEVxxsEipjvQaAe-N1Qwf4KPw7ssiTiDbyI5YccMXBc9p1pghs8HGmeAiOiPKOOG4TJFBS0uR4LAdx2nW0LY50dZgAjTIVdoBV8FBZ5ROv9gggIyUX83J\u0026source=gbs_api"}}}'
+  recorded_at: Fri, 11 Mar 2022 20:17:10 GMT
 recorded_with: VCR 6.0.0

@@ -23,26 +23,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 17:59:38 GMT
+      - Fri, 11 Mar 2022 20:17:00 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"a2fdaca0b5d066b7f7f313e49520983f"
+      - W/"b10d4918aba3270f6e8735c68193cadf"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5805f3f3-3ffe-4b26-8317-ba3b6591a5b4
+      - 4949e2c8-34f5-469c-be52-551928f85370
       X-Runtime:
-      - '0.016396'
+      - '0.015919'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"7","type":"comment","attributes":{"title":"Test123","body":"My
+      string: '{"data":{"id":"22","type":"comment","attributes":{"title":"Test123","body":"My
         comment","user_id":1,"club_id":1}}}'
-  recorded_at: Fri, 11 Mar 2022 17:59:39 GMT
+  recorded_at: Fri, 11 Mar 2022 20:17:00 GMT
 recorded_with: VCR 6.0.0
