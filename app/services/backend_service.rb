@@ -4,7 +4,7 @@ class BackendService
     # conn = Faraday.new(url: "http://localhost:3000/")
 
     # Heroku app connection code
-    conn = Faraday.new(url: "hhttps://hidden-garden-03870.herokuapp.com/")
+    conn = Faraday.new(url: "https://hidden-garden-03870.herokuapp.com/")
   end
 
   def self.parsed_response(url)
