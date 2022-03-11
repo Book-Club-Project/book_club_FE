@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://boiling-woodland-43020.herokuapp.com/api/v1/quote
+    uri: https://hidden-garden-03870.herokuapp.com/api/v1/quote
     body:
       encoding: US-ASCII
       string: ''
@@ -21,26 +21,28 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 04:13:56 GMT
+      - Fri, 11 Mar 2022 17:46:03 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"fa3c0798e06f32ebef30eca9f1890941"
+      - W/"2ae988a91b94d8358f9d93798e6bc34c"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 318aac10-1c22-4807-a891-68838c023bed
+      - 3626fbba-d654-4051-8e0d-b4e6c91af754
       X-Runtime:
-      - '0.186584'
+      - '0.228886'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"Luck always
-        favors those who are bold.","author":"Debasish Mridha, M.D."}}}'
-  recorded_at: Fri, 11 Mar 2022 04:13:56 GMT
+      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"Here''s to
+        you ,as good as you are, And here''s to me, as bad as I am But as good as
+        you are, and as bad as I am, I am as good as you are, as bad as I am.","author":"Scottish
+        Proverb"}}}'
+  recorded_at: Fri, 11 Mar 2022 17:46:03 GMT
 recorded_with: VCR 6.0.0

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/clubs/1
+    uri: https://hidden-garden-03870.herokuapp.com/api/v1/clubs/1
     body:
       encoding: US-ASCII
       string: ''
@@ -18,20 +18,28 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 11 Mar 2022 17:45:18 GMT
+      Connection:
+      - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"5d9b65eb8fa0f86b5bd9cd9fe8789ea9"
+      - W/"be5c014b5d84d0f57273aacf994ad272"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 76bed827-4692-46ef-b869-d03fbf8d61ca
+      - f48df339-eda7-4b2d-bb92-035bc5b9b7fb
       X-Runtime:
-      - '0.002296'
+      - '0.067699'
       Transfer-Encoding:
       - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":"ZV9DDwAAQBAJ"}}}'
-  recorded_at: Fri, 04 Mar 2022 05:51:49 GMT
+      string: '{"data":{"id":"1","type":"club","attributes":{"name":"Sierra Tucker","host_id":4,"book_id":"szamDwAAQBAJ"}}}'
+  recorded_at: Fri, 11 Mar 2022 17:45:18 GMT
 recorded_with: VCR 6.0.0

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://boiling-woodland-43020.herokuapp.com/api/v1/quote
+    uri: https://hidden-garden-03870.herokuapp.com/api/v1/quote
     body:
       encoding: US-ASCII
       string: ''
@@ -21,28 +21,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 04:13:54 GMT
+      - Fri, 11 Mar 2022 17:45:19 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"e84e2d8d4418bbb4868d7cb8a1c2aaf5"
+      - W/"99f464922d867181a9f9c5ad5b472920"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - bbd9e669-517d-40a8-ac04-deec6694876e
+      - d0731e4d-bfe8-4cb5-bad3-2d091603a1c5
       X-Runtime:
-      - '0.136476'
+      - '0.363335'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"Ignorance
-        is preferable to error, and he is less remote from the truth who believes
-        nothing than he who believes what is wrong.","author":"Thomas Jefferson, (Notes
-        on Virginia, 1782)"}}}'
-  recorded_at: Fri, 11 Mar 2022 04:13:55 GMT
+      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"The question
+        of whether a computer can think is no more interesting than the question of
+        whether a submarine can swim.","author":"E. W. Dijkstra"}}}'
+  recorded_at: Fri, 11 Mar 2022 17:45:19 GMT
 recorded_with: VCR 6.0.0
