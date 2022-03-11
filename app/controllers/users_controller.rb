@@ -28,7 +28,6 @@ class UsersController < ApplicationController
         req.body = JSON.generate(user: { username: email, email: email })
       end
       user = JSON.parse(response.body, symbolize_names: true)[:data]
-      binding.pry
       session[:user_id] = user[0][:id]
     else
       user = JSON.parse(response.body, symbolize_names: true)[:data]
