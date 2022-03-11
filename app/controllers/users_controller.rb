@@ -11,7 +11,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    conn = Faraday.new(url: 'https://boiling-woodland-43020.herokuapp.com/')
+    conn = Faraday.new(url: 'https://hidden-garden-03870.herokuapp.com/')
     auth_hash = request.env['omniauth.auth']
     email = auth_hash['info']['email']
 
@@ -22,7 +22,7 @@ class UsersController < ApplicationController
 
     user = JSON.parse(response.body, symbolize_names: true)[:data]
     session[:user_id] = user[:id]
-
+    # binding.pry
     redirect_to '/dashboard'
   end
 end
