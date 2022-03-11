@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 17:45:36 GMT
+      - Fri, 11 Mar 2022 17:59:57 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 4a51ce09-d609-40a0-a185-52f37ca4fade
+      - 66839bb5-cae3-45d4-a87a-bc9bb1adbe56
       X-Runtime:
-      - '0.014661'
+      - '0.008083'
       Transfer-Encoding:
       - chunked
       Via:
@@ -41,7 +41,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"error":{"exception":"Validation failed: Email has already been taken"}}'
-  recorded_at: Fri, 11 Mar 2022 17:45:36 GMT
+  recorded_at: Fri, 11 Mar 2022 17:59:58 GMT
 - request:
     method: get
     uri: https://hidden-garden-03870.herokuapp.com/api/v1/users
@@ -65,27 +65,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 17:45:36 GMT
+      - Fri, 11 Mar 2022 17:59:57 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"771435033563aa0600eeef8fcb34a46b"
+      - W/"f5335dde282619a408411e9b65439eb8"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5b20a817-eb34-47a9-adf5-48ef16983972
+      - 748f07ea-f6f6-40c3-ba3f-aa6a48790081
       X-Runtime:
-      - '0.012253'
+      - '0.007138'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"demitrimeer@yahoo.com","email":"demitrimeer@yahoo.com"}},{"id":"2","type":"user","attributes":{"username":"apaarn2211@gmail.com","email":"apaarn2211@gmail.com"}},{"id":"3","type":"user","attributes":{"username":"anavaro1995@gmail.com","email":"anavaro1995@gmail.com"}},{"id":"4","type":"user","attributes":{"username":"sierra.tucker121@gmail.com","email":"sierra.tucker121@gmail.com"}},{"id":"5","type":"user","attributes":{"username":"sierra.tucker121@gmail.com","email":"sierra.tucker121@gmail.com"}},{"id":"6","type":"user","attributes":{"username":"mountaingoat16@gmail.com","email":"mountaingoat16@gmail.com"}},{"id":"7","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}]}'
-  recorded_at: Fri, 11 Mar 2022 17:45:37 GMT
+      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}},{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}]}'
+  recorded_at: Fri, 11 Mar 2022 17:59:58 GMT
 - request:
     method: get
     uri: https://hidden-garden-03870.herokuapp.com/api/v1/users/1/clubs
@@ -107,17 +107,17 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 17:45:36 GMT
+      - Fri, 11 Mar 2022 17:59:58 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"cba919a17fd8413896ff452aa25c6a33"
+      - W/"041c0c0f25a0837e215dc81cb9821bd7"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 221ebd03-17ce-492a-ae47-e1758f0787f1
+      - 77c065e2-d6d6-404a-94bf-5f03d44cf4c7
       X-Runtime:
       - '0.011790'
       Transfer-Encoding:
@@ -126,9 +126,8 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"3","type":"club","attributes":{"name":"People love
-        books","host_id":4,"book_id":"zrZM0POHzocC"}}]}'
-  recorded_at: Fri, 11 Mar 2022 17:45:37 GMT
+      string: '{"data":[{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":"ZV9DDwAAQBAJ"}}]}'
+  recorded_at: Fri, 11 Mar 2022 17:59:58 GMT
 - request:
     method: get
     uri: https://hidden-garden-03870.herokuapp.com/api/v1/books/gwgON2IwgDUC
@@ -150,19 +149,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 17:45:36 GMT
+      - Fri, 11 Mar 2022 17:59:58 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"88a1186fdeee9d50be9ecaf12ec449b0"
+      - W/"83929df55dfa149f1ba50c49e0d30156"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6a2dadbe-bd24-4751-9437-7d1cab8b10bc
+      - '030896d5-f1a8-472f-9e42-ab99af48f797'
       X-Runtime:
-      - '0.108969'
+      - '0.764936'
       Transfer-Encoding:
       - chunked
       Via:
@@ -172,8 +171,8 @@ http_interactions:
       string: '{"data":{"id":"gwgON2IwgDUC","type":"book","attributes":{"title":"Pride
         and Prejudice","authors":["Jane Austen"],"genres":["Fiction / Classics"],"description":"Insight
         edition with engaging side notes that offer background on social customs,
-        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE70w10nz23FNVXBv_IyR4LPR4aON0Kdx3nYkyW_cGPrfhxsuVaie3JbgvqHMyhcPFywSCYmqsU8JPg3nYDiQP5r_1dYE4-QuvI-qXYMfzHHMAMWz_XF_uWuQXqK1X_CKhrUqFq0h\u0026source=gbs_api"}}}'
-  recorded_at: Fri, 11 Mar 2022 17:45:37 GMT
+        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE71BTq0jhGuACZfDO8_BKPeKzjncp8LkDm05NCHNvbvBd0UsvK5Lp-G4rxqADgOjj-vw-0KSx0-U_s090JKu55aXQj3o1DBpntHAL7xSqGbD8qtv_yQ4_WZadMCgdt4OkbyJ5HiO\u0026source=gbs_api"}}}'
+  recorded_at: Fri, 11 Mar 2022 17:59:59 GMT
 - request:
     method: get
     uri: https://hidden-garden-03870.herokuapp.com/api/v1/users
@@ -195,25 +194,25 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 17:45:37 GMT
+      - Fri, 11 Mar 2022 17:59:59 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"771435033563aa0600eeef8fcb34a46b"
+      - W/"f5335dde282619a408411e9b65439eb8"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c459d6d3-804c-43f1-b9be-c9af99a17c56
+      - 364e5975-96a0-48b6-90b0-2ef113f76d59
       X-Runtime:
-      - '0.006016'
+      - '0.004671'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"demitrimeer@yahoo.com","email":"demitrimeer@yahoo.com"}},{"id":"2","type":"user","attributes":{"username":"apaarn2211@gmail.com","email":"apaarn2211@gmail.com"}},{"id":"3","type":"user","attributes":{"username":"anavaro1995@gmail.com","email":"anavaro1995@gmail.com"}},{"id":"4","type":"user","attributes":{"username":"sierra.tucker121@gmail.com","email":"sierra.tucker121@gmail.com"}},{"id":"5","type":"user","attributes":{"username":"sierra.tucker121@gmail.com","email":"sierra.tucker121@gmail.com"}},{"id":"6","type":"user","attributes":{"username":"mountaingoat16@gmail.com","email":"mountaingoat16@gmail.com"}},{"id":"7","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}]}'
-  recorded_at: Fri, 11 Mar 2022 17:45:37 GMT
+      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}},{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}]}'
+  recorded_at: Fri, 11 Mar 2022 17:59:59 GMT
 recorded_with: VCR 6.0.0

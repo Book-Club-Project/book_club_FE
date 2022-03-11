@@ -21,25 +21,25 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 17:45:18 GMT
+      - Fri, 11 Mar 2022 17:59:38 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"326c0f01a14036c60e6caba8264daa9c"
+      - W/"4436a0b6ee66f1e7c8b42bf3a17d4454"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8e0c7f00-7f1d-48d3-ad39-84a7097b2c62
+      - ca6d50d7-9eaa-4ab3-8923-83fb8c21dacd
       X-Runtime:
-      - '0.009274'
+      - '0.009075'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"2","type":"user","attributes":{"username":"apaarn2211@gmail.com","email":"apaarn2211@gmail.com"}},{"id":"4","type":"user","attributes":{"username":"sierra.tucker121@gmail.com","email":"sierra.tucker121@gmail.com"}}]}'
-  recorded_at: Fri, 11 Mar 2022 17:45:18 GMT
+      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}}]}'
+  recorded_at: Fri, 11 Mar 2022 17:59:39 GMT
 recorded_with: VCR 6.0.0

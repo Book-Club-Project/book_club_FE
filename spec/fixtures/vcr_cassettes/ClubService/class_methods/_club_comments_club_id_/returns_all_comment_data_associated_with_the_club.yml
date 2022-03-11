@@ -21,28 +21,30 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 17:46:02 GMT
+      - Fri, 11 Mar 2022 18:00:27 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"823154b284857d5b191e270083ceef9a"
+      - W/"0de8a534f751aa370982fc721fd2ec19"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e55c5406-93ac-4b71-843f-ee0366bd506b
+      - 83e4120c-990a-4aab-9238-152a584138ab
       X-Runtime:
-      - '0.006731'
+      - '0.006285'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"4","type":"comment","attributes":{"title":"This book","body":"Is
-        goated","user_id":2,"club_id":1}},{"id":"5","type":"comment","attributes":{"title":"Test123","body":"My
-        comment","user_id":1,"club_id":1}},{"id":"6","type":"comment","attributes":{"title":"My
+      string: '{"data":[{"id":"1","type":"comment","attributes":{"title":"Hello","body":"Blah","user_id":1,"club_id":1}},{"id":"2","type":"comment","attributes":{"title":"Comments","body":"Blah
+        Blah","user_id":2,"club_id":1}},{"id":"3","type":"comment","attributes":{"title":"Coolio","body":"Blah
+        Blah Blah","user_id":3,"club_id":1}},{"id":"4","type":"comment","attributes":{"title":"Goodbye","body":"Blah
+        Blah Blah Blah","user_id":4,"club_id":1}},{"id":"7","type":"comment","attributes":{"title":"Test123","body":"My
+        comment","user_id":1,"club_id":1}},{"id":"8","type":"comment","attributes":{"title":"My
         title","body":"My body","user_id":1,"club_id":1}}]}'
-  recorded_at: Fri, 11 Mar 2022 17:46:02 GMT
+  recorded_at: Fri, 11 Mar 2022 18:00:27 GMT
 recorded_with: VCR 6.0.0

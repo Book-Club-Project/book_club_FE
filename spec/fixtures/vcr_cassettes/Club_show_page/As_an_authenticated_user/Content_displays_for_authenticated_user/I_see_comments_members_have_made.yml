@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 17:45:47 GMT
+      - Fri, 11 Mar 2022 18:00:11 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 505c75f1-c553-49a5-b1c3-9975cf14be6e
+      - '02968689-d1c6-44ba-9d85-4514551b4ac8'
       X-Runtime:
-      - '0.007957'
+      - '0.032926'
       Transfer-Encoding:
       - chunked
       Via:
@@ -41,7 +41,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"error":{"exception":"Validation failed: Email has already been taken"}}'
-  recorded_at: Fri, 11 Mar 2022 17:45:47 GMT
+  recorded_at: Fri, 11 Mar 2022 18:00:12 GMT
 - request:
     method: get
     uri: https://hidden-garden-03870.herokuapp.com/api/v1/users
@@ -65,27 +65,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 17:45:47 GMT
+      - Fri, 11 Mar 2022 18:00:11 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"771435033563aa0600eeef8fcb34a46b"
+      - W/"f5335dde282619a408411e9b65439eb8"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7ae1e770-0fd0-4c9e-903b-fa2de4c1163e
+      - e754fa95-64bc-4aa0-ab90-4ac59b5afc3d
       X-Runtime:
-      - '0.005274'
+      - '0.008178'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"demitrimeer@yahoo.com","email":"demitrimeer@yahoo.com"}},{"id":"2","type":"user","attributes":{"username":"apaarn2211@gmail.com","email":"apaarn2211@gmail.com"}},{"id":"3","type":"user","attributes":{"username":"anavaro1995@gmail.com","email":"anavaro1995@gmail.com"}},{"id":"4","type":"user","attributes":{"username":"sierra.tucker121@gmail.com","email":"sierra.tucker121@gmail.com"}},{"id":"5","type":"user","attributes":{"username":"sierra.tucker121@gmail.com","email":"sierra.tucker121@gmail.com"}},{"id":"6","type":"user","attributes":{"username":"mountaingoat16@gmail.com","email":"mountaingoat16@gmail.com"}},{"id":"7","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}]}'
-  recorded_at: Fri, 11 Mar 2022 17:45:48 GMT
+      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}},{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}]}'
+  recorded_at: Fri, 11 Mar 2022 18:00:12 GMT
 - request:
     method: get
     uri: https://hidden-garden-03870.herokuapp.com/api/v1/users/1/clubs
@@ -107,28 +107,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 17:45:48 GMT
+      - Fri, 11 Mar 2022 18:00:12 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"8ee1abdf9b63089349b226115694fbe7"
+      - W/"b8fc75710e4f97bc4357c200dfde2d92"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8157ea87-cefc-4a90-90cf-5712c6e284e7
+      - d5805789-1d25-4066-a643-430608617434
       X-Runtime:
-      - '0.011547'
+      - '0.016408'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"3","type":"club","attributes":{"name":"People love
-        books","host_id":4,"book_id":"zrZM0POHzocC"}},{"id":"4","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"5","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"6","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"7","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"8","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}}]}'
-  recorded_at: Fri, 11 Mar 2022 17:45:48 GMT
+      string: '{"data":[{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":"ZV9DDwAAQBAJ"}},{"id":"4","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"5","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"6","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"7","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"8","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}}]}'
+  recorded_at: Fri, 11 Mar 2022 18:00:12 GMT
 - request:
     method: get
     uri: https://hidden-garden-03870.herokuapp.com/api/v1/books/gwgON2IwgDUC
@@ -150,19 +149,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 17:45:47 GMT
+      - Fri, 11 Mar 2022 18:00:12 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"c35134fe9b1074015c83e883533390d5"
+      - W/"f12d464e2aeda84c521736849c149403"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4d2eb89f-1db5-4f1c-bc61-bbe75298d177
+      - ce55927f-d3e9-46bf-a883-92f5eb13d7fa
       X-Runtime:
-      - '0.115222'
+      - '0.096652'
       Transfer-Encoding:
       - chunked
       Via:
@@ -172,8 +171,8 @@ http_interactions:
       string: '{"data":{"id":"gwgON2IwgDUC","type":"book","attributes":{"title":"Pride
         and Prejudice","authors":["Jane Austen"],"genres":["Fiction / Classics"],"description":"Insight
         edition with engaging side notes that offer background on social customs,
-        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE71oPvjgzcfhZl3rIR0anthcTpgxdh3rBOCnYCv16MiJGsdhfKfIR_4W763yfDlQcC-L6EutKsKH_li7SIeWGTjot9idK63ZbArjxjs2mzLtXHON9MdOzwoo9R6UOo-cHoLIg_9b\u0026source=gbs_api"}}}'
-  recorded_at: Fri, 11 Mar 2022 17:45:48 GMT
+        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE73PWp_q4598sGJeW2c5H4gbM8CHX1lZTbCTld8t4wOfxm2Af0g8uGPrcQCkHMo8aY6TycMi6Z0qtoU2umohrljgg7eZVDtYaQIDUybEqSR0dcYujNyAayXm5EtGgWxusUazDXu_\u0026source=gbs_api"}}}'
+  recorded_at: Fri, 11 Mar 2022 18:00:13 GMT
 - request:
     method: get
     uri: https://hidden-garden-03870.herokuapp.com/api/v1/users
@@ -195,27 +194,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 17:45:47 GMT
+      - Fri, 11 Mar 2022 18:00:12 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"771435033563aa0600eeef8fcb34a46b"
+      - W/"f5335dde282619a408411e9b65439eb8"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - bcc55ebd-e1ed-48bb-99c0-fbaa79e1ee22
+      - ed480cb5-ab20-40f3-a71c-bf280ea0e18a
       X-Runtime:
-      - '0.006526'
+      - '0.013639'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"demitrimeer@yahoo.com","email":"demitrimeer@yahoo.com"}},{"id":"2","type":"user","attributes":{"username":"apaarn2211@gmail.com","email":"apaarn2211@gmail.com"}},{"id":"3","type":"user","attributes":{"username":"anavaro1995@gmail.com","email":"anavaro1995@gmail.com"}},{"id":"4","type":"user","attributes":{"username":"sierra.tucker121@gmail.com","email":"sierra.tucker121@gmail.com"}},{"id":"5","type":"user","attributes":{"username":"sierra.tucker121@gmail.com","email":"sierra.tucker121@gmail.com"}},{"id":"6","type":"user","attributes":{"username":"mountaingoat16@gmail.com","email":"mountaingoat16@gmail.com"}},{"id":"7","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}]}'
-  recorded_at: Fri, 11 Mar 2022 17:45:48 GMT
+      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}},{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}]}'
+  recorded_at: Fri, 11 Mar 2022 18:00:13 GMT
 - request:
     method: post
     uri: https://hidden-garden-03870.herokuapp.com/api/v1/clubs
@@ -239,7 +238,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 17:45:48 GMT
+      - Fri, 11 Mar 2022 18:00:13 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -249,9 +248,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5145200d-9e29-436d-9586-b965a8873b6c
+      - 53b6d791-6387-490c-8e04-33af18fa0af7
       X-Runtime:
-      - '0.021067'
+      - '0.022269'
       Transfer-Encoding:
       - chunked
       Via:
@@ -259,7 +258,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"9","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}}}'
-  recorded_at: Fri, 11 Mar 2022 17:45:48 GMT
+  recorded_at: Fri, 11 Mar 2022 18:00:13 GMT
 - request:
     method: get
     uri: https://hidden-garden-03870.herokuapp.com/api/v1/clubs/9
@@ -281,7 +280,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 17:45:48 GMT
+      - Fri, 11 Mar 2022 18:00:12 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -291,9 +290,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 39ea68d6-a375-41b8-bcb7-ab10ae5b6e26
+      - 8c19613a-e4f1-4fd0-9e69-5e263301c186
       X-Runtime:
-      - '0.004163'
+      - '0.004032'
       Transfer-Encoding:
       - chunked
       Via:
@@ -301,7 +300,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"9","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}}}'
-  recorded_at: Fri, 11 Mar 2022 17:45:48 GMT
+  recorded_at: Fri, 11 Mar 2022 18:00:13 GMT
 - request:
     method: get
     uri: https://hidden-garden-03870.herokuapp.com/api/v1/clubs/9/users
@@ -323,27 +322,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 17:45:48 GMT
+      - Fri, 11 Mar 2022 18:00:13 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"7a0bdc096008b3c1d9983a60443aab96"
+      - W/"2f3da8eaea413591c724a68762f798a5"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 34782cc6-b7b2-46fb-8168-4c4e60b31048
+      - 21e6d1f8-4479-4b75-bb88-01f86d6377ae
       X-Runtime:
-      - '0.007276'
+      - '0.007428'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"demitrimeer@yahoo.com","email":"demitrimeer@yahoo.com"}}]}'
-  recorded_at: Fri, 11 Mar 2022 17:45:48 GMT
+      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}}]}'
+  recorded_at: Fri, 11 Mar 2022 18:00:13 GMT
 - request:
     method: get
     uri: https://hidden-garden-03870.herokuapp.com/api/v1/books/gwgON2IwgDUC
@@ -365,19 +364,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 17:45:48 GMT
+      - Fri, 11 Mar 2022 18:00:13 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"96b1c5dc5bfb2ecd1352c3613bd76588"
+      - W/"aab3173b0355ebaf42b75a7e0e84d9c3"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f9ed7ee7-a1a9-4f63-bbb3-f6d5154bd44f
+      - 7e18492c-9821-4dba-bd8d-6f373b8ac4fb
       X-Runtime:
-      - '0.109591'
+      - '0.108975'
       Transfer-Encoding:
       - chunked
       Via:
@@ -387,8 +386,8 @@ http_interactions:
       string: '{"data":{"id":"gwgON2IwgDUC","type":"book","attributes":{"title":"Pride
         and Prejudice","authors":["Jane Austen"],"genres":["Fiction / Classics"],"description":"Insight
         edition with engaging side notes that offer background on social customs,
-        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE72A769Y5ZNNbShtuAiSeS9heRDS_UNDi9hUxdEzUj4Ot9fKcbbcgZjuRITGiN6w0FrR_BGSdjscZaNAA3vVKzKVJqbuEHj3qMAdfI4y7cDBRx08eIpCiI3wBZfn35MZHHWI8vwy\u0026source=gbs_api"}}}'
-  recorded_at: Fri, 11 Mar 2022 17:45:49 GMT
+        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE71AEvmLYVTGWy-THEOacHfstdPBPczaxY2DNDnyDLt0aN7qXaLIVdSp1b61DfPoR28R8Ct5-EExTO3WbBdwhwqodJXb6dNfZ-Sq0TQL0GzEwqAAeBb8x4XQuEy10nc8CL6qtqR8\u0026source=gbs_api"}}}'
+  recorded_at: Fri, 11 Mar 2022 18:00:13 GMT
 - request:
     method: get
     uri: https://hidden-garden-03870.herokuapp.com/api/v1/clubs/9/comments
@@ -410,7 +409,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 17:45:49 GMT
+      - Fri, 11 Mar 2022 18:00:13 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -420,9 +419,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d325e287-ae53-4326-86fa-803ea2081edb
+      - 3cae6572-f2ea-481f-9daa-ea1184248dec
       X-Runtime:
-      - '0.016724'
+      - '0.006091'
       Transfer-Encoding:
       - chunked
       Via:
@@ -430,7 +429,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":[]}'
-  recorded_at: Fri, 11 Mar 2022 17:45:49 GMT
+  recorded_at: Fri, 11 Mar 2022 18:00:13 GMT
 - request:
     method: get
     uri: https://hidden-garden-03870.herokuapp.com/api/v1/clubs/1
@@ -452,27 +451,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 17:45:48 GMT
+      - Fri, 11 Mar 2022 18:00:13 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"be5c014b5d84d0f57273aacf994ad272"
+      - W/"5d9b65eb8fa0f86b5bd9cd9fe8789ea9"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6a5a7ad2-fef9-4f54-b1a9-536854098044
+      - 7e8a5ae6-b215-461f-80a6-0c9d160e8735
       X-Runtime:
-      - '0.007450'
+      - '0.004641'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"club","attributes":{"name":"Sierra Tucker","host_id":4,"book_id":"szamDwAAQBAJ"}}}'
-  recorded_at: Fri, 11 Mar 2022 17:45:49 GMT
+      string: '{"data":{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":"ZV9DDwAAQBAJ"}}}'
+  recorded_at: Fri, 11 Mar 2022 18:00:14 GMT
 - request:
     method: get
     uri: https://hidden-garden-03870.herokuapp.com/api/v1/clubs/1/users
@@ -494,30 +493,30 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 17:45:48 GMT
+      - Fri, 11 Mar 2022 18:00:14 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"326c0f01a14036c60e6caba8264daa9c"
+      - W/"4436a0b6ee66f1e7c8b42bf3a17d4454"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7f464dfd-7471-4f50-8226-8ff9516890c5
+      - bc6530e9-c8e7-4c6f-8b9d-70ccff892e73
       X-Runtime:
-      - '0.007090'
+      - '0.010134'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"2","type":"user","attributes":{"username":"apaarn2211@gmail.com","email":"apaarn2211@gmail.com"}},{"id":"4","type":"user","attributes":{"username":"sierra.tucker121@gmail.com","email":"sierra.tucker121@gmail.com"}}]}'
-  recorded_at: Fri, 11 Mar 2022 17:45:49 GMT
+      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}}]}'
+  recorded_at: Fri, 11 Mar 2022 18:00:14 GMT
 - request:
     method: get
-    uri: https://hidden-garden-03870.herokuapp.com/api/v1/books/szamDwAAQBAJ
+    uri: https://hidden-garden-03870.herokuapp.com/api/v1/books/ZV9DDwAAQBAJ
     body:
       encoding: US-ASCII
       string: ''
@@ -536,46 +535,28 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 17:45:49 GMT
+      - Fri, 11 Mar 2022 18:00:14 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"9dfab2f2a71e04226ab1c119c6dbcd48"
+      - W/"6234f02a299a92b11bfc96baee1e3ee9"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - fe2a4807-0127-4470-b8ba-f7d2fda7ce00
+      - afa2fb96-474b-41e8-8579-ce80531fee82
       X-Runtime:
-      - '0.127507'
+      - '0.084704'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"szamDwAAQBAJ","type":"book","attributes":{"title":"Once
-        Upon a Goat","authors":["Dan Richards"],"genres":["Juvenile Fiction / Fairy
-        Tales \u0026 Folklore / General"],"description":"\u003cb\u003eA twisted fairy
-        tale about a king and queen who wish for a child of their own . . . and end
-        up with a baby goat. Perfect for readers of \u003ci\u003eChildren Make Terrible
-        Pets\u003c/i\u003e and \u003ci\u003eWolfie the Bunny\u003c/i\u003e.\u003c/b\u003e
-        \u003cp\u003eOnce upon a time, a very prim and proper king and queen begged
-        their fairy godmother for a child. They''d prefer a boy, with glowing skin,
-        bright eyes, and two roses for lips . . . but any kid will do. When they find
-        themselves gifted with a baby goat (also known as a kid) instead, they can''t
-        \u003ci\u003eimagine\u003c/i\u003e how he''ll fit into their lives. But of
-        course, it isn''t long before he''s part of the royal family. \u003cp\u003eReaders
-        will delight in this story''s hilarity, confusion, and celebration of families
-        that come in every shape and size. \u003cp\u003e\"A fresh, amusing, kindhearted
-        picture book.\"--\u003ci\u003eBooklist\u003c/i\u003e, Starred review\u003cbr\u003e\"With
-        its gentle morals of acceptance, not judging by appearances, and being open
-        to outcomes different than expectations, this is a lovely family read-aloud.\"--\u003ci\u003eKirkus\u003c/i\u003e\u003cbr\u003e\"The
-        contrast between the royal couple''s once-ordered existence and the cheerful
-        mess at book''s end is very funny, and the message about acceptance and the
-        expanded definition of family is a bonus.\"--\u003ci\u003eHorn Book\u003c/i\u003e","rating":4.5,"image":"http://books.google.com/books/publisher/content?id=szamDwAAQBAJ\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE72tfDePyPYctwvJUwV_YkkIDxUhccGqltYa9SsT1fomNSG81yvt5ePBcJski3FwC743RcWM35O32dKQD5wiI1nIWEa_UKRpsDEUI_y4ZFUx-NwMozCAiu8K6xs2s0nfjTbZq_mn\u0026source=gbs_api"}}}'
-  recorded_at: Fri, 11 Mar 2022 17:45:49 GMT
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiWlY5RER3QUFRQkFKIiwidHlwZSI6ImJvb2siLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiUHJpZGUiLCJhdXRob3JzIjpbIkliaSBab2JvaSJdLCJnZW5yZXMiOlsiWW91bmcgQWR1bHQgRmljdGlvbiAvIERpdmVyc2l0eSBcdTAwMjYgTXVsdGljdWx0dXJhbCIsIllvdW5nIEFkdWx0IEZpY3Rpb24gLyBTb2NpYWwgVGhlbWVzIC8gQ2xhc3MgRGlmZmVyZW5jZXMiLCJZb3VuZyBBZHVsdCBGaWN0aW9uIC8gUm9tYW5jZSAvIENvbnRlbXBvcmFyeSJdLCJkZXNjcmlwdGlvbiI6Ilx1MDAzY3BcdTAwM2VJbiBhIHRpbWVseSB1cGRhdGUgb2YgSmFuZSBBdXN0ZW4nc8KgUHJpZGUgYW5kIFByZWp1ZGljZSzCoE5hdGlvbmFsIEJvb2sgQXdhcmQgZmluYWxpc3TCoEliaSBab2JvaSBza2lsbGZ1bGx5IGJhbGFuY2VzIGN1bHR1cmFsIGlkZW50aXR5LCBjbGFzcywgYW5kIGdlbnRyaWZpY2F0aW9uIGFnYWluc3QgdGhlIGhlYWR5IG1hZ2ljIG9mIGZpcnN0IGxvdmUgaW4gaGVyIHZpYnJhbnQgcmVpbWFnaW5pbmcgb2YgdGhpcyBiZWxvdmVkIGNsYXNzaWMuIEEgc21hcnQsIGZ1bm55LCBnb3JnZW91cyByZXRlbGxpbmcgc3RhcnJpbmcgYWxsIGNoYXJhY3RlcnMgb2YgY29sb3IuwqBcdTAwM2MvcFx1MDAzZVx1MDAzY3BcdTAwM2VadXJpIEJlbml0ZXogaGFzIHByaWRlLiBCcm9va2x5biBwcmlkZSwgZmFtaWx5IHByaWRlLCBhbmQgcHJpZGXCoGluIGhlciBBZnJvLUxhdGlubyByb290cy4gQnV0IHByaWRlIG1pZ2h0IG5vdCBiZSBlbm91Z2ggdG8gc2F2ZSBoZXIgcmFwaWRseSBnZW50cmlmeWluZyBuZWlnaGJvcmhvb2QgZnJvbSBiZWNvbWluZyB1bnJlY29nbml6YWJsZS4gXHUwMDNjL3BcdTAwM2VcdTAwM2NwXHUwMDNlV2hlbiB0aGUgd2VhbHRoeSBEYXJjeSBmYW1pbHkgbW92ZXMgaW4gYWNyb3NzIHRoZSBzdHJlZXQsIFp1cmkgd2FudHMgbm90aGluZyB0byBkbyB3aXRoIHRoZWlyIHR3byB0ZWVuYWdlIHNvbnMsIGV2ZW4gYXMgaGVyIG9sZGVyIHNpc3RlciwgSmFuYWUsIHN0YXJ0cyB0byBmYWxsIGZvciB0aGUgY2hhcm1pbmcgQWluc2xleS4gU2hlIGVzcGVjaWFsbHkgY2Fu4oCZdCBzdGFuZCB0aGUganVkZ21lbnRhbCBhbmQgYXJyb2dhbnQgRGFyaXVzLiBZZXQgYXMgWnVyaSBhbmQgRGFyaXVzIGFyZSBmb3JjZWQgdG8gZmluZCBjb21tb24gZ3JvdW5kLCB0aGVpciBpbml0aWFsIGRpc2xpa2Ugc2hpZnRzIGludG8gYW4gdW5leHBlY3RlZCB1bmRlcnN0YW5kaW5nLlx1MDAzYy9wXHUwMDNlXHUwMDNjcFx1MDAzZUJ1dCB3aXRoIGZvdXIgd2lsZCBzaXN0ZXJzIHB1bGxpbmcgaGVyIGluIGRpZmZlcmVudCBkaXJlY3Rpb25zLCBjdXRlIGJveSBXYXJyZW4gdnlpbmcgZm9yIGhlciBhdHRlbnRpb24sIGFuZCBjb2xsZWdlIGFwcGxpY2F0aW9ucyBob3ZlcmluZyBvbiB0aGUgaG9yaXpvbiwgWnVyaSBmaWdodHMgdG8gZmluZCBoZXIgcGxhY2UgaW4gQnVzaHdpY2vigJlzIGNoYW5naW5nIGxhbmRzY2FwZSwgb3IgbG9zZSBpdCBhbGwuXHUwMDNjL3BcdTAwM2VcdTAwM2NwXHUwMDNlXCJab2JvaSBza2lsbGZ1bGx5IGRlcGljdHMgdGhlIHZpY2lzc2l0dWRlcyBvZiB0ZWVuYWdlIHJlbGF0aW9uc2hpcHMsIGFuZCBadXJp4oCZcyBvdXRzaXplIHByaWRlIGFuZCBwb2V0aWMgc2Vuc2liaWxpdHkgbWFrZSBoZXIgYSBzeW1wYXRoZXRpYyB0ZWVuYWdlciBpbiBhIGNvbnRlbXBvcmFyeSBzdG9yeSBhYm91dCByYWNlLCBnZW50cmlmaWNhdGlvbiwgYW5kIHlvdW5nIGxvdmUuXCLCoChQdWJsaXNoZXJzIFdlZWtseSwgXCJBbiBBbnRpLVJhY2lzdCBDaGlsZHJlbidzIGFuZCBZQSBSZWFkaW5nIExpc3RcIilcdTAwM2MvcFx1MDAzZSIsInJhdGluZyI6NCwiaW1hZ2UiOiJodHRwOi8vYm9va3MuZ29vZ2xlLmNvbS9ib29rcy9wdWJsaXNoZXIvY29udGVudD9pZD1aVjlERHdBQVFCQUpcdTAwMjZwcmludHNlYz1mcm9udGNvdmVyXHUwMDI2aW1nPTFcdTAwMjZ6b29tPTVcdTAwMjZlZGdlPWN1cmxcdTAwMjZpbWd0az1BRkxSRTcwUkRxdjhMTnlsM2gyM3RjaHpIZ0tTX2JoUFNqR3FWOW1yWXdEb3d1VjljWjJoblJNbmV4NVZYQmNkSERRU2w4bFBBZkpPdU9rTVhoNG1mNko4TjhxVl9hcGdwejZuUEZGLVpIMU1NRTRIZHYzc3p1ZTZGYUgwZXZoUW9mSW55N2dzbFY4RVx1MDAyNnNvdXJjZT1nYnNfYXBpIn19fQ==
+  recorded_at: Fri, 11 Mar 2022 18:00:14 GMT
 - request:
     method: get
     uri: https://hidden-garden-03870.herokuapp.com/api/v1/clubs/1/comments
@@ -597,27 +578,29 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 17:45:49 GMT
+      - Fri, 11 Mar 2022 18:00:14 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"91fb5ed3d8c24229602e341f08dca13f"
+      - W/"0c4644d1a75eba57f1a38dcb1ec2cf5a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c5e05cff-845b-4bc5-b292-9952b6e390f3
+      - b61dc263-2217-402a-a706-a8820ee233a4
       X-Runtime:
-      - '0.006349'
+      - '0.008718'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"4","type":"comment","attributes":{"title":"This book","body":"Is
-        goated","user_id":2,"club_id":1}},{"id":"5","type":"comment","attributes":{"title":"Test123","body":"My
+      string: '{"data":[{"id":"1","type":"comment","attributes":{"title":"Hello","body":"Blah","user_id":1,"club_id":1}},{"id":"2","type":"comment","attributes":{"title":"Comments","body":"Blah
+        Blah","user_id":2,"club_id":1}},{"id":"3","type":"comment","attributes":{"title":"Coolio","body":"Blah
+        Blah Blah","user_id":3,"club_id":1}},{"id":"4","type":"comment","attributes":{"title":"Goodbye","body":"Blah
+        Blah Blah Blah","user_id":4,"club_id":1}},{"id":"7","type":"comment","attributes":{"title":"Test123","body":"My
         comment","user_id":1,"club_id":1}}]}'
-  recorded_at: Fri, 11 Mar 2022 17:45:50 GMT
+  recorded_at: Fri, 11 Mar 2022 18:00:14 GMT
 recorded_with: VCR 6.0.0
