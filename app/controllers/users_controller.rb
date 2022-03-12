@@ -20,14 +20,14 @@ class UsersController < ApplicationController
       req.headers['Content-Type'] = 'application/json'
       req.body = JSON.generate(user: { username: email, email: email })
     end
-  
+
     if response.status == 400
       response = conn.get('/api/v1/users') do |req|
         req.headers['Content-Type'] = 'application/json'
         req.body = JSON.generate(user: { username: email, email: email })
       end
       user = JSON.parse(response.body, symbolize_names: true)[:data]
-      selected = user.select {|x| x[:attributes][:email] == email}
+      selected = user.select {|selected_user| selected_user[:attributes][:email] == email}
       session[:user_id] = selected[0][:id]
     else
       user = JSON.parse(response.body, symbolize_names: true)[:data]
