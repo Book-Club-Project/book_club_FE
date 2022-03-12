@@ -61,7 +61,7 @@
             <% if @book.summary == nil %>
              <h3> Summary: </h3> <p>n/a</p>
             <% else %>
-            <h3>Summary: </h3><p> <%= @book.summary %></p>
+            <h3>Summary: </h3><p> <%= sanitize @book.summary %></p>
             <% end %>
             <br>
             <% if @book.rating == nil%>
