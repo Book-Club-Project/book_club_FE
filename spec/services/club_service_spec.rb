@@ -67,14 +67,17 @@ RSpec.describe ClubService do
 
     context '::create_club' do
       it 'Creates a club with the given data', :vcr do
+        user = UserService.get_user(3)
+
+
         data = {
-          :name=>"Hello123",
-          :book_id=>"gwgON2IwgDUC",
-          :host_id=>3
-        }
+          name: "Hello123",
+          book_id: "gwgON2IwgDUC",
+          host_id: 1,
+          params: ['1']  }
 
         response = ClubService.create_club(data)
-
+ 
         expect(response).to be_a Hash
         expect(response).to have_key :data
 

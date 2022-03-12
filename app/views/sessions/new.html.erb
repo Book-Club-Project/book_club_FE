@@ -50,7 +50,7 @@
 
       <p text-align="center">--- OR ---</p><br>
 
-      <%= button_to 'Login with Google', '/auth/google_oauth2/', method: :get, params: {client_id: "#{ENV['GOOGLE_CLIENT_ID']}" }  %>
+      <%= button_to 'Login with Google', '/auth/google_oauth2/', method: :post, params: {client_id: "#{ENV['GOOGLE_CLIENT_ID']}" }  %>
     </div>
   <% end %>
 </body>

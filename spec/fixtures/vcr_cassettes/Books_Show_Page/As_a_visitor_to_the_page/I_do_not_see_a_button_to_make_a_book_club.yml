@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/books/gwgON2IwgDUC
+    uri: https://hidden-garden-03870.herokuapp.com/api/v1/books/gwgON2IwgDUC
     body:
       encoding: US-ASCII
       string: ''
@@ -18,23 +18,31 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 11 Mar 2022 20:17:11 GMT
+      Connection:
+      - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"40fa2d99e1201becce26cd849656b1f2"
+      - W/"d46508a9cc11d056ea002a45b56da4d4"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - eae78eae-61dd-4f8e-abf5-eeadf52d47c8
+      - a91f687b-1c47-4803-ba89-e70b02d9f8d8
       X-Runtime:
-      - '0.137413'
+      - '0.081682'
       Transfer-Encoding:
       - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
       string: '{"data":{"id":"gwgON2IwgDUC","type":"book","attributes":{"title":"Pride
         and Prejudice","authors":["Jane Austen"],"genres":["Fiction / Classics"],"description":"Insight
         edition with engaging side notes that offer background on social customs,
-        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE7375AkCwy-DjCZiNWU_pe0xV_9ktV_qahXGh0bQfo9FapKlYURU3tYdUK1z1xwREBhqmdz6Rff3NAElYvQ79SlItiEQ9QVAMuJNEBFWWtNpLQcMIrHEI7w7bsHEUfXm5cGgl4jx\u0026source=gbs_api"}}}'
-  recorded_at: Fri, 04 Mar 2022 05:51:55 GMT
+        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE70SZIW5TSXYLvNQIdkR2WLfA5Jv2uJs5Cg8x6E5utRvP0q8n6kCUPa7Kx9h3O3YVu8k2snksFuNTbkM_a8aJ1_c7FqT2bJVmxi6QfXZCvpnaNaVNT-rLUvOIK05THLT-jQiRpRA\u0026source=gbs_api"}}}'
+  recorded_at: Fri, 11 Mar 2022 20:17:13 GMT
 recorded_with: VCR 6.0.0
