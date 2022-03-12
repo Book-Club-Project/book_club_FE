@@ -21,28 +21,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 20:18:07 GMT
+      - Sat, 12 Mar 2022 00:37:50 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"7d232a4d6922804348a233d5631f37d1"
+      - W/"3bbcf92a5ecb30b1c5dc21e729a6da45"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f701eb5d-8c28-4d9b-bd94-8238b4810c26
+      - 4f1e7135-057a-4029-ab1c-d2fcfb001f49
       X-Runtime:
-      - '0.263118'
+      - '0.291060'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"Long hair
-        is considered bohemian, which may be why I grew it, but I keep it long because
-        I love the way it feels, part cloak, part fan, part mane, part security blanket.","author":"Marge
-        Piercy"}}}'
-  recorded_at: Fri, 11 Mar 2022 20:18:07 GMT
+      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"Earth is the
+        source of light.","author":"Dejan Stojanovic"}}}'
+  recorded_at: Sat, 12 Mar 2022 00:37:51 GMT
 recorded_with: VCR 6.0.0

@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 20:16:59 GMT
+      - Sat, 12 Mar 2022 00:36:35 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c70c952a-ebc9-44d5-bfd5-763027725d00
+      - 287ece7d-9907-4e46-996c-bce574e6d425
       X-Runtime:
-      - '0.043850'
+      - '0.181791'
       Transfer-Encoding:
       - chunked
       Via:
@@ -41,5 +41,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":"ZV9DDwAAQBAJ"}}}'
-  recorded_at: Fri, 11 Mar 2022 20:17:00 GMT
+  recorded_at: Sat, 12 Mar 2022 00:36:35 GMT
 recorded_with: VCR 6.0.0

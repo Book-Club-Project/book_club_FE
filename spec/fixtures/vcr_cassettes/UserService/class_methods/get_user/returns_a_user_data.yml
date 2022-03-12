@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 20:18:07 GMT
+      - Sat, 12 Mar 2022 00:37:51 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a6bf19b9-b3ce-414a-880f-aa28cbc97d9e
+      - 3c482cd9-2bad-4316-83d4-8c6ff12fd774
       X-Runtime:
-      - '0.004141'
+      - '0.004414'
       Transfer-Encoding:
       - chunked
       Via:
@@ -41,5 +41,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}}}'
-  recorded_at: Fri, 11 Mar 2022 20:18:07 GMT
+  recorded_at: Sat, 12 Mar 2022 00:37:51 GMT
 recorded_with: VCR 6.0.0

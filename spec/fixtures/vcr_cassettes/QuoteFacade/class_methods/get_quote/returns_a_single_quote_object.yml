@@ -21,26 +21,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 20:17:00 GMT
+      - Sat, 12 Mar 2022 00:36:37 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"b5056e13ea3b0198ee4ddef55e3f27ba"
+      - W/"09baafe338db1ca7f888329c8790faa8"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f90281af-5abf-4aba-a34a-fdcf9db39461
+      - 87ae53a4-51d9-4bb6-b747-56da9c4dfc37
       X-Runtime:
-      - '0.401748'
+      - '0.263323'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"You can complain
-        about the house where the husband is the wife.","author":"Vikrant Parsai"}}}'
-  recorded_at: Fri, 11 Mar 2022 20:17:01 GMT
+      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"A baby is
+        God''s opinion that life should go on.","author":"Carl Sandburg"}}}'
+  recorded_at: Sat, 12 Mar 2022 00:36:37 GMT
 recorded_with: VCR 6.0.0

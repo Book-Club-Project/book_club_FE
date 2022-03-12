@@ -15,27 +15,31 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 500
-      message: Internal Server Error
+      code: 200
+      message: OK
     headers:
       Server:
       - Cowboy
       Date:
-      - Fri, 11 Mar 2022 20:17:03 GMT
+      - Sat, 12 Mar 2022 00:36:39 GMT
       Connection:
       - keep-alive
       Content-Type:
-      - text/html; charset=UTF-8
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ba5f3ea40e95f49bce11942f375ebd38"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8876a776-2c40-45e7-bd9b-a647ba02a2cf
+      - 235f4ed5-6c44-415a-8bf7-1070604b3a62
       X-Runtime:
-      - '0.213253'
-      Content-Length:
-      - '0'
+      - '0.169402'
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: ''
-  recorded_at: Fri, 11 Mar 2022 20:17:03 GMT
+      string: '{"data":null}'
+  recorded_at: Sat, 12 Mar 2022 00:36:40 GMT
 recorded_with: VCR 6.0.0
