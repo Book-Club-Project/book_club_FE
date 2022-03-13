@@ -11,11 +11,11 @@
   </head>
 
   <body>
-    <% flash.each do |type, notice| %>
-        <div class="alert alert-info">
-          <p><%= notice %></p>
-        </div>
-    <% end %>
+    <!-- Navbar -->
+    <nav>
+      <%= render partial: '/layouts/partials/logo_nav_profile' %>
+    </nav><br>
+
     <%= yield %>
   </body>
 </html>
