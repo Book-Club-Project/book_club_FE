@@ -1,19 +1,11 @@
-<header>
+<head>
   <style>
     .container {
-      margin: auto;
-      width: 50%;
-      border: 3px solid green;
-      padding: 10px;
-      position: relative;
       text-align: center;
       justify-content: center;
     }
-
   </style>
-
-
-</header>
+</head>
 
 <body>
   <%# render partial: '/layouts/partials/random_quote' %> <br><br>
@@ -35,13 +27,15 @@
 
           <%= f.password_field :password, required: true, placeholder: 'password' %><br><br>
 
-          <%= f.submit 'Login' %><br><br>
+          <button type="button" class="btn btn-secondary btn-lg"><%= f.submit 'Login' %></button>
         <% end %>
       </div>
+      
+      <br><br>
 
       <p text-align="center">--- OR ---</p><br>
 
-      <%= button_to 'Login with Google', '/auth/google_oauth2/', method: :get, params: {client_id: "#{ENV['GOOGLE_CLIENT_ID']}" }  %>
+      <button type="button" class="btn btn-secondary btn-lg"><%= button_to 'Login with Google', '/auth/google_oauth2/', method: :get, params: {client_id: "#{ENV['GOOGLE_CLIENT_ID']}" } %></button>
     </div>
   <% end %>
 </body>
