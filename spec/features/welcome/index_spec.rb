@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
   #As an un-authenticated visitor
-  context 'As a visitor to the landing page', :vcr do
+  context 'As an unauthenticated visitor to the landing page', :vcr do
 
     before(:each) { visit '/' }
 
@@ -10,47 +10,40 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
       expect(page).to have_current_path('/')
     end
 
-    scenario 'I see a welcome to app message' do
-      expect(page).to have_content('Welcome to Book Club')
-    end
+    # Navbar exists on page.
+    scenario 'I see the nav bar with links for unauthenticated user' do
+      within '#nav-bar' do
+        # logo exists and is the image we want
+        expect(page.find('#logo')['alt']).to eq('logo')
+        expect(page.find('#logo')['src']).to match('logo')
 
-    scenario 'I see home and discover books links' do
-      expect(page).to have_link('Home', href: '/')
-      expect(page).to have_link('Discover Books', href: '/discover')
-    end
+        # link to home exists
+        expect(page).to have_selector(:css, 'a[href="/"]')
 
-    context 'Different links appear when logged out' do
-      scenario 'I see login and register buttons' do
+        # links for unauthenticated user exist
         expect(page).to have_link('Login', href: '/login')
         expect(page).to have_link('Register', href: '/register')
-      end
 
-      context 'Clicking links directs me to the proper page' do
-        scenario 'I click the home button' do
-          click_link 'Home'
-          expect(page).to have_current_path('/')
-        end
-
-        scenario 'I click the discover books link' do
-          click_link 'Discover Books'
-          expect(page).to have_current_path('/discover')
-        end
-
-        scenario 'I click the register link' do
-          click_link 'Register'
-          expect(page).to have_current_path('/register')
-        end
-
-        scenario 'I click the login link' do
-          click_link 'Login'
-          expect(page).to have_current_path('/login')
-        end
-      end
-
-      scenario 'I do not see logout and my dashboard links' do
+        # links for authenticated users do not exist
         expect(page).to_not have_link('Logout')
-        expect(page).to_not have_link('My Dashboard')
-        expect(page).to_not have_css('#dashboard-link')
+        expect(page).to_not have_link('Dashboard')
+      end
+    end
+
+    context 'Clicking links directs me to the proper page' do
+      scenario 'I click the home button' do
+        find(:xpath, "//a[@href='/']").click
+        expect(page).to have_current_path('/')
+      end
+
+      scenario 'I click the register link' do
+        click_link 'Register'
+        expect(page).to have_current_path('/register')
+      end
+
+      scenario 'I click the login link' do
+        click_link 'Login'
+        expect(page).to have_current_path('/login')
       end
     end
 
@@ -60,10 +53,6 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
       within "#static-quote" do
         expect(page).to have_content("You will be the same person in five years as you are today except for the people you meet and the books you read.")
       end
-    end
-
-    scenario 'I see the app logo' do
-      expect(page).to have_css("#logo")
     end
   end
 
@@ -88,88 +77,74 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
       visit "/auth/google_oauth2"
     end
 
-    scenario 'I am on the root directory and see global links' do
-      visit '/'
-      expect(page).to have_current_path('/')
-      expect(page).to have_content('Welcome to Book Club')
-      expect(page).to have_link('Home', href: '/')
-      expect(page).to have_link('Discover Books', href: '/discover')
-    end
+    context 'I can see links and content' do
+      before { visit '/' }
 
-    context 'Different links appear when logged in' do
-      before(:each) { visit '/' }
+      scenario 'I am on the landing page' do
+        expect(current_path).to eq('/')
+      end
 
-      scenario 'I see logout and dashboard links' do
-        expect(page).to have_link('Logout', href: '/logout')
-
-        within '#dashboard-link' do
-          expect(page).to have_link('My Dashboard', href: '/dashboard')
-        end
-
+      # Navbar exists on page.
+      scenario 'I see the nav bar with links for authenticated user' do
         within '#nav-bar' do
-          expect(page).to have_link('My Dashboard', href: '/dashboard')
+          # logo exists and is the image we want
+          expect(page.find('#logo')['alt']).to eq('logo')
+          expect(page.find('#logo')['src']).to match('logo')
+
+          # link to home exists
+          expect(page).to have_selector(:css, 'a[href="/"]')
+
+          # links for unauthenticated user do not exist
+          expect(page).to_not have_link('Login', href: '/login')
+          expect(page).to_not have_link('Register', href: '/register')
+
+          # links for authenticated user exist
+          expect(page).to have_link('Logout')
+          expect(page).to have_link('Dashboard')
         end
       end
 
-      scenario 'I do not see login and register links' do
-        expect(page).to_not have_link('Login')
-        expect(page).to_not have_link('Register')
-      end
-    end
+      context 'Clicking links directs me to the proper page' do
+        scenario 'I click the home button' do
+          find(:xpath, "//a[@href='/']").click
+          expect(page).to have_current_path('/')
+        end
 
-    context 'Clicking links directs me to the proper page' do
-      before(:each) { visit '/' }
+        scenario 'I click the dashboard link in nav-bar' do
+          within '#nav-bar' do
+            click_link 'Dashboard'
+            expect(page).to have_current_path('/dashboard')
+          end
+        end
 
-      scenario 'I click the home button' do
-        click_link 'Home'
-        expect(page).to have_current_path('/')
-      end
+        scenario 'I click the logout link' do
+          click_link 'Logout'
+          expect(page).to have_current_path('/')
 
-      scenario 'I click the discover books link' do
-        click_link 'Discover Books'
-        expect(page).to have_current_path('/discover')
-      end
-
-      scenario 'I click the dashboard link in nav-bar' do
-        within '#nav-bar' do
-          click_link 'My Dashboard'
-          expect(page).to have_current_path('/dashboard')
+          expect(page).to_not have_link('Logout')
+          expect(page).to_not have_link('Dashboard')
         end
       end
 
-      scenario 'I click the dashboard link in body' do
-        within '#dashboard-link' do
-          click_link 'My Dashboard'
-          expect(page).to have_current_path('/dashboard')
+      scenario 'I see a static quote' do
+        expect(page).to have_css('#static-quote')
+
+        within "#static-quote" do
+          expect(page).to have_content("You will be the same person in five years as you are today except for the people you meet and the books you read.")
         end
-      end
-
-      scenario 'I click the logout link' do
-        click_link 'Logout'
-        expect(page).to have_current_path('/')
-      end
-    end
-
-    scenario 'I see a static quote' do
-      visit '/'
-
-      expect(page).to have_css('#static-quote')
-
-      within "#static-quote" do
-        expect(page).to have_content("You will be the same person in five years as you are today except for the people you meet and the books you read.")
       end
     end
   end
 
-  context 'As an unauthenticated visitor', :vcr do
-    before(:each) { visit '/discover'}
+  context 'As an unauthenticated visitor I see a search', :vcr do
+    before(:each) { visit '/'}
 
     scenario 'I see a search bar that searches for books by keyword' do
       expect(page).to have_button('Search')
 
       fill_in :search, with: 'pride'
       click_button 'Search'
-      expect(current_path).to eq('/discover')
+      expect(current_path).to eq('/')
       expect(page).to have_content('Pride and Prejudice')
     end
 
@@ -178,7 +153,7 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
 
       fill_in :search, with: "jh21g31yiu2g3"
       click_button 'Search'
-      expect(current_path).to eq('/discover')
+      expect(current_path).to eq('/')
       expect(page).to have_content("We failed you or this book does not exist")
     end
 
@@ -189,17 +164,6 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
       click_link 'Pride and Prejudice'
 
       expect(current_path).to match('/books/')
-    end
-
-    # Navbar behavior is tested in welcome/index_spec.rb
-    scenario 'I see the nav bar links for unauthenticated user' do
-      expect(page).to have_link('Home', href: '/')
-      expect(page).to have_link('Discover Books', href: '/discover')
-      expect(page).to have_link('Login', href: '/login')
-      expect(page).to have_link('Register', href: '/register')
-
-      expect(page).to_not have_link('Logout')
-      expect(page).to_not have_link('My Dashboard')
     end
 
     # Skipped to not blow out API rate limit
@@ -229,14 +193,14 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
     end
 
     context 'Content displays for logged in user', :vcr do
-      before(:each) { visit '/discover' }
+      before(:each) { visit '/' }
 
       scenario 'I see a search bar that searches for books by keyword' do
         expect(page).to have_button('Search')
 
         fill_in :search, with: 'pride'
         click_button 'Search'
-        expect(current_path).to eq('/discover')
+        expect(current_path).to eq('/')
         expect(page).to have_content('Pride and Prejudice')
       end
 
@@ -245,7 +209,7 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
 
         fill_in :search, with: "jh21g31yiu2g3"
         click_button 'Search'
-        expect(current_path).to eq('/discover')
+        expect(current_path).to eq('/')
         expect(page).to have_content("We failed you or this book does not exist")
       end
 
@@ -256,18 +220,6 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
         click_link 'Pride and Prejudice'
 
         expect(current_path).to match('/books/')
-      end
-
-      # Navbar behavior is tested in welcome/index_spec.rb
-      scenario 'I see the nav bar links for authenticated user' do
-        expect(page).to have_link('Home', href: '/')
-        expect(page).to have_link('Discover Books', href: '/discover')
-
-        expect(page).to_not have_link('Login', href: '/login')
-        expect(page).to_not have_link('Register', href: '/register')
-
-        expect(page).to have_link('Logout')
-        expect(page).to have_link('My Dashboard')
       end
 
       # Skipped to not blow out API rate limit

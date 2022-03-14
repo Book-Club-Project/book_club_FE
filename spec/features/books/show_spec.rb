@@ -70,7 +70,7 @@ RSpec.describe 'Books Show Page' do
       before(:each) { visit '/books/gwgON2IwgDUC' }
 
       # Navbar exists on page. Explicit behavior is tested in welcome/index_spec.rb
-      scenario 'I see the nav bar with links for unauthenticated user' do
+      scenario 'I see the nav bar with links for authenticated user' do
         within '#nav-bar' do
           # logo exists and is the image we want
           expect(page.find('#logo')['alt']).to eq('logo')
