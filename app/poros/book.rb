@@ -5,7 +5,8 @@ class Book
               :summary,
               :rating,
               :genre,
-              :image
+              :image,
+              :larger_image
 
   def initialize(data)
     @id = data[:id]
@@ -15,6 +16,7 @@ class Book
     @rating = data[:attributes][:rating]
     @genre = data[:attributes][:genres]
     @image = data[:attributes][:image]
+    @larger_image = data[:attributes][:larger_image]
   end
 
 end
