@@ -1,19 +1,8 @@
-<header>
+<head>
   <style>
-    .container {
-      margin: auto;
-      width: 50%;
-      border: 3px solid green;
-      padding: 10px;
-      position: relative;
-      text-align: center;
-      justify-content: center;
-    }
+
   </style>
-
-
-
-</header>
+</head>
 
 <body>
   <% if session[:user_id].nil? %>
@@ -30,10 +19,42 @@
     <center><h1><%= @user.username %>'s Dashboard</h1></center>
 
     <div class="container">
-      <div class="centered"><h3 class="bookclubs">My Bookclubs:</h3>
-        <% @clubs.each do |club| %>
-        <p><%= link_to club.name, club_path(club.id) %></p>
-        <% end %>
+      <div class="row">
+        <!-- my book clubs -->
+        <div class="col">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <h3>My Bookclubs:</h3>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <% @clubs.each do |club| %>
+                <p><%= link_to club.name, club_path(club.id) %></p>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- my recent activity -->
+        <div class="col">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <h3>My Recent Activity:</h3>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <p>put 5 most recent comments here.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   <% end %>
