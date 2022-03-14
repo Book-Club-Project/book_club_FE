@@ -1,12 +1,13 @@
 <header>
   <style media="screen">
     #random-quote {
-      border-style: solid;
-      border-width: 5px;
+      position: relative;
+      text-align: center;
+      padding: 20px;
     }
   </style>
 </header>
 
-<div id="random-quote" class="container" max-width="50%">
+<div id="random-quote" class="container">
   <p> <%= @quote.quote %> <br> - <%= @quote.author %></p>
 </div>
