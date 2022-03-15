@@ -1,11 +1,53 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: http://localhost:3000/api/v1/clubs
+    method: get
+    uri: https://hidden-garden-03870.herokuapp.com/api/v1/users/3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 12 Mar 2022 00:37:49 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"05c91f191fcd8daafa7f32f4d60cdd0e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e7b73b7d-31e1-405e-a028-6990a5fa5f0f
+      X-Runtime:
+      - '0.004337'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: club%5Bbook_id%5D=gwgON2IwgDUC&club%5Bhost_id%5D=3&club%5Bname%5D=Hello123
+      string: '{"data":{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}}}'
+  recorded_at: Sat, 12 Mar 2022 00:37:49 GMT
+- request:
+    method: post
+    uri: https://hidden-garden-03870.herokuapp.com/api/v1/clubs
+    body:
+      encoding: UTF-8
+      string: club%5Bbook_id%5D=gwgON2IwgDUC&club%5Bhost_id%5D=1&club%5Bname%5D=Hello123&club%5Bparams%5D%5B%5D=1
     headers:
       User-Agent:
       - Faraday v2.2.0
@@ -17,21 +59,31 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 201
+      message: Created
     headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 12 Mar 2022 00:37:49 GMT
+      Connection:
+      - keep-alive
       Content-Type:
       - application/json; charset=utf-8
+      Etag:
+      - W/"c72e6b1620102c05ebd9301daa187def"
       Cache-Control:
-      - no-cache
+      - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 75921f89-3716-4c6b-b7c8-76c96f2c1870
+      - fc0c25d9-3728-43a7-8ddf-4d18ca138577
       X-Runtime:
-      - '0.001435'
+      - '0.017363'
       Transfer-Encoding:
       - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"error":{"exception":"Couldn''t find User without an ID"}}'
-  recorded_at: Fri, 04 Mar 2022 05:52:30 GMT
+      string: '{"data":{"id":"80","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}}}'
+  recorded_at: Sat, 12 Mar 2022 00:37:50 GMT
 recorded_with: VCR 6.0.0

@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://hidden-garden-03870.herokuapp.com/api/v1/comments
+    body:
+      encoding: UTF-8
+      string: comment%5Bcomment%5D%5Bbody%5D=My+comment&comment%5Bcomment%5D%5Bclub_id%5D=1&comment%5Bcomment%5D%5Btitle%5D=Test123&comment%5Bcomment%5D%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 12 Mar 2022 01:33:47 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 4d672ca0-1f53-4f53-b409-2024447c9775
+      X-Runtime:
+      - '0.007799'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"error":{"exception":"Validation failed: User must exist, Club must
+        exist, Title can''t be blank, Body can''t be blank"}}'
+  recorded_at: Sat, 12 Mar 2022 01:33:48 GMT
+recorded_with: VCR 6.0.0

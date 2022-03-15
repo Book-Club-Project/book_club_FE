@@ -15,7 +15,7 @@ RSpec.describe 'Books Discover/Index' do
 
     scenario 'I see a flash message if query returns no results' do
       expect(page).to have_button('Search')
-
+      # binding.pry
       fill_in :search, with: "jh21g31yiu2g3"
       click_button 'Search'
       expect(current_path).to eq('/discover')
