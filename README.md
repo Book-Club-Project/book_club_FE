@@ -60,25 +60,25 @@ In order to run this application you need both this Frontend Repository and the 
  
 For a full explanation to set-up the backend server, please see the docs [Here](https://github.com/Book-Club-Project/book_club_BE#readme)
 
-On you command line:
+<!-- On you command line:
 1. Navigate to the local directory where the backend repo is housed
 2. Start the Backend server with `$ rails s` and navigate to http://localhost:3000/ in your web browser. Here you are able to interact with the API endpoints.
 
-OR
+OR -->
 
-1. Navigate to https://boiling-woodland-43020.herokuapp.com/ to interact with the endpoints.
+1. Navigate to https://hidden-garden-43020.herokuapp.com/ to interact with the endpoints.
 
 **Frontend Server**
  
-On your command line:
+<!-- On your command line:
 1. Navigate to local directory where the frontend repo is housed
 2. Run `$ rails s` to run the server locally
 3. Open a web browser and navigate to http://localhost:5000/
 4. Now you may explore the web application!
 
-OR
+OR -->
 
-1. Navigate to https://secure-retreat-15276.herokuapp.com/ and take a look around!
+1. Navigate to https://bookclub2022.herokuapp.com/ and take a look around!
 ### Use of the BookClub Application
 
 
