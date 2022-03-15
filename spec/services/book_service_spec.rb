@@ -29,7 +29,7 @@ RSpec.describe BookService do
 
         expect(search.first[:attributes]).to have_key :image
         expect(search.first[:attributes][:image]).to be_a String
-
+      
         expect(search.first[:attributes]).to have_key :larger_image
         expect(search.first[:attributes][:larger_image]).to be_a String
       end
