@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/books/search?title=jh21g31yiu2g3
+    uri: https://hidden-garden-03870.herokuapp.com/api/v1/books/search?title=jh21g31yiu2g3
     body:
       encoding: US-ASCII
       string: ''
@@ -15,11 +15,21 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 500
-      message: Internal Server Error
+      code: 200
+      message: OK
     headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 15 Mar 2022 19:48:58 GMT
+      Connection:
+      - keep-alive
       Content-Type:
-      - application/json; charset=UTF-8
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ba5f3ea40e95f49bce11942f375ebd38"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
       X-Request-Id:
       - 4ec9a82e-f5fa-4bd2-ae9b-1a91c8c44e45
       X-Runtime:
