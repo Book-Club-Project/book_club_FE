@@ -11,4 +11,9 @@ RSpec.describe BookFacade do
     book = BookFacade.book_show("ZV9DDwAAQBAJ")
     expect(book).to be_a(Book)
   end
+
+  it 'returns a book by isbn', :vcr do
+    book = BookFacade.book_by_isbn("0671027034")
+    expect(book).to be_a Book
+  end
 end

@@ -12,4 +12,9 @@ class BookFacade
     book = BookService.book_info(book_id)[:data]
     Book.new(book)
   end
+
+  def self.book_by_isbn(isbn)
+    book = BookService.book_by_isbn(isbn)[:data]
+    Book.new(book)
+  end
 end
