@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/books/gwgON2IwgDUC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"32bc3efd83f35a212bbefafa5960d2c6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 899fcb28-8b58-4c0f-8632-f030b103bbd3
+      X-Runtime:
+      - '0.210634'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"gwgON2IwgDUC","type":"book","attributes":{"title":"Pride
+        and Prejudice","authors":["Jane Austen"],"genres":["Fiction / Classics"],"description":"Insight
+        edition with engaging side notes that offer background on social customs,
+        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE73keWi9pe_JPbGLp3nq3dCdXEJZ6wOCCRDnnKsA51mOywYPW5o5V6-OSCbrDYhwqfQefHqsbqtBSGy9BkS2Q--dwmKYH0pnkWrb8D40CSfi0osSu4RproquuF7cciu_0WJrOe0x\u0026source=gbs_api"}}}'
+  recorded_at: Tue, 15 Mar 2022 00:01:39 GMT
+recorded_with: VCR 6.0.0

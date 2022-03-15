@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/comments
+    body:
+      encoding: UTF-8
+      string: comment%5Bbody%5D=My+comment&comment%5Bclub_id%5D=1&comment%5Btitle%5D=Test123&comment%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"bd3d1c53024a95a252d13be60d582deb"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 11b8cc48-a7f9-4cdf-bf77-e0dc9da53cea
+      X-Runtime:
+      - '0.193056'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"26","type":"comment","attributes":{"title":"Test123","body":"My
+        comment","user_id":1,"club_id":1}}}'
+  recorded_at: Tue, 15 Mar 2022 00:01:51 GMT
+recorded_with: VCR 6.0.0
