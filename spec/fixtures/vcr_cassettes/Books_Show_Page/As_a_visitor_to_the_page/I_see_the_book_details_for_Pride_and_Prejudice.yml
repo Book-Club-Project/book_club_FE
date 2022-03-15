@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/books/gwgON2IwgDUC
+    uri: https://hidden-garden-03870.herokuapp.com/api/v1/books/gwgON2IwgDUC
     body:
       encoding: US-ASCII
       string: ''
@@ -18,23 +18,31 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 15 Mar 2022 19:49:08 GMT
+      Connection:
+      - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"12b7098f227c21c90f3e25941ee0346e"
+      - W/"ed350b2a1dcb14a5f9c3cbe174874986"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9537e7bb-c403-4cb7-94a8-5585e07d45cc
+      - b646c30d-faf1-4c61-924d-276d5de02008
       X-Runtime:
-      - '0.224055'
+      - '0.099105'
       Transfer-Encoding:
       - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
       string: '{"data":{"id":"gwgON2IwgDUC","type":"book","attributes":{"title":"Pride
         and Prejudice","authors":["Jane Austen"],"genres":["Fiction / Classics"],"description":"Insight
         edition with engaging side notes that offer background on social customs,
-        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE70ZgwaeMBY5JRnjts0paFFTYQMzudwFEiP1fdDoprJoRK9vyWqmXEZohXH-qnPWiNEHsVZg86rN4gmaa8Lm1a2Yp39_1qwx0T5BzUpru-6G0j6kFGmj9BRrvcknx2BeXOMJLct3\u0026source=gbs_api","larger_image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=1\u0026edge=curl\u0026imgtk=AFLRE72yc6lb9-FdnU2adfl7HG_r0rrfN8sABk82vxzSCdEJE4S8B7GYa_XGRBOGokmcX_2XeI2_LXeHc0em3zAPqSnz-3IlEdKfV0AuXvUhWVMccvjcuDn5enAWTM_hGe1pjycLGumv\u0026source=gbs_api"}}}'
-  recorded_at: Mon, 14 Mar 2022 21:26:11 GMT
+        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE70ueVvC2hSbX4J8SSCFWiCrlGcMYeJMbmfh9dctFdDNTn18j0DcxH6QEA_9wnRjvT8zmpQcMh_d2JtC9xyWh4zAYme3fvQk4TqRb3NzL5leXDcywP4O1p23TXIqHT1WMWG-Q8-B\u0026source=gbs_api"}}}'
+  recorded_at: Tue, 15 Mar 2022 19:49:09 GMT
 recorded_with: VCR 6.0.0

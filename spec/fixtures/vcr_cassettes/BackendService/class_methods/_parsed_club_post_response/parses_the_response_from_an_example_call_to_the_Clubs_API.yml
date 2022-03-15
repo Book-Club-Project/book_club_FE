@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://hidden-garden-03870.herokuapp.com/api/v1/clubs
+    body:
+      encoding: UTF-8
+      string: club%5Bclub%5D%5Bbook_id%5D=gwgON2IwgDUC&club%5Bclub%5D%5Bhost_id%5D=1&club%5Bclub%5D%5Bid%5D=1&club%5Bclub%5D%5Bname%5D=Hello123
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 15 Mar 2022 19:50:00 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - a69a010b-787c-4fea-aeb3-ab009da9fadb
+      X-Runtime:
+      - '0.002038'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"error":{"exception":"Couldn''t find User without an ID"}}'
+  recorded_at: Tue, 15 Mar 2022 19:50:01 GMT
+recorded_with: VCR 6.0.0
