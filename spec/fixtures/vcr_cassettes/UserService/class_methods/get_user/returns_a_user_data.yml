@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/users/1
+    uri: https://hidden-garden-03870.herokuapp.com/api/v1/users/1
     body:
       encoding: US-ASCII
       string: ''
@@ -18,6 +18,12 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 15 Mar 2022 20:38:07 GMT
+      Connection:
+      - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
@@ -25,13 +31,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d3d168bb-76c0-4bc7-b818-791863bedacf
+      - a322b726-a8b5-4d5f-8964-e7e13c282533
       X-Runtime:
-      - '0.001523'
+      - '0.004408'
       Transfer-Encoding:
       - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}}}'
-  recorded_at: Tue, 15 Mar 2022 00:01:51 GMT
+  recorded_at: Tue, 15 Mar 2022 20:38:07 GMT
 recorded_with: VCR 6.0.0

@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 15 Mar 2022 19:49:03 GMT
+      - Tue, 15 Mar 2022 20:37:58 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 63aace13-5141-44a8-9ba8-684864af07d0
+      - feba2fd5-5d04-4aa3-a0b3-5a0631e354c2
       X-Runtime:
-      - '0.063024'
+      - '0.007666'
       Transfer-Encoding:
       - chunked
       Via:
@@ -41,7 +41,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"error":{"exception":"Validation failed: Email has already been taken"}}'
-  recorded_at: Tue, 15 Mar 2022 19:49:03 GMT
+  recorded_at: Tue, 15 Mar 2022 20:37:58 GMT
 - request:
     method: get
     uri: https://hidden-garden-03870.herokuapp.com/api/v1/users
@@ -65,27 +65,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 15 Mar 2022 19:49:03 GMT
+      - Tue, 15 Mar 2022 20:37:58 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"d03e84698f5e370effa03523b8867102"
+      - W/"01e236e52c19485934b75b73711121a4"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 66517ff2-d41d-4995-8c70-5939e4212f7f
+      - bcc55395-a920-4d75-adbf-8600bbba979a
       X-Runtime:
-      - '0.015456'
+      - '0.004617'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}}}'
-  recorded_at: Mon, 14 Mar 2022 23:55:32 GMT
+      string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}},{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}},{"id":"6","type":"user","attributes":{"username":"mallorygallery12@gmail.com","email":"mallorygallery12@gmail.com"}},{"id":"7","type":"user","attributes":{"username":"mal.p.vine@gmail.com","email":"mal.p.vine@gmail.com"}},{"id":"8","type":"user","attributes":{"username":"apaarn2211@gmail.com","email":"apaarn2211@gmail.com"}},{"id":"9","type":"user","attributes":{"username":"anavaro1995@gmail.com","email":"anavaro1995@gmail.com"}},{"id":"10","type":"user","attributes":{"username":"joe","email":"j@email.com"}},{"id":"11","type":"user","attributes":{"username":"dontreadalonetakethis@gmail.com","email":"dontreadalonetakethis@gmail.com"}}]}'
+  recorded_at: Tue, 15 Mar 2022 20:37:58 GMT
 - request:
     method: get
     uri: https://hidden-garden-03870.herokuapp.com/api/v1/users/1/clubs
@@ -107,27 +107,28 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 15 Mar 2022 19:49:03 GMT
+      - Tue, 15 Mar 2022 20:37:58 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"25a0d17eb7618f59e0037286d1fae016"
+      - W/"c33773f8d5459e4bc36f693e8fc05053"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b46afd39-3cac-4a94-a004-eebdc60a0e07
+      - 5dfb4611-c90d-4885-9c61-11b340936b9c
       X-Runtime:
-      - '0.010222'
+      - '0.013282'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":"ZV9DDwAAQBAJ"}},{"id":"4","type":"club","attributes":{"name":"Braniacs","host_id":6,"book_id":"5CzZzQEACAAJ"}},{"id":"5","type":"club","attributes":{"name":"thing","host_id":6,"book_id":"5CzZzQEACAAJ"}},{"id":"6","type":"club","attributes":{"name":"thing","host_id":6,"book_id":"5CzZzQEACAAJ"}},{"id":"15","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"16","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"18","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"19","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"20","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"21","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"22","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"23","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"24","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"25","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"26","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"27","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"28","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"29","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"30","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"31","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"32","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"33","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"35","type":"club","attributes":{"name":"nzfznggf","host_id":6,"book_id":"eOYELwAACAAJ"}},{"id":"36","type":"club","attributes":{"name":"fgm","host_id":6,"book_id":"hGBEDwAAQBAJ"}},{"id":"37","type":"club","attributes":{"name":"yes","host_id":6,"book_id":"hGBEDwAAQBAJ"}}]}'
-  recorded_at: Mon, 14 Mar 2022 23:55:32 GMT
+      string: '{"data":[{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":"ZV9DDwAAQBAJ"}},{"id":"4","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"5","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"6","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"7","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"8","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"9","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"10","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"11","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"12","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"13","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"14","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"15","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"16","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"17","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"18","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"19","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"20","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"21","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"22","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"23","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"24","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"25","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"26","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"27","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"28","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"29","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"30","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"31","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"32","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"33","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"35","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"36","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"37","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"38","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"39","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"40","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"41","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"42","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"44","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"45","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"46","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"47","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"48","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"49","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"50","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"51","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"53","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"54","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"55","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"56","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"57","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"58","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"59","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"60","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"62","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"63","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"64","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"65","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"66","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"67","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"68","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"69","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"70","type":"club","attributes":{"name":"Spooky
+        ","host_id":6,"book_id":"NFjZCwAAQBAJ"}},{"id":"73","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"74","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"75","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"76","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"77","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"78","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"79","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"80","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"81","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"84","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"85","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"86","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"87","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"88","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"89","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"90","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"91","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"93","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"94","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"95","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"96","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"97","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"98","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"99","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}}]}'
+  recorded_at: Tue, 15 Mar 2022 20:37:59 GMT
 - request:
     method: get
     uri: https://hidden-garden-03870.herokuapp.com/api/v1/books/search?title=jh21g31yiu2g3
@@ -149,7 +150,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 15 Mar 2022 19:49:04 GMT
+      - Tue, 15 Mar 2022 20:37:58 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -159,120 +160,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f92f674e-5670-4a2c-b988-9bdd35d06705
+      - 9e264eb7-4f07-49f6-b8b5-8c9859be5202
       X-Runtime:
-      - '0.290193'
-      Content-Length:
-      - '10272'
+      - '0.186955'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"status":500,"error":"Internal Server Error","exception":"#\u003cNoMethodError:
-        undefined method `map'' for nil:NilClass\u003e","traces":{"Application Trace":[{"id":0,"trace":"app/facades/books_facade.rb:4:in
-        `get_searched_books''"},{"id":1,"trace":"app/controllers/api/v1/books_controller.rb:10:in
-        `search''"}],"Framework Trace":[{"id":2,"trace":"actionpack (5.2.6.2) lib/action_controller/metal/basic_implicit_render.rb:6:in
-        `send_action''"},{"id":3,"trace":"actionpack (5.2.6.2) lib/abstract_controller/base.rb:194:in
-        `process_action''"},{"id":4,"trace":"actionpack (5.2.6.2) lib/action_controller/metal/rendering.rb:30:in
-        `process_action''"},{"id":5,"trace":"actionpack (5.2.6.2) lib/abstract_controller/callbacks.rb:42:in
-        `block in process_action''"},{"id":6,"trace":"activesupport (5.2.6.2) lib/active_support/callbacks.rb:98:in
-        `run_callbacks''"},{"id":7,"trace":"actionpack (5.2.6.2) lib/abstract_controller/callbacks.rb:41:in
-        `process_action''"},{"id":8,"trace":"actionpack (5.2.6.2) lib/action_controller/metal/rescue.rb:22:in
-        `process_action''"},{"id":9,"trace":"actionpack (5.2.6.2) lib/action_controller/metal/instrumentation.rb:34:in
-        `block in process_action''"},{"id":10,"trace":"activesupport (5.2.6.2) lib/active_support/notifications.rb:168:in
-        `block in instrument''"},{"id":11,"trace":"activesupport (5.2.6.2) lib/active_support/notifications/instrumenter.rb:23:in
-        `instrument''"},{"id":12,"trace":"activesupport (5.2.6.2) lib/active_support/notifications.rb:168:in
-        `instrument''"},{"id":13,"trace":"actionpack (5.2.6.2) lib/action_controller/metal/instrumentation.rb:32:in
-        `process_action''"},{"id":14,"trace":"actionpack (5.2.6.2) lib/action_controller/metal/params_wrapper.rb:256:in
-        `process_action''"},{"id":15,"trace":"activerecord (5.2.6.2) lib/active_record/railties/controller_runtime.rb:24:in
-        `process_action''"},{"id":16,"trace":"actionpack (5.2.6.2) lib/abstract_controller/base.rb:134:in
-        `process''"},{"id":17,"trace":"actionpack (5.2.6.2) lib/action_controller/metal.rb:191:in
-        `dispatch''"},{"id":18,"trace":"actionpack (5.2.6.2) lib/action_controller/metal.rb:252:in
-        `dispatch''"},{"id":19,"trace":"actionpack (5.2.6.2) lib/action_dispatch/routing/route_set.rb:52:in
-        `dispatch''"},{"id":20,"trace":"actionpack (5.2.6.2) lib/action_dispatch/routing/route_set.rb:34:in
-        `serve''"},{"id":21,"trace":"actionpack (5.2.6.2) lib/action_dispatch/journey/router.rb:52:in
-        `block in serve''"},{"id":22,"trace":"actionpack (5.2.6.2) lib/action_dispatch/journey/router.rb:35:in
-        `each''"},{"id":23,"trace":"actionpack (5.2.6.2) lib/action_dispatch/journey/router.rb:35:in
-        `serve''"},{"id":24,"trace":"actionpack (5.2.6.2) lib/action_dispatch/routing/route_set.rb:840:in
-        `call''"},{"id":25,"trace":"rack (2.2.3) lib/rack/etag.rb:27:in `call''"},{"id":26,"trace":"rack
-        (2.2.3) lib/rack/conditional_get.rb:27:in `call''"},{"id":27,"trace":"rack
-        (2.2.3) lib/rack/head.rb:12:in `call''"},{"id":28,"trace":"activerecord (5.2.6.2)
-        lib/active_record/migration.rb:559:in `call''"},{"id":29,"trace":"actionpack
-        (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call''"},{"id":30,"trace":"activesupport
-        (5.2.6.2) lib/active_support/callbacks.rb:98:in `run_callbacks''"},{"id":31,"trace":"actionpack
-        (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call''"},{"id":32,"trace":"actionpack
-        (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"id":33,"trace":"actionpack
-        (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call''"},{"id":34,"trace":"actionpack
-        (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call''"},{"id":35,"trace":"railties
-        (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app''"},{"id":36,"trace":"railties
-        (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call''"},{"id":37,"trace":"activesupport
-        (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged''"},{"id":38,"trace":"activesupport
-        (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged''"},{"id":39,"trace":"activesupport
-        (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged''"},{"id":40,"trace":"railties
-        (5.2.6.2) lib/rails/rack/logger.rb:26:in `call''"},{"id":41,"trace":"actionpack
-        (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call''"},{"id":42,"trace":"actionpack
-        (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call''"},{"id":43,"trace":"rack
-        (2.2.3) lib/rack/runtime.rb:22:in `call''"},{"id":44,"trace":"activesupport
-        (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
-        `call''"},{"id":45,"trace":"actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in
-        `call''"},{"id":46,"trace":"actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in
-        `call''"},{"id":47,"trace":"rack (2.2.3) lib/rack/sendfile.rb:110:in `call''"},{"id":48,"trace":"railties
-        (5.2.6.2) lib/rails/engine.rb:524:in `call''"},{"id":49,"trace":"puma (3.12.6)
-        lib/puma/configuration.rb:227:in `call''"},{"id":50,"trace":"puma (3.12.6)
-        lib/puma/server.rb:706:in `handle_request''"},{"id":51,"trace":"puma (3.12.6)
-        lib/puma/server.rb:476:in `process_client''"},{"id":52,"trace":"puma (3.12.6)
-        lib/puma/server.rb:334:in `block in run''"},{"id":53,"trace":"puma (3.12.6)
-        lib/puma/thread_pool.rb:135:in `block in spawn_thread''"}],"Full Trace":[{"id":0,"trace":"app/facades/books_facade.rb:4:in
-        `get_searched_books''"},{"id":1,"trace":"app/controllers/api/v1/books_controller.rb:10:in
-        `search''"},{"id":2,"trace":"actionpack (5.2.6.2) lib/action_controller/metal/basic_implicit_render.rb:6:in
-        `send_action''"},{"id":3,"trace":"actionpack (5.2.6.2) lib/abstract_controller/base.rb:194:in
-        `process_action''"},{"id":4,"trace":"actionpack (5.2.6.2) lib/action_controller/metal/rendering.rb:30:in
-        `process_action''"},{"id":5,"trace":"actionpack (5.2.6.2) lib/abstract_controller/callbacks.rb:42:in
-        `block in process_action''"},{"id":6,"trace":"activesupport (5.2.6.2) lib/active_support/callbacks.rb:98:in
-        `run_callbacks''"},{"id":7,"trace":"actionpack (5.2.6.2) lib/abstract_controller/callbacks.rb:41:in
-        `process_action''"},{"id":8,"trace":"actionpack (5.2.6.2) lib/action_controller/metal/rescue.rb:22:in
-        `process_action''"},{"id":9,"trace":"actionpack (5.2.6.2) lib/action_controller/metal/instrumentation.rb:34:in
-        `block in process_action''"},{"id":10,"trace":"activesupport (5.2.6.2) lib/active_support/notifications.rb:168:in
-        `block in instrument''"},{"id":11,"trace":"activesupport (5.2.6.2) lib/active_support/notifications/instrumenter.rb:23:in
-        `instrument''"},{"id":12,"trace":"activesupport (5.2.6.2) lib/active_support/notifications.rb:168:in
-        `instrument''"},{"id":13,"trace":"actionpack (5.2.6.2) lib/action_controller/metal/instrumentation.rb:32:in
-        `process_action''"},{"id":14,"trace":"actionpack (5.2.6.2) lib/action_controller/metal/params_wrapper.rb:256:in
-        `process_action''"},{"id":15,"trace":"activerecord (5.2.6.2) lib/active_record/railties/controller_runtime.rb:24:in
-        `process_action''"},{"id":16,"trace":"actionpack (5.2.6.2) lib/abstract_controller/base.rb:134:in
-        `process''"},{"id":17,"trace":"actionpack (5.2.6.2) lib/action_controller/metal.rb:191:in
-        `dispatch''"},{"id":18,"trace":"actionpack (5.2.6.2) lib/action_controller/metal.rb:252:in
-        `dispatch''"},{"id":19,"trace":"actionpack (5.2.6.2) lib/action_dispatch/routing/route_set.rb:52:in
-        `dispatch''"},{"id":20,"trace":"actionpack (5.2.6.2) lib/action_dispatch/routing/route_set.rb:34:in
-        `serve''"},{"id":21,"trace":"actionpack (5.2.6.2) lib/action_dispatch/journey/router.rb:52:in
-        `block in serve''"},{"id":22,"trace":"actionpack (5.2.6.2) lib/action_dispatch/journey/router.rb:35:in
-        `each''"},{"id":23,"trace":"actionpack (5.2.6.2) lib/action_dispatch/journey/router.rb:35:in
-        `serve''"},{"id":24,"trace":"actionpack (5.2.6.2) lib/action_dispatch/routing/route_set.rb:840:in
-        `call''"},{"id":25,"trace":"rack (2.2.3) lib/rack/etag.rb:27:in `call''"},{"id":26,"trace":"rack
-        (2.2.3) lib/rack/conditional_get.rb:27:in `call''"},{"id":27,"trace":"rack
-        (2.2.3) lib/rack/head.rb:12:in `call''"},{"id":28,"trace":"activerecord (5.2.6.2)
-        lib/active_record/migration.rb:559:in `call''"},{"id":29,"trace":"actionpack
-        (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call''"},{"id":30,"trace":"activesupport
-        (5.2.6.2) lib/active_support/callbacks.rb:98:in `run_callbacks''"},{"id":31,"trace":"actionpack
-        (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call''"},{"id":32,"trace":"actionpack
-        (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"id":33,"trace":"actionpack
-        (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call''"},{"id":34,"trace":"actionpack
-        (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call''"},{"id":35,"trace":"railties
-        (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app''"},{"id":36,"trace":"railties
-        (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call''"},{"id":37,"trace":"activesupport
-        (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged''"},{"id":38,"trace":"activesupport
-        (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged''"},{"id":39,"trace":"activesupport
-        (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged''"},{"id":40,"trace":"railties
-        (5.2.6.2) lib/rails/rack/logger.rb:26:in `call''"},{"id":41,"trace":"actionpack
-        (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call''"},{"id":42,"trace":"actionpack
-        (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call''"},{"id":43,"trace":"rack
-        (2.2.3) lib/rack/runtime.rb:22:in `call''"},{"id":44,"trace":"activesupport
-        (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
-        `call''"},{"id":45,"trace":"actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in
-        `call''"},{"id":46,"trace":"actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in
-        `call''"},{"id":47,"trace":"rack (2.2.3) lib/rack/sendfile.rb:110:in `call''"},{"id":48,"trace":"railties
-        (5.2.6.2) lib/rails/engine.rb:524:in `call''"},{"id":49,"trace":"puma (3.12.6)
-        lib/puma/configuration.rb:227:in `call''"},{"id":50,"trace":"puma (3.12.6)
-        lib/puma/server.rb:706:in `handle_request''"},{"id":51,"trace":"puma (3.12.6)
-        lib/puma/server.rb:476:in `process_client''"},{"id":52,"trace":"puma (3.12.6)
-        lib/puma/server.rb:334:in `block in run''"},{"id":53,"trace":"puma (3.12.6)
-        lib/puma/thread_pool.rb:135:in `block in spawn_thread''"}]}}'
-  recorded_at: Mon, 14 Mar 2022 23:55:33 GMT
+      string: '{"data":null}'
+  recorded_at: Tue, 15 Mar 2022 20:37:59 GMT
 recorded_with: VCR 6.0.0

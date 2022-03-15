@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/books/gwgON2IwgDUC
+    uri: https://hidden-garden-03870.herokuapp.com/api/v1/books/gwgON2IwgDUC
     body:
       encoding: US-ASCII
       string: ''
@@ -18,23 +18,31 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 15 Mar 2022 20:36:52 GMT
+      Connection:
+      - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"f9b6b39478b9f68be6502c98a65e55c7"
+      - W/"78da431edc4118a4124e728c82b1611a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - '09412e4b-fa1a-47be-8ff6-b4b6827231a2'
+      - eb0a5140-8b02-436a-a90c-48e6b6573f02
       X-Runtime:
-      - '0.199631'
+      - '0.087034'
       Transfer-Encoding:
       - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
       string: '{"data":{"id":"gwgON2IwgDUC","type":"book","attributes":{"title":"Pride
         and Prejudice","authors":["Jane Austen"],"genres":["Fiction / Classics"],"description":"Insight
         edition with engaging side notes that offer background on social customs,
-        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE72j9gKcjl-U6Ah9k35MsyUxBm2mOp8-0NVV1_Lv5TTDOs0p56v3m9X1tDsBsO3HQ0w_Hm_GtbJfgyM36N0qzN27qhGMkaHPF25AHGpUnpsbChXK5ahs9Ri08kCMLgb40JHHx31A\u0026source=gbs_api"}}}'
-  recorded_at: Tue, 15 Mar 2022 00:01:39 GMT
+        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE73awsB36P0P-oi3IoypHCIW0ekuVUjAc3MLt8d6aco8_VEVAX2gLtk7e4M4Kn-qGefH6veRqNq_bdOmIksPZMRD7wXy09Ga61GS96UFIoxFJO4ZfUEMDrgaO19bx64aQrR_hZm0\u0026source=gbs_api","larger_image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=1\u0026edge=curl\u0026imgtk=AFLRE72dFgZWki0ivE5v_yljaPXU3OyUYPsDF1NOoEquq_0g61iRjNpoLG_mu8t-OSpQqsbFIKdPMu8KEzE7fk0KSwsiWErCxJBehteD8mVZEmmwMkF8sQUDe-eC11PFMAYNTkuR-4lF\u0026source=gbs_api"}}}'
+  recorded_at: Tue, 15 Mar 2022 20:36:52 GMT
 recorded_with: VCR 6.0.0

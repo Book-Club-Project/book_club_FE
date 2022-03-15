@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://localhost:3000/api/v1/comments
+    uri: https://hidden-garden-03870.herokuapp.com/api/v1/comments
     body:
       encoding: UTF-8
       string: comment%5Bbody%5D=My+comment&comment%5Bclub_id%5D=1&comment%5Btitle%5D=Test123&comment%5Buser_id%5D=1
@@ -20,21 +20,29 @@ http_interactions:
       code: 201
       message: Created
     headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 15 Mar 2022 20:36:44 GMT
+      Connection:
+      - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"4bf996d30725cee883ecafb0ee2b138c"
+      - W/"1cc6f1aafdf15f1aba5783a5f1d89f93"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0aa76808-bcf7-4b8a-a3de-eda5d2f8d26b
+      - 30530db4-ea5f-4f8d-99d5-fc5889e50ca6
       X-Runtime:
-      - '0.385087'
+      - '0.019404'
       Transfer-Encoding:
       - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"25","type":"comment","attributes":{"title":"Test123","body":"My
+      string: '{"data":{"id":"40","type":"comment","attributes":{"title":"Test123","body":"My
         comment","user_id":1,"club_id":1}}}'
-  recorded_at: Tue, 15 Mar 2022 00:01:37 GMT
+  recorded_at: Tue, 15 Mar 2022 20:36:45 GMT
 recorded_with: VCR 6.0.0
