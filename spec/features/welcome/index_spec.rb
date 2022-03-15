@@ -54,6 +54,12 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
         expect(page).to have_content("You will be the same person in five years as you are today except for the people you meet and the books you read.")
       end
     end
+
+    scenario 'I see discoverable content' do
+      expect(page).to have_content('Book of the Week')
+      expect(page).to have_content('Popular Books')
+      expect(page).to have_content('Popular Clubs')
+    end
   end
 
   #As an authenticated visitor
@@ -132,6 +138,12 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
         within "#static-quote" do
           expect(page).to have_content("You will be the same person in five years as you are today except for the people you meet and the books you read.")
         end
+      end
+
+      scenario 'I see discoverable content' do
+        expect(page).to have_content('Book of the Week')
+        expect(page).to have_content('Popular Books')
+        expect(page).to have_content('Popular Clubs')
       end
     end
   end
