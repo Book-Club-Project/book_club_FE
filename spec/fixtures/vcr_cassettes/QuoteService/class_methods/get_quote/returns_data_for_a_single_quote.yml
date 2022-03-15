@@ -21,26 +21,28 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Sat, 12 Mar 2022 00:37:50 GMT
+      - Tue, 15 Mar 2022 19:50:04 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"3bbcf92a5ecb30b1c5dc21e729a6da45"
+      - W/"74ef023325319795dcd88841c75bc022"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4f1e7135-057a-4029-ab1c-d2fcfb001f49
+      - 10ff284f-363c-4cbc-b1df-b1d61a83dec2
       X-Runtime:
-      - '0.291060'
+      - '0.228375'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"Earth is the
-        source of light.","author":"Dejan Stojanovic"}}}'
-  recorded_at: Sat, 12 Mar 2022 00:37:51 GMT
+      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"You go back.
+        You search for what made you happy when you were smaller. We are all grown
+        up children, really... So one should go back and search for what was loved
+        and found to be real.","author":"Audrey Hepburn"}}}'
+  recorded_at: Tue, 15 Mar 2022 19:50:05 GMT
 recorded_with: VCR 6.0.0

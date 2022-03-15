@@ -21,19 +21,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Sat, 12 Mar 2022 00:37:49 GMT
+      - Tue, 15 Mar 2022 19:50:03 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"1d74a0f846b7bf3b9d7dd1f7385e9533"
+      - W/"635c258b61d62dca5f5dfaf6241c6033"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1fa08a45-2b37-4b1a-9a50-ef3c89664b78
+      - 93be7eca-3d5b-4b56-a962-74a5070a4175
       X-Runtime:
-      - '0.007841'
+      - '0.008424'
       Transfer-Encoding:
       - chunked
       Via:
@@ -69,6 +69,11 @@ http_interactions:
         title","body":"My body","user_id":1,"club_id":1}},{"id":"30","type":"comment","attributes":{"title":"Test123","body":"My
         comment","user_id":1,"club_id":1}},{"id":"31","type":"comment","attributes":{"title":"Test123","body":"My
         comment","user_id":1,"club_id":1}},{"id":"32","type":"comment","attributes":{"title":"My
+        title","body":"My body","user_id":1,"club_id":1}},{"id":"33","type":"comment","attributes":{"title":"Test123","body":"My
+        comment","user_id":1,"club_id":1}},{"id":"35","type":"comment","attributes":{"title":"My
+        comment","body":"I love books!","user_id":1,"club_id":1}},{"id":"36","type":"comment","attributes":{"title":"My
+        comment","body":"I love books!","user_id":1,"club_id":1}},{"id":"37","type":"comment","attributes":{"title":"Test123","body":"My
+        comment","user_id":1,"club_id":1}},{"id":"38","type":"comment","attributes":{"title":"My
         title","body":"My body","user_id":1,"club_id":1}}]}'
-  recorded_at: Sat, 12 Mar 2022 00:37:49 GMT
+  recorded_at: Tue, 15 Mar 2022 19:50:03 GMT
 recorded_with: VCR 6.0.0

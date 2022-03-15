@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Sat, 12 Mar 2022 01:33:47 GMT
+      - Tue, 15 Mar 2022 19:50:01 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 4d672ca0-1f53-4f53-b409-2024447c9775
+      - c724f733-0bca-4600-b9ca-b32bf4991dac
       X-Runtime:
-      - '0.007799'
+      - '0.010190'
       Transfer-Encoding:
       - chunked
       Via:
@@ -42,5 +42,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"error":{"exception":"Validation failed: User must exist, Club must
         exist, Title can''t be blank, Body can''t be blank"}}'
-  recorded_at: Sat, 12 Mar 2022 01:33:48 GMT
+  recorded_at: Tue, 15 Mar 2022 19:50:02 GMT
 recorded_with: VCR 6.0.0
