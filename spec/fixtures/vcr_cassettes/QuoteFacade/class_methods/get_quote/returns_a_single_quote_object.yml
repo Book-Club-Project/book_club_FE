@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://hidden-garden-03870.herokuapp.com/api/v1/quote
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 12 Mar 2022 00:36:37 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"09baafe338db1ca7f888329c8790faa8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 87ae53a4-51d9-4bb6-b747-56da9c4dfc37
+      X-Runtime:
+      - '0.263323'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"A baby is
+        God''s opinion that life should go on.","author":"Carl Sandburg"}}}'
+  recorded_at: Sat, 12 Mar 2022 00:36:37 GMT
+recorded_with: VCR 6.0.0

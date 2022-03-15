@@ -91,7 +91,7 @@ VCR.configure do |config|
   # config.filter_sensitive_data('<api_key>') { ENV[''] }
   config.configure_rspec_metadata!
 end
-
+OmniAuth.config.silence_get_warning = true
 OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new({
    :provider => "google_oauth2",
    :uid => "123456789",
