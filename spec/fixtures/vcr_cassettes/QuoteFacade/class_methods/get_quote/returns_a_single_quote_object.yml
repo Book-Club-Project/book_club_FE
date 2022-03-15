@@ -21,26 +21,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Sat, 12 Mar 2022 00:36:37 GMT
+      - Tue, 15 Mar 2022 19:48:55 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"09baafe338db1ca7f888329c8790faa8"
+      - W/"12d9f8592d312b6bb96f0a545e7794cc"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 87ae53a4-51d9-4bb6-b747-56da9c4dfc37
+      - b64c4aa1-42c0-4e4a-8837-4999a4e05ce3
       X-Runtime:
-      - '0.263323'
+      - '0.161332'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"A baby is
-        God''s opinion that life should go on.","author":"Carl Sandburg"}}}'
-  recorded_at: Sat, 12 Mar 2022 00:36:37 GMT
+      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"Life''s not
+        how we want it sometimes. It just is what it is. So do what you love and make
+        the most of what it \"is\". ","author":"JMPearson"}}}'
+  recorded_at: Tue, 15 Mar 2022 19:48:55 GMT
 recorded_with: VCR 6.0.0
