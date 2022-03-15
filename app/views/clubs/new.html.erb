@@ -10,7 +10,7 @@
       <h1>Create Club</h1>
     </div><br>
 
-    <div class="container">
+    <div id="form" class="container">
       <%= form_with url: "/clubs",  method: :post, local: true do |f| %>
       <%= f.hidden_field :book_id, value: @book_id %>
       <%= f.hidden_field :host_id, value: session[:id] %>
