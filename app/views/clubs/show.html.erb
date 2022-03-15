@@ -1,89 +1,119 @@
-<header>
+<head>
   <style>
-    .container {
-      margin: auto;
-      width: 50%;
-      border: 3px solid green;
-      padding: 10px;
-      position: relative;
-      text-align: center;
-      justify-content: center;
+
+    .book-img {
+      width: 80%;
+      height: auto;
+      border-radius: 10px;
     }
 
     .comment-container {
-    margin: auto;
-    width: 100%;
-    border: 3px dashed grey;
-    padding: 10px;
-    position: relative;
-    text-align: center;
-    justify-content: center;
-  }
+      background-color: white;
+      padding: 5px;
+      border-left: 3px solid darkgray;
+      border-bottom: 3px solid whitesmoke;
+      border-radius: 5px;
+    }
 
   </style>
-
-  <div class="logo">
-    <!-- Logo/App Name -->
-    <%= render partial: '/layouts/partials/app_logo_banner' %>
-    <!-- Logo/App Name -->
-
-    <!-- Navbar -->
-    <%= render partial: '/layouts/partials/nav_bar', locals: {links: {uri: '/', link_text: 'Home'}} %>
-    <!-- Navbar -->
-  </div><br>
-
-</header>
+</head>
 
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-sm">
-        <h1>Members</h1>
-        <ul>
-        <% @club_users.each do |user| %>
-          <% if user.id == @club.host_id.to_s %>
-          <li><%= user.username %> (Host) - <%= user.email %> </li>
-          <% else %>
-          <li> <%= user.username %> - <%= user.email %></li>
-          <% end %>
-        <% end %>
-        <ul>
-      </div>
-      <div class="col-lg">
-        <h1>Club: <%= @club.name %> </h1>
-        <h6>Club Book: <%= @book.title %> </h6>
-        <img src= <%= @book.image %>>
-        <br><br>
-          <h2>Comments</h2>
-            <% @comments.each do |comment| %>
-              <% @club_users.each do |user| %>
-                <% if comment.user_id == user.id.to_i %>
-                <h6> Comment by: <%= user.username %> </h6>
-                <div class="comment-container">
-                <p><b> <%= comment.title %></b>--
-              <%= comment.body %></p>
-              <br><br>
-            </div>
-                <% end  %>
-              <% end %>
-            <% end %>
+      <!-- book club information -->
+      <div class="col">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1>Club: <%= @club.name %> </h1>
             </div>
           </div>
+
+          <div class="row">
+            <div class="col">
+              <h6>Club Book: <%= @book.title %> </h6>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <img class="book-img" src= <%= @book.image %> >
+            </div>
+          </div>
+        </div><br>
+
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1>Members:</h1>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <ul>
+              <% @club_users.each do |user| %>
+                <% if user.id == @club.host_id.to_s %>
+                <li><%= user.username %> (Host) - <%= user.email %> </li>
+                <% else %>
+                <li> <%= user.username %> - <%= user.email %></li>
+                <% end %>
+              <% end %>
+              <ul>
+            </div>
+          </div>
+        </div>
+
       </div>
-  <br>
-  <div id="comment-add" class="container">
-    <h4>Add a Comment...</h4>
-    <%= form_with url: '/comments', method: :post, local: true do |f| %>
 
-    <%= f.text_field :title, required: :true, placeholder: 'Comment Title' %><br><br>
+      <!-- discussion section -->
+      <div class="col">
+        <div class="container">
 
-    <%= f.text_area :body, required: true, placeholder: 'Your message here' %><br
+          <div class="row">
+            <div class="col">
+              <h2>Discussion:</h2>
+            </div>
+          </div>
 
-    <%= f.hidden_field :user_id, value: current_user.id %>
+          <!-- make a comment -->
+          <div class="row">
+            <div id="comment-add">
+              <h4>Add a Comment...</h4>
+              <%= form_with url: '/comments', method: :post, local: true do |f| %>
 
-    <%= f.hidden_field :club_id, value: @club.id %>
+              <%= f.text_field :title, required: :true, placeholder: 'Comment Title' %><br><br>
 
-    <%= f.submit 'Submit', method: :post %><br><br>
-    <% end %>
+              <%= f.text_area :body, required: true, placeholder: 'Your message here' %><br
+
+              <%= f.hidden_field :user_id, value: current_user.id %>
+
+              <%= f.hidden_field :club_id, value: @club.id %>
+
+              <%= f.submit 'Submit', method: :post %><br><br>
+              <% end %>
+            </div>
+          </div>
+
+          <!-- all comments -->
+          <div class="row">
+            <div class="col">
+              <% @comments.each do |comment| %>
+                <% @club_users.each do |user| %>
+                  <% if comment.user_id == user.id.to_i %>
+                  <p> <img src="<%= asset_path 'profile_pic_2.png' %>" width="20" height="20" class="rounded-circle">  <%= user.username %> </p>
+                  <div class="comment-container">
+                  <p><b> <%= comment.title %></b><br>
+                <%= comment.body %></p>
+              </div><br>
+                  <% end  %>
+                <% end %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>

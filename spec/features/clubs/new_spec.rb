@@ -31,16 +31,24 @@ RSpec.describe "New club page" do
         expect(current_path).to eq("/clubs/new")
       end
 
-      # Navbar behavior is tested in welcome/index_spec.rb
-      scenario 'I see the nav bar links for authenticated user' do
-        expect(page).to have_link('Home', href: '/')
-        expect(page).to have_link('Discover Books', href: '/discover')
+      # Navbar exists on page. Navbar behavior is tested in welcome/index_spec.rb
+      scenario 'I see the nav bar with links for authenticated user' do
+        within '#nav-bar' do
+          # logo exists and is the image we want
+          expect(page.find('#logo')['alt']).to eq('logo')
+          expect(page.find('#logo')['src']).to match('logo')
 
-        expect(page).to_not have_link('Login', href: '/login')
-        expect(page).to_not have_link('Register', href: '/register')
+          # link to home exists
+          expect(page).to have_selector(:css, 'a[href="/"]')
 
-        expect(page).to have_link('Logout')
-        expect(page).to have_link('My Dashboard')
+          # links for unauthenticated user do not exist
+          expect(page).to_not have_link('Login', href: '/login')
+          expect(page).to_not have_link('Register', href: '/register')
+
+          # links for authenticated user exist
+          expect(page).to have_link('Logout')
+          expect(page).to have_link('Dashboard')
+        end
       end
 
       # Skipped to not blow out API rate limit
@@ -50,7 +58,7 @@ RSpec.describe "New club page" do
 
       scenario 'I see a form to create a book club' do
         expect(page).to have_field(:name)
-        expect(page).to have_content('Select Users to Add')
+        expect(page).to have_content('Invite Users?')
         expect(page).to have_css('#select-user-1')
         expect(page).to have_button('Create Book Club')
       end

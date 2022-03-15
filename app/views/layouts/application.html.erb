@@ -8,14 +8,27 @@
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+
+    <style media="screen">
+      body {
+        background-color: whitesmoke;
+      }
+
+      .container {
+        background-color: white;
+        padding: 15px;
+        border-radius: 15px;
+        border: 3px solid whitesmoke;
+      }
+    </style>
   </head>
 
   <body>
-    <% flash.each do |type, notice| %>
-        <div class="alert alert-info">
-          <p><%= notice %></p>
-        </div>
-    <% end %>
+    <!-- Navbar -->
+    <nav>
+      <%= render partial: '/layouts/partials/logo_nav_profile' %>
+    </nav><br>
+
     <%= yield %>
   </body>
 </html>

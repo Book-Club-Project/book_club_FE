@@ -36,16 +36,24 @@ RSpec.describe 'Club show page' do
         expect(current_path).to match('/clubs/')
       end
 
-      # Navbar behavior is tested in welcome/index_spec.rb
-      scenario 'I see the nav bar links for authenticated user' do
-        expect(page).to have_link('Home', href: '/')
-        expect(page).to have_link('Discover Books', href: '/discover')
+      # Navbar exists on page. Navbar behavior is tested in welcome/index_spec.rb
+      scenario 'I see the nav bar with links for authenticated user' do
+        within '#nav-bar' do
+          # logo exists and is the image we want
+          expect(page.find('#logo')['alt']).to eq('logo')
+          expect(page.find('#logo')['src']).to match('logo')
 
-        expect(page).to_not have_link('Login', href: '/login')
-        expect(page).to_not have_link('Register', href: '/register')
+          # link to home exists
+          expect(page).to have_selector(:css, 'a[href="/"]')
 
-        expect(page).to have_link('Logout')
-        expect(page).to have_link('My Dashboard')
+          # links for unauthenticated user do not exist
+          expect(page).to_not have_link('Login', href: '/login')
+          expect(page).to_not have_link('Register', href: '/register')
+
+          # links for authenticated user exist
+          expect(page).to have_link('Logout')
+          expect(page).to have_link('Dashboard')
+        end
       end
 
       # Skipped to not blow out API rate limit
@@ -71,11 +79,8 @@ RSpec.describe 'Club show page' do
 
       scenario "I see comments members have made" do
         visit("/clubs/1")
-
-        expect(page).to have_content("Comments")
-        expect(page).to have_content("Comment by: 1")
-        expect(page).to have_content("Hello-- Blah")
-        expect(page).to have_content("Comment by: 3")
+        expect(page).to have_content("Blah Blah Blah")
+        expect(page).to have_content("Coolio")
       end
 
       scenario 'I can create new comments' do

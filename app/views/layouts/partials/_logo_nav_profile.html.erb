@@ -1,0 +1,48 @@
+<style media="screen">
+  .left-margin {
+    margin-left: 10px;
+  }
+
+  .right-margin {
+    margin-right: 10px;
+  }
+</style>
+
+<div id="nav-bar" class="container">
+  <div id="logo-nav-profile">
+    <nav class="navbar navbar-dark bg-secondary navbar-expand-sm">
+
+      <!-- logo is a link -->
+      <a class="navbar-brand" href="/">
+        <img id="logo" src="<%= asset_path 'logo.png' %>" class="left-margin" width="80" height="80" alt="logo">
+      </a>
+
+      <!-- user profile image is dropdown menu -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-4" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse flex-row-reverse right-margin" id="navbar-list-4">
+        <ul class="navbar-nav">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" >
+                <img src="<%= asset_path 'profile_pic_2.png' %>" width="40" height="40" class="rounded-circle">
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <% if session[:user_id] %>
+                  <a class="dropdown-item" href="/dashboard">Dashboard</a>
+                  <a class="dropdown-item" href="#">Edit Profile</a>
+                  <a class="dropdown-item" href="/logout">Logout</a>
+                <% else %>
+                  <a class="dropdown-item" href="/register">Register</a>
+                  <a class="dropdown-item" href="/login">Login</a>
+                <% end %>
+              </div>
+            </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>

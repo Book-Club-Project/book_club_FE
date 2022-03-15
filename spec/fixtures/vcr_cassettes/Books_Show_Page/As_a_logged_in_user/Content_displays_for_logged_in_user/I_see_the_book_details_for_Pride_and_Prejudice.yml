@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 15 Mar 2022 19:49:13 GMT
+      - Tue, 15 Mar 2022 20:36:55 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 3c63ffab-a8c6-4c9a-a9b9-fbd1c31569b0
+      - 783500c5-a074-4aae-bb6c-4f0c4eda73f5
       X-Runtime:
-      - '0.008932'
+      - '0.008588'
       Transfer-Encoding:
       - chunked
       Via:
@@ -41,7 +41,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"error":{"exception":"Validation failed: Email has already been taken"}}'
-  recorded_at: Tue, 15 Mar 2022 19:49:14 GMT
+  recorded_at: Tue, 15 Mar 2022 20:36:55 GMT
 - request:
     method: get
     uri: https://hidden-garden-03870.herokuapp.com/api/v1/users
@@ -65,7 +65,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 15 Mar 2022 19:49:13 GMT
+      - Tue, 15 Mar 2022 20:36:56 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -75,9 +75,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 01aea002-73b1-4677-8cd3-b4b84a3729a4
+      - 18da934d-95de-4448-b71d-799461ceb7b5
       X-Runtime:
-      - '0.004842'
+      - '0.005592'
       Transfer-Encoding:
       - chunked
       Via:
@@ -85,7 +85,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"user","attributes":{"username":"1","email":"1@mail.com"}},{"id":"2","type":"user","attributes":{"username":"2","email":"2@mail.com"}},{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}},{"id":"4","type":"user","attributes":{"username":"4","email":"4@mail.com"}},{"id":"5","type":"user","attributes":{"username":"happy22@example.com","email":"happy22@example.com"}},{"id":"6","type":"user","attributes":{"username":"mallorygallery12@gmail.com","email":"mallorygallery12@gmail.com"}},{"id":"7","type":"user","attributes":{"username":"mal.p.vine@gmail.com","email":"mal.p.vine@gmail.com"}},{"id":"8","type":"user","attributes":{"username":"apaarn2211@gmail.com","email":"apaarn2211@gmail.com"}},{"id":"9","type":"user","attributes":{"username":"anavaro1995@gmail.com","email":"anavaro1995@gmail.com"}},{"id":"10","type":"user","attributes":{"username":"joe","email":"j@email.com"}},{"id":"11","type":"user","attributes":{"username":"dontreadalonetakethis@gmail.com","email":"dontreadalonetakethis@gmail.com"}}]}'
-  recorded_at: Tue, 15 Mar 2022 19:49:14 GMT
+  recorded_at: Tue, 15 Mar 2022 20:36:56 GMT
 - request:
     method: get
     uri: https://hidden-garden-03870.herokuapp.com/api/v1/users/1/clubs
@@ -107,19 +107,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 15 Mar 2022 19:49:14 GMT
+      - Tue, 15 Mar 2022 20:36:55 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ece6a3d1ccd2163539f9680ee90a65ee"
+      - W/"c0a18fea2b706fbd1c819ff00e795a42"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 546ee689-a694-426b-9cbe-3c7cee5de877
+      - 7995c3e3-f753-497b-b631-f5bf4822ffb3
       X-Runtime:
-      - '0.018985'
+      - '0.009864'
       Transfer-Encoding:
       - chunked
       Via:
@@ -127,8 +127,8 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"club","attributes":{"name":"Cool Cats","host_id":1,"book_id":"ZV9DDwAAQBAJ"}},{"id":"4","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"5","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"6","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"7","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"8","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"9","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"10","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"11","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"12","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"13","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"14","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"15","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"16","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"17","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"18","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"19","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"20","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"21","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"22","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"23","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"24","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"25","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"26","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"27","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"28","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"29","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"30","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"31","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"32","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"33","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"35","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"36","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"37","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"38","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"39","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"40","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"41","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"42","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"44","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"45","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"46","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"47","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"48","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"49","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"50","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"51","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"53","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"54","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"55","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"56","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"57","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"58","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"59","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"60","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"62","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"63","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"64","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"65","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"66","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"67","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"68","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"69","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"70","type":"club","attributes":{"name":"Spooky
-        ","host_id":6,"book_id":"NFjZCwAAQBAJ"}},{"id":"73","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"74","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"75","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"76","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"77","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"78","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"79","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"80","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"81","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}}]}'
-  recorded_at: Tue, 15 Mar 2022 19:49:14 GMT
+        ","host_id":6,"book_id":"NFjZCwAAQBAJ"}},{"id":"73","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"74","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"75","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"76","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"77","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"78","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"79","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"80","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"81","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"84","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"85","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"86","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"87","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"88","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"89","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"90","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}},{"id":"91","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}}]}'
+  recorded_at: Tue, 15 Mar 2022 20:36:56 GMT
 - request:
     method: get
     uri: https://hidden-garden-03870.herokuapp.com/api/v1/books/gwgON2IwgDUC
@@ -150,19 +150,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 15 Mar 2022 19:49:14 GMT
+      - Tue, 15 Mar 2022 20:36:56 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"c436236f03114d9b00cf3f97a23b988b"
+      - W/"1d664f0b3aaf6ed82d9762f30dd8a68f"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - '028f73e9-9cd6-4c60-87a5-94227deed03a'
+      - 75660bb5-bcde-45cb-a12c-ff96b79f4fb2
       X-Runtime:
-      - '0.091509'
+      - '0.081261'
       Transfer-Encoding:
       - chunked
       Via:
@@ -172,6 +172,6 @@ http_interactions:
       string: '{"data":{"id":"gwgON2IwgDUC","type":"book","attributes":{"title":"Pride
         and Prejudice","authors":["Jane Austen"],"genres":["Fiction / Classics"],"description":"Insight
         edition with engaging side notes that offer background on social customs,
-        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE70SMWQ7WNesdjWoezSc-ZAWraGBixoiECnVU0w1235FG5dDqqqZ5gKGnHf0zbjJNnpqy3yCqNgmb39OL-aNDysnY1r_onWf8QFzooQlz-urPDrcBuw7H7VSYueO7cqvOkI8F8OB\u0026source=gbs_api"}}}'
-  recorded_at: Tue, 15 Mar 2022 19:49:15 GMT
+        thoughts on the book''s themes of faith, and other engaging information.","rating":5,"image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026edge=curl\u0026imgtk=AFLRE73ngWAY5_nmHH_TDfqlki776yamTq0A1GjohEtKtcKSrqoMYKm4ymJeqqpuAWAOYjA9QA4C0m4kEx6Mb8oo6qYnpKnCTkfqup5xMgacZmd9-A8J8cf7udzKr6Xf96LVwKh14rsm\u0026source=gbs_api","larger_image":"http://books.google.com/books/content?id=gwgON2IwgDUC\u0026printsec=frontcover\u0026img=1\u0026zoom=1\u0026edge=curl\u0026imgtk=AFLRE72pmDhoxljehz1ztw-vvKyjz4XdK5zPdKcx_fqVYFmqaOYBMgu7KBWBTafnsgmA9NWe55-xYVxvxYFTJsRiS3t7rf6VMk-U-2vDgYD_cr91XC7_BFaN5t4TvhbyJHv9yzzrfY-v\u0026source=gbs_api"}}}'
+  recorded_at: Tue, 15 Mar 2022 20:36:56 GMT
 recorded_with: VCR 6.0.0

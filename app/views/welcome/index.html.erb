@@ -1,64 +1,14 @@
-<header>
+<head>
   <style>
-    .logo {
-      position: relative;
-      top: 10;
-      left:10;
-    }
-
-    .logo-container {
-      height: 80px;
-      width: 80px;
-      display: inline-block;
-    }
-
-    .banner {
-      width: 100%;
-      opacity: 0.5;
-    }
-
-    .container {
+    #static-quote {
       position: relative;
       text-align: center;
+      padding: 20px;
     }
-
-    /* Centered text */
-    .centered {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    .app-name {
-      font-size: 100px;
-      color: blue;
-    }
-
   </style>
-  <div class="container">
-    <!-- Content here -->
-    <img class="banner" src="<%= asset_path 'landing_banner_2.jpg' %>" alt="Bookclub landing page banner image">
-    <div class="centered"><h1 class='app-name'>Welcome to Book Club</h1></div>
-  </div>
-  <!-- Navbar -->
-  <nav>
-    <%= render partial: '/layouts/partials/nav_bar', locals: {links: [[uri: '/', link_text: 'Home']]} %>
-  </nav>
-
-  <!-- Navbar -->
-
-</header>
+</head>
 
 <body>
-  <div class="container">
-    <div class="logo">
-      <div id="logo" class="logo-container">
-        <img class="banner" src="<%= asset_path 'logo.png' %>" alt="Book club logo">
-      </div>
-    </div>
-  </div>
-
   <div class="container">
     <div id="static-quote">
       <p>"You will be the same person in five years as you are today except for the people you meet and the books you read." <br>
@@ -66,12 +16,68 @@
         - Charlie "Tremendous Jones"
       </p>
     </div>
+  </div><br>
+
+  <div class="container">
+    <div class="row">
+        <!-- search bar -->
+        <div class="col">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6 col-md-offset-3">
+                    <h3>Discover Books</h3>
+                  </div>
+
+                  <div class="row">
+                      <div class="col">
+                        <%= form_with url: '/', method: :get, local: true do |f| %>
+                        <%= f.text_field :search, required: true %><br><br>
+                        <%= f.submit "Search" %>
+                        <% end %><br>
+
+                        <%= render partial: '/layouts/partials/render_flash' %>
+                      </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-8 col-md-offset-3">
+                      <% if @books %>
+                      <h3>Results</h3>
+                        <% @books.each do |book| %>
+                          <p> <%= link_to book.title, "/books/#{book.id}" %> </p>
+                        <% end %>
+                      <% end  %>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- books and clubs -->
+        <div class="col">
+          <!-- book of the week -->
+          <div class="container">
+            <h3>Book of the Week!</h3>
+
+            <p>book of the week goes here</p>
+          </div>
+          <!-- popular books -->
+          <div class="container">
+            <h3>Popular Books</h3>
+
+            <p>Books go here</p>
+          </div><br>
+
+          <!-- popular clubs -->
+          <div class="container">
+            <h3>Popular Clubs</h3>
+
+            <p>Clubs go here</p>
+          </div>
+
+        </div>
+    </div>
   </div>
 
-  <% if session[:user_id] %>
-    <div id="dashboard-link" class="container">
-      <%= link_to 'My Dashboard', '/dashboard' %>
-    </div>
-  <% end %>
 
 </body>

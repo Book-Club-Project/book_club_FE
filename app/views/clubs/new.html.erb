@@ -1,55 +1,53 @@
-<header>
+<head>
   <style>
-    .container {
-      margin: auto;
-      width: 50%;
-      padding: 10px;
-      position: relative;
-      justify-content: center;
-    }
+
   </style>
-
-  <div class="logo">
-    <!-- Logo/App Name -->
-    <%= render partial: '/layouts/partials/app_logo_banner' %>
-    <!-- Logo/App Name -->
-
-    <!-- Navbar -->
-    <%= render partial: '/layouts/partials/nav_bar', locals: {links: {uri: '/', link_text: 'Home'}} %>
-    <!-- Navbar -->
-  </div><br>
-
-</header>
+</head>
 
 <body>
-  <div class="container text-center" text-align="center">
-    <h1>Create Club</h1>
-  </div>
+  <div class="container">
+    <div class="container text-center" text-align="center">
+      <h1>Create Club</h1>
+    </div><br>
 
-  <div id="form" class="container">
-    <%= form_with url: "/clubs",  method: :post, local: true do |f| %>
-      <%= f.label :name %>
-      <%= f.text_field :name, required: true %>
-      <br><br>
-
+    <div id="form" class="container">
+      <%= form_with url: "/clubs",  method: :post, local: true do |f| %>
       <%= f.hidden_field :book_id, value: @book_id %>
       <%= f.hidden_field :host_id, value: session[:id] %>
 
-      <p>Select Users to Add</p>
+      <div class="row">
+        <div class="col">
+          <div class="container">
+            <%= f.label :name, 'Club Name' %>
+            <%= f.text_field :name, required: true %><br><br><br>
 
-      <% user_counter = 0 %>
-      <% @users.each do |user| %>
-        <div id="select-user-<%= user_counter %>">
-          <% if user.id != current_user.id %>
-          <p><%= check_box_tag('user_ids[]', user.id, nil, :id => user.username) %>
-             <%= f.label "#{user.username}" %></p>
-          <% end  %>
+            <button type="button" class="btn btn-secondary btn-lg"><%= f.submit "Create Book Club" %></button>
+          </div>
         </div>
-        <% user_counter += 1 %>
-      <% end  %>
 
-      <%= f.submit "Create Book Club" %>
+        <div class="col">
+          <div class="container">
+            <p>Invite Users? (*not required)</p>
 
-    <% end %>
+            <% user_counter = 0 %>
+            <% @users.each do |user| %>
+              <div id="select-user-<%= user_counter %>">
+                <% if user.id != current_user.id %>
+                <p><%= check_box_tag('user_ids[]', user.id, nil, :id => user.username) %>
+                   <%= f.label "#{user.username}" %></p>
+                <% end  %>
+              </div>
+              <% user_counter += 1 %>
+            <% end  %>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
   </div>
+
+
+
+
+
 </body>
