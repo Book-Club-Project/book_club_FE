@@ -29,7 +29,7 @@ RSpec.describe BookService do
 
         expect(search.first[:attributes]).to have_key :image
         expect(search.first[:attributes][:image]).to be_a String
-      
+
         expect(search.first[:attributes]).to have_key :larger_image
         expect(search.first[:attributes][:larger_image]).to be_a String
       end
@@ -37,6 +37,35 @@ RSpec.describe BookService do
       describe 'book_info(book_id)' do
         it 'returns book data for a single volume', :vcr do
           book_data = BookService.book_info("ZV9DDwAAQBAJ")[:data]
+
+          expect(book_data).to be_a Hash
+
+          expect(book_data).to have_key(:id)
+          expect(book_data[:id]).to be_a String
+
+          expect(book_data[:attributes]).to have_key :title
+          expect(book_data[:attributes][:title]).to be_a String
+
+          expect(book_data[:attributes]).to have_key :authors
+          expect(book_data[:attributes][:authors]).to be_an Array
+
+          expect(book_data[:attributes]).to have_key :description
+          expect(book_data[:attributes][:description]).to be_a String
+
+          expect(book_data[:attributes]).to have_key :rating
+          expect(book_data[:attributes][:rating]).to be_an Integer
+
+          expect(book_data[:attributes]).to have_key :image
+          expect(book_data[:attributes][:image]).to be_a String
+
+          expect(book_data[:attributes]).to have_key :larger_image
+          expect(book_data[:attributes][:larger_image]).to be_a String
+        end
+      end
+
+      describe 'book_by_isbn(isbn)' do
+        it 'returns book data for a single volume', :vcr do
+          book_data = BookService.book_by_isbn("0671027034")[:data]
 
           expect(book_data).to be_a Hash
 
