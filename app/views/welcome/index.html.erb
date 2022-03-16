@@ -15,6 +15,15 @@
       border-radius: 10px;
     }
 
+    .thumbnail-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      height: auto;
+      border-radius: 10px;
+    }
+
     /* Style the button that is used to open and close the collapsible content */
     .collapsible {
       background-color: #eee;
@@ -39,6 +48,12 @@
       display: none;
       overflow: hidden;
       background-color: #f1f1f1;
+    }
+
+    .popular-book-container {
+      background-color: white;
+      padding: 5px;
+      border-bottom: 5px solid whitesmoke;
     }
   </style>
 
@@ -90,7 +105,7 @@
           </div>
         </div>
 
-        <!-- books and clubs -->
+        <!-- suggested books -->
         <div class="col">
           <!-- book of the week -->
           <div class="container">
@@ -151,22 +166,30 @@
 
               </div>
             </div>
+          </div><br>
 
-
-          </div>
           <!-- popular books -->
           <div class="container">
             <h3>Popular Books</h3>
+              <% @popular_books.each do |book| %>
+                <div class="popular-book-container">
+                  <div class="col">
+                    <div class="row">
+                      <div class="col-md-4 col-md-offset-3">
+                        <img class="thumbnail-img" src= <%= book.image %>>
+                      </div>
 
-            <p>Books go here</p>
+                      <div class="col">
+                        <p>Title: <%= book.title %></p>
+                        <p>Author: <%= book.author %></p>
+                        <p>Summary: <%= book.description %></p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div><br>
+              <% end %>
           </div><br>
-
-          <!-- popular clubs -->
-          <!-- <div class="container">
-            <h3>Popular Clubs</h3>
-
-            <p>Clubs go here</p>
-          </div> -->
         </div>
     </div>
   </div>
