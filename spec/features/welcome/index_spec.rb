@@ -58,7 +58,6 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
     scenario 'I see discoverable content' do
       expect(page).to have_content('Book of the Week')
       expect(page).to have_content('Popular Books')
-      expect(page).to have_content('Popular Clubs')
     end
   end
 
@@ -143,7 +142,6 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
       scenario 'I see discoverable content' do
         expect(page).to have_content('Book of the Week')
         expect(page).to have_content('Popular Books')
-        expect(page).to have_content('Popular Clubs')
       end
     end
   end
@@ -176,11 +174,6 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
       click_link 'Pride and Prejudice'
 
       expect(current_path).to match('/books/')
-    end
-
-    # Skipped to not blow out API rate limit
-    xscenario 'I see a random quote' do
-      expect(page).to have_css('#random-quote')
     end
   end
 
@@ -232,11 +225,6 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
         click_link 'Pride and Prejudice'
 
         expect(current_path).to match('/books/')
-      end
-
-      # Skipped to not blow out API rate limit
-      xscenario 'I see a random quote' do
-        expect(page).to have_css('#random-quote')
       end
     end
   end

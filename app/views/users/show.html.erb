@@ -14,8 +14,6 @@
     </div>
 
   <% else %>
-    <%# render partial: '/layouts/partials/random_quote' %> <br><br>
-
     <center><h1><%= @user.username %>'s Dashboard</h1></center>
 
     <div class="container">
@@ -24,13 +22,13 @@
         <div class="col">
           <div class="container">
             <div class="row">
-              <div class="col-md-6 col-md-offset-3">
+              <div class="col">
                 <h3>My Bookclubs:</h3>
               </div>
             </div>
 
             <div class="row">
-              <div class="col-md-6 col-md-offset-3">
+              <div class="col">
                 <% @clubs.each do |club| %>
                 <p><%= link_to club.name, club_path(club.id) %></p>
                 <% end %>
@@ -43,14 +41,14 @@
         <div class="col">
           <div class="container">
             <div class="row">
-              <div class="col-md-6 col-md-offset-3">
+              <div class="col">
                 <h3>My Recent Activity:</h3>
               </div>
             </div>
 
             <div class="row">
-              <div class="col-md-6 col-md-offset-3">
-                <p>put 5 most recent comments here.</p>
+              <div class="col">
+                <p>User's recent activity will show up here.</p>
               </div>
             </div>
           </div>

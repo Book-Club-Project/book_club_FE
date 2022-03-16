@@ -68,19 +68,32 @@ RSpec.configure do |config|
     quote_response = File.read('./spec/support/stubbed_api_responses/quote_response.json')
 
     stub_request(:get, "http://localhost:3000/api/v1/quote").to_return(body: quote_response, status: 200)
+
+    heroku_quote_response = File.read('./spec/support/stubbed_api_responses/quote_response.json')
+
+    stub_request(:get, "https://hidden-garden-03870.herokuapp.com/api/v1/quote").to_return(body: heroku_quote_response, status: 200)
   end
 
   config.before(:each, :type => :facade) do
     quote_response = File.read('./spec/support/stubbed_api_responses/quote_response.json')
 
     stub_request(:get, "http://localhost:3000/api/v1/quote").to_return(body: quote_response, status: 200)
+
+    heroku_quote_response = File.read('./spec/support/stubbed_api_responses/quote_response.json')
+
+    stub_request(:get, "https://hidden-garden-03870.herokuapp.com/api/v1/quote").to_return(body: heroku_quote_response, status: 200)
   end
 
   config.before(:each, :type => :service) do
     quote_response = File.read('./spec/support/stubbed_api_responses/quote_response.json')
 
     stub_request(:get, "http://localhost:3000/api/v1/quote").to_return(body: quote_response, status: 200)
+
+    heroku_quote_response = File.read('./spec/support/stubbed_api_responses/quote_response.json')
+
+    stub_request(:get, "https://hidden-garden-03870.herokuapp.com/api/v1/quote").to_return(body: heroku_quote_response, status: 200)
   end
+  
   config.include IntegrationSpecHelper, :type => :request
 end
 

@@ -1,13 +1,23 @@
-<header>
+<head>
   <style media="screen">
     #random-quote {
       position: relative;
       text-align: center;
-      padding: 20px;
     }
   </style>
-</header>
+</head>
 
-<div id="random-quote" class="container">
-  <p> <%= @quote.quote %> <br> - <%= @quote.author %></p>
-</div>
+<% if @quote %>
+  <div id="random-quote" class="container">
+    <p> <%= @quote.quote %> <br> - <%= @quote.author %></p>
+  </div><br>
+<% else %>
+  <div class="container">
+    <div id="static-quote">
+      <p>"You will be the same person in five years as you are today except for the people you meet and the books you read." <br>
+
+        - Charlie "Tremendous Jones"
+      </p>
+    </div>
+  </div><br>
+<% end %>

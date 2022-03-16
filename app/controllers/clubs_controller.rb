@@ -1,4 +1,6 @@
 class ClubsController < ApplicationController
+  before_action :quote, only: [:new]
+  
   def show
     club_host = current_user
     club_id = params[:id]

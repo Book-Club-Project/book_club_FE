@@ -21,27 +21,28 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 15 Mar 2022 20:38:06 GMT
+      - Wed, 16 Mar 2022 15:59:16 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"b16fffa9f38bbc6871029da45dceef97"
+      - W/"9e8985efb6df02249a524b07ce1c0564"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 21ad9264-5f01-4ff4-acec-80d020b83129
+      - 36f968fb-36c9-43eb-b9ed-c9a33b26f7ff
       X-Runtime:
-      - '0.134302'
+      - '0.068061'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"Motivation
-        is like food for the brain. You cannot get enough in one sitting. It needs
-        continual and regular top up''s.","author":"Peter J. Davies"}}}'
-  recorded_at: Tue, 15 Mar 2022 20:38:06 GMT
+      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"Someone asked
+        Sophocles, How do you feel now about sex Are you able to have a woman He replied,
+        Hush man most gladly indeed am I rid off it all, as though I had escaped from
+        a mad and savage master.","author":"Sophocles"}}}'
+  recorded_at: Wed, 16 Mar 2022 15:59:16 GMT
 recorded_with: VCR 6.0.0
