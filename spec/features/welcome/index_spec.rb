@@ -58,7 +58,6 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
     scenario 'I see discoverable content' do
       expect(page).to have_content('Book of the Week')
       expect(page).to have_content('Popular Books')
-      expect(page).to have_content('Popular Clubs')
     end
   end
 
@@ -143,7 +142,6 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
       scenario 'I see discoverable content' do
         expect(page).to have_content('Book of the Week')
         expect(page).to have_content('Popular Books')
-        expect(page).to have_content('Popular Clubs')
       end
     end
   end

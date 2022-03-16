@@ -5,6 +5,56 @@
       text-align: center;
       padding: 20px;
     }
+
+    .cover-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .thumbnail-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* Style the button that is used to open and close the collapsible content */
+    .collapsible {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active, .collapsible:hover {
+      background-color: #ccc;
+    }
+
+    /* Style the collapsible content. Note: hidden by default */
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
+
+    .popular-book-container {
+      background-color: white;
+      padding: 5px;
+      border-bottom: 5px solid whitesmoke;
+    }
   </style>
 </head>
 
@@ -53,28 +103,91 @@
           </div>
         </div>
 
-        <!-- books and clubs -->
+        <!-- suggested books -->
         <div class="col">
           <!-- book of the week -->
           <div class="container">
-            <h3>Book of the Week!</h3>
+            <div class="row">
+              <h3>Book of the Week!</h3>
+            </div>
 
-            <p>book of the week goes here</p>
-          </div>
+            <div class="row">
+              <div class="col">
+                <div class="row">
+                  <a href="/books/<%= @book_of_the_week.id %>">
+                    <img class="cover-img" src="<%= @book_of_the_week.larger_image %>" alt="book of the week cover">
+                  </a>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="row">
+                  <p>Author: <% @book_of_the_week.author.each do |author| %>
+                    <%= author %>
+                    <% end %></p>
+                </div>
+
+                <div class="row">
+                  <% if @book_of_the_week.genre == nil%>
+                      <p> Genre(s): n/a</p>
+                  <% else %>
+                  <p>Genre(s): <% @book_of_the_week.genre.each do |genre| %>
+                    <%= genre %>
+                    <% end %>
+                  <% end %> </p>
+                </div>
+
+                <div class="row">
+                  <button type="button" class="collapsible">Summary</button>
+
+                  <div class="content">
+                    <p> <%= sanitize @book_of_the_week.summary %> </p>
+                  </div>
+
+                  <script>
+                    var coll = document.getElementsByClassName("collapsible");
+                    var i;
+
+                    for (i = 0; i < coll.length; i++) {
+                      coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.display === "block") {
+                          content.style.display = "none";
+                        } else {
+                          content.style.display = "block";
+                        }
+                      });
+                    }
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div><br>
+
           <!-- popular books -->
           <div class="container">
             <h3>Popular Books</h3>
 
-            <p>Books go here</p>
+            <% @popular_books.each do |book| %>
+                <div class="popular-book-container">
+                  <div class="col">
+                    <div class="row">
+                      <div class="col-md-4 col-md-offset-3">
+                        <img class="thumbnail-img" src= <%= book.image %>>
+                      </div>
+
+                      <div class="col">
+                        <p>Title: <%= book.title %></p>
+                        <p>Author: <%= book.author %></p>
+                        <p>Summary: <%= book.description %></p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div><br>
+              <% end %>
           </div><br>
-
-          <!-- popular clubs -->
-          <div class="container">
-            <h3>Popular Clubs</h3>
-
-            <p>Clubs go here</p>
-          </div>
-
         </div>
     </div>
   </div>
