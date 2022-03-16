@@ -56,11 +56,6 @@ RSpec.describe 'Club show page' do
         end
       end
 
-      # Skipped to not blow out API rate limit
-      xscenario 'I see a random quote' do
-        expect(page).to have_css('#random-quote')
-      end
-
       scenario "I see the club details" do
         expect(page).to have_content("Hello123")
         expect(page).to have_content("Club Book:")

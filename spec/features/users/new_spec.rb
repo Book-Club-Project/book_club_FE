@@ -26,7 +26,7 @@ RSpec.describe 'Users New/Register Page', type: :feature do
     end
 
     # Skipped to not blow out API rate limit
-    xscenario 'I see a random quote' do
+    scenario 'I see a random quote' do
       expect(page).to have_css('#random-quote')
     end
 
@@ -109,7 +109,7 @@ RSpec.describe 'Users New/Register Page', type: :feature do
       end
 
       # Skipped to not blow out API rate limit
-      xscenario 'I see a random quote' do
+      scenario 'I see a random quote' do
         expect(page).to have_css('#random-quote')
       end
     end

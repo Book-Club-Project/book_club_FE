@@ -175,11 +175,6 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
 
       expect(current_path).to match('/books/')
     end
-
-    # Skipped to not blow out API rate limit
-    xscenario 'I see a random quote' do
-      expect(page).to have_css('#random-quote')
-    end
   end
 
   context 'As an authenticated user' do
@@ -230,11 +225,6 @@ RSpec.describe 'Book Club Landing/Welcome page', type: :feature do
         click_link 'Pride and Prejudice'
 
         expect(current_path).to match('/books/')
-      end
-
-      # Skipped to not blow out API rate limit
-      xscenario 'I see a random quote' do
-        expect(page).to have_css('#random-quote')
       end
     end
   end
