@@ -5,21 +5,24 @@ RSpec.describe 'Users New/Register Page', type: :feature do
 
     before(:each) { visit '/register' }
 
-    scenario 'I see the app name and logo' do
-      within "#logo" do
-        expect(page).to have_content("The Book Club")
+    # Navbar exists on page. Navbar behavior is tested in welcome/index_spec.rb
+    scenario 'I see the nav bar with links for unauthenticated user' do
+      within '#nav-bar' do
+        # logo exists and is the image we want
+        expect(page.find('#logo')['alt']).to eq('logo')
+        expect(page.find('#logo')['src']).to match('logo')
+
+        # link to home exists
+        expect(page).to have_selector(:css, 'a[href="/"]')
+
+        # links for unauthenticated user exist
+        expect(page).to have_link('Login', href: '/login')
+        expect(page).to have_link('Register', href: '/register')
+
+        # links for authenticated users do not exist
+        expect(page).to_not have_link('Logout')
+        expect(page).to_not have_link('Dashboard')
       end
-    end
-
-    # Navbar behavior is tested in welcome/index_spec.rb
-    scenario 'I see the nav bar links for unauthenticated user' do
-      expect(page).to have_link('Home', href: '/')
-      expect(page).to have_link('Discover Books', href: '/discover')
-      expect(page).to have_link('Login', href: '/login')
-      expect(page).to have_link('Register', href: '/register')
-
-      expect(page).to_not have_link('Logout')
-      expect(page).to_not have_link('My Dashboard')
     end
 
     # Skipped to not blow out API rate limit
@@ -64,16 +67,24 @@ RSpec.describe 'Users New/Register Page', type: :feature do
     context 'Content displays for logged in user' do
       before(:each) { visit '/register' }
 
-      # Navbar behavior is tested in welcome/index_spec.rb
-      scenario 'I see the nav bar links for authenticated user' do
-        expect(page).to have_link('Home', href: '/')
-        expect(page).to have_link('Discover Books', href: '/discover')
+      # Navbar exists on page. Navbar behavior is tested in welcome/index_spec.rb
+      scenario 'I see the nav bar with links for authenticated user' do
+        within '#nav-bar' do
+          # logo exists and is the image we want
+          expect(page.find('#logo')['alt']).to eq('logo')
+          expect(page.find('#logo')['src']).to match('logo')
 
-        expect(page).to_not have_link('Login', href: '/login')
-        expect(page).to_not have_link('Register', href: '/register')
+          # link to home exists
+          expect(page).to have_selector(:css, 'a[href="/"]')
 
-        expect(page).to have_link('Logout')
-        expect(page).to have_link('My Dashboard')
+          # links for unauthenticated user do not exist
+          expect(page).to_not have_link('Login', href: '/login')
+          expect(page).to_not have_link('Register', href: '/register')
+
+          # links for authenticated user exist
+          expect(page).to have_link('Logout')
+          expect(page).to have_link('Dashboard')
+        end
       end
 
       scenario 'I do not see a form to create a new user' do

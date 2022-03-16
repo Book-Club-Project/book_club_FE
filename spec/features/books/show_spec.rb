@@ -5,9 +5,23 @@ RSpec.describe 'Books Show Page' do
     # Visits book show page and displays info for Pride and Prejudice
     before(:each) { visit "/books/gwgON2IwgDUC" }
 
-    scenario 'I see the app name and logo' do
-      within "#logo" do
-        expect(page).to have_content("The Book Club")
+    # Navbar exists on page. Explicit behavior is tested in welcome/index_spec.rb
+    scenario 'I see the nav bar with links for unauthenticated user' do
+      within '#nav-bar' do
+        # logo exists and is the image we want
+        expect(page.find('#logo')['alt']).to eq('logo')
+        expect(page.find('#logo')['src']).to match('logo')
+
+        # link to home exists
+        expect(page).to have_selector(:css, 'a[href="/"]')
+
+        # links for unauthenticated user exist
+        expect(page).to have_link('Login', href: '/login')
+        expect(page).to have_link('Register', href: '/register')
+
+        # links for authenticated users do not exist
+        expect(page).to_not have_link('Logout')
+        expect(page).to_not have_link('Dashboard')
       end
     end
 
@@ -15,28 +29,13 @@ RSpec.describe 'Books Show Page' do
       expect(page).to have_content('Pride and Prejudice')
       expect(page).to have_content('Jane Austen')
       expect(page).to have_content('Fiction / Classics')
-      expect(page).to have_css("#book-cover")
+      expect(page.find('#book-cover')['alt']).to eq('book cover')
       expect(page).to have_content('Summary')
       expect(page).to have_content('Book rating')
-
-      within "#book-cover" do
-        expect(page).to have_css("#cover-image")
-      end
-    end
-
-    # Navbar behavior is tested in welcome/index_spec.rb
-    scenario 'I see the nav bar links for unauthenticated user' do
-      expect(page).to have_link('Home', href: '/')
-      expect(page).to have_link('Discover Books', href: '/discover')
-      expect(page).to have_link('Login', href: '/login')
-      expect(page).to have_link('Register', href: '/register')
-
-      expect(page).to_not have_link('Logout')
-      expect(page).to_not have_link('My Dashboard')
     end
 
     scenario 'I see a message to login before creating a book club' do
-      within '#need-login-message' do
+      within '#create-club-button' do
         expect(page).to have_content('To start a club with this book, please')
         expect(page).to have_link('Login', href: '/login')
       end
@@ -70,26 +69,28 @@ RSpec.describe 'Books Show Page' do
     context 'Content displays for logged in user' do
       before(:each) { visit '/books/gwgON2IwgDUC' }
 
-      scenario 'I see the app name and logo' do
-        within "#logo" do
-          expect(page).to have_content("The Book Club")
+      # Navbar exists on page. Explicit behavior is tested in welcome/index_spec.rb
+      scenario 'I see the nav bar with links for authenticated user' do
+        within '#nav-bar' do
+          # logo exists and is the image we want
+          expect(page.find('#logo')['alt']).to eq('logo')
+          expect(page.find('#logo')['src']).to match('logo')
+
+          # link to home exists
+          expect(page).to have_selector(:css, 'a[href="/"]')
+
+          # links for unauthenticated user do not exist
+          expect(page).to_not have_link('Login', href: '/login')
+          expect(page).to_not have_link('Register', href: '/register')
+
+          # links for authenticated user exist
+          expect(page).to have_link('Logout')
+          expect(page).to have_link('Dashboard')
         end
       end
 
-      # Navbar behavior is tested in welcome/index_spec.rb
-      scenario 'I see the nav bar links for authenticated user' do
-        expect(page).to have_link('Home', href: '/')
-        expect(page).to have_link('Discover Books', href: '/discover')
-
-        expect(page).to_not have_link('Login', href: '/login')
-        expect(page).to_not have_link('Register', href: '/register')
-
-        expect(page).to have_link('Logout')
-        expect(page).to have_link('My Dashboard')
-      end
-
       scenario 'I see button to create club and no message to log in' do
-        within '#create-club' do
+        within '#create-club-button' do
           expect(page).to have_button('Create Book Club')
           expect(page).to_not have_link('Login', href: '/login')
         end
@@ -99,13 +100,9 @@ RSpec.describe 'Books Show Page' do
         expect(page).to have_content('Pride and Prejudice')
         expect(page).to have_content('Jane Austen')
         expect(page).to have_content('Fiction / Classics')
-        expect(page).to have_css("#book-cover")
+        expect(page.find('#book-cover')['alt']).to eq('book cover')
         expect(page).to have_content('Summary')
         expect(page).to have_content('Book rating')
-
-        within "#book-cover" do
-          expect(page).to have_css("#cover-image")
-        end
       end
 
       scenario 'I click create club button and am taken to a form to create new club' do
