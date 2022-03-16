@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/books/isbn?isbn=0671027034
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"76dcbaf60ad3690ac920e96954621a91"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 18765aa1-0d77-4ed4-bc18-edb617ad4a90
+      X-Runtime:
+      - '0.319064'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"D7TznQEACAAJ","type":"book","attributes":{"title":"How
+        to Win Friends and Influence People","authors":["Dale Carnegie"],"genres":["Business
+        \u0026 Economics"],"description":"Provides suggestions for successfully dealing
+        with people both in social and business situations","rating":4,"image":"http://books.google.com/books/content?id=D7TznQEACAAJ\u0026printsec=frontcover\u0026img=1\u0026zoom=5\u0026source=gbs_api","larger_image":"http://books.google.com/books/content?id=D7TznQEACAAJ\u0026printsec=frontcover\u0026img=1\u0026zoom=1\u0026source=gbs_api"}}}'
+  recorded_at: Wed, 16 Mar 2022 00:22:28 GMT
+recorded_with: VCR 6.0.0
