@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 15 Mar 2022 20:38:04 GMT
+      - Wed, 16 Mar 2022 15:59:13 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 84f58e93-e3bd-4164-b8ae-e1c5f67794ea
+      - 258e4c4b-c0ea-40b7-a3d2-5de84ff0e311
       X-Runtime:
-      - '0.004150'
+      - '0.007588'
       Transfer-Encoding:
       - chunked
       Via:
@@ -41,7 +41,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"3","type":"user","attributes":{"username":"3","email":"3@mail.com"}}}'
-  recorded_at: Tue, 15 Mar 2022 20:38:05 GMT
+  recorded_at: Wed, 16 Mar 2022 15:59:14 GMT
 - request:
     method: post
     uri: https://hidden-garden-03870.herokuapp.com/api/v1/clubs
@@ -65,25 +65,25 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 15 Mar 2022 20:38:06 GMT
+      - Wed, 16 Mar 2022 15:59:13 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"8f17ca148954c75ca102f91bbf278b81"
+      - W/"398e09f554a9667e3cf59706224ecda5"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e6f9ff9d-f064-4c74-96b5-1de60b79e128
+      - a2100d88-ed91-4ff5-ad22-9cfa54f805a6
       X-Runtime:
-      - '0.021813'
+      - '0.046834'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"100","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}}}'
-  recorded_at: Tue, 15 Mar 2022 20:38:06 GMT
+      string: '{"data":{"id":"116","type":"club","attributes":{"name":"Hello123","host_id":1,"book_id":"gwgON2IwgDUC"}}}'
+  recorded_at: Wed, 16 Mar 2022 15:59:14 GMT
 recorded_with: VCR 6.0.0

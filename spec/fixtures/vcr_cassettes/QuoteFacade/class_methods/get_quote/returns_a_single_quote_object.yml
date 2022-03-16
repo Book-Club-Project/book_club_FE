@@ -21,27 +21,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 15 Mar 2022 20:36:45 GMT
+      - Wed, 16 Mar 2022 15:46:28 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"2fc0faccc106f6926e17a2d38e1a9bd8"
+      - W/"0fd66023842149dd4aea94ce5210abee"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 43b05fc7-89ac-48f3-9d42-c51ea03c30ad
+      - 1c49979e-9afb-4c9f-b073-72c34c241dab
       X-Runtime:
-      - '0.150313'
+      - '0.146889'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"Tell ''em
-        to go out there with all they got and win just one for the Gipper.","author":"George
-        Gipp"}}}'
-  recorded_at: Tue, 15 Mar 2022 20:36:45 GMT
+      string: '{"data":{"id":null,"type":"quote","attributes":{"quote":"Friendship
+        is a gift forever;\ncherish everyday, forget it never.","author":"Debasish
+        Mridha, M.D."}}}'
+  recorded_at: Wed, 16 Mar 2022 15:46:28 GMT
 recorded_with: VCR 6.0.0
