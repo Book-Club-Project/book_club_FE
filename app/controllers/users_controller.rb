@@ -1,10 +1,11 @@
 class UsersController < ApplicationController
-  # before_action :quote, only: [:new]
+  before_action :quote, only: [:new]
 
   def new; end
 
   def show
     unless current_user.nil?
+      require "pry"; binding.pry
       @user = current_user
       @clubs = UserFacade.user_clubs(@user.id)
     end

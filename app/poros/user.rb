@@ -3,7 +3,7 @@ class User
               :email,
               :username,
               :password_digest
-              
+
   def initialize(data)
     @id = data[:id]
     @email = data[:attributes][:email]
